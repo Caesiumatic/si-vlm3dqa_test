@@ -6,7 +6,7 @@ Start: 2026-09-25 22:00:06 UTC. Deadline: 2026-09-28 22:00:06 UTC.
 
 Main compute: Lop SGE. Mac: auxiliary data processing and analysis, optional measured model assistance.
 
-Current stage: inspect released RGB data and validate a video-capable training stack. Scientific protocol is in `configs/protocol.json`; numerical sizes remain unfrozen until measured feasibility. The source design is `DESIGN.md`.
+Current stage: real-video training stack passed on Lop; validating full teacher and multi-step training interfaces. Scientific protocol is in `configs/protocol.json`; numerical sizes remain unfrozen until measured feasibility. The source design is `DESIGN.md`.
 
 Only source videos and anonymous identities enter model workflows. Human scores remain evaluation-only. Main arms T0/T1/T2/T3 with T5 prioritized. Teacher and student share initialization; T2/T3/T5 share labels and schedule.
 

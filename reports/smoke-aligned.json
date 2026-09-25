@@ -1,0 +1,486 @@
+{
+  "status": "passed",
+  "started": 1790375521.1108515,
+  "formula_checks": {
+    "reward_monotonicity": true,
+    "swap_symmetry": true,
+    "zero_variance": true,
+    "post_normalization_scaling": true
+  },
+  "gpus": [
+    {
+      "name": "NVIDIA GeForce GTX 980",
+      "capability": [
+        5,
+        2
+      ]
+    },
+    {
+      "name": "NVIDIA GeForce GTX 980",
+      "capability": [
+        5,
+        2
+      ]
+    },
+    {
+      "name": "NVIDIA GeForce GTX 980",
+      "capability": [
+        5,
+        2
+      ]
+    },
+    {
+      "name": "NVIDIA GeForce GTX 980",
+      "capability": [
+        5,
+        2
+      ]
+    }
+  ],
+  "load_seconds": 13.5299371778965,
+  "attention_equivalence": [
+    {
+      "bounds": [
+        0,
+        16,
+        32,
+        48
+      ],
+      "forward_max_error": 0.0,
+      "gradient_max_error": 0.0
+    },
+    {
+      "bounds": [
+        0,
+        17,
+        48,
+        64
+      ],
+      "forward_max_error": 5.551115123125783e-17,
+      "gradient_max_error": 8.326672684688674e-17
+    }
+  ],
+  "device_map": {
+    "visual": "0",
+    "model.embed_tokens": "1",
+    "lm_head": "1",
+    "model.layers.0": "1",
+    "model.layers.1": "1",
+    "model.layers.2": "1",
+    "model.layers.3": "1",
+    "model.layers.4": "1",
+    "model.layers.5": "1",
+    "model.layers.6": "1",
+    "model.layers.7": "1",
+    "model.layers.8": "1",
+    "model.layers.9": "2",
+    "model.layers.10": "2",
+    "model.layers.11": "2",
+    "model.layers.12": "2",
+    "model.layers.13": "2",
+    "model.layers.14": "2",
+    "model.layers.15": "2",
+    "model.layers.16": "2",
+    "model.layers.17": "2",
+    "model.layers.18": "2",
+    "model.layers.19": "2",
+    "model.layers.20": "2",
+    "model.layers.21": "2",
+    "model.layers.22": "3",
+    "model.layers.23": "3",
+    "model.layers.24": "3",
+    "model.layers.25": "3",
+    "model.layers.26": "3",
+    "model.layers.27": "3",
+    "model.layers.28": "3",
+    "model.layers.29": "3",
+    "model.layers.30": "3",
+    "model.layers.31": "3",
+    "model.layers.32": "3",
+    "model.layers.33": "3",
+    "model.layers.34": "3",
+    "model.layers.35": "3",
+    "model.norm": "3",
+    "model.rotary_emb": "3"
+  },
+  "teacher": {
+    "text": "{\"preference\": \"A\"}",
+    "observations": [
+      {
+        "source_fps": 30.0,
+        "duration": 10.0,
+        "original_size": [
+          1600,
+          800
+        ],
+        "crop_xyxy": [
+          800,
+          0,
+          1600,
+          800
+        ],
+        "timestamps": [
+          0.0,
+          1.4,
+          2.8333333333333335,
+          4.266666666666667,
+          5.666666666666667,
+          7.1,
+          8.533333333333333,
+          9.966666666666667
+        ],
+        "shape": [
+          8,
+          224,
+          224,
+          3
+        ]
+      },
+      {
+        "source_fps": 30.0,
+        "duration": 10.0,
+        "original_size": [
+          1600,
+          800
+        ],
+        "crop_xyxy": [
+          800,
+          0,
+          1600,
+          800
+        ],
+        "timestamps": [
+          2.0,
+          2.1333333333333333,
+          2.2666666666666666,
+          2.4,
+          2.533333333333333,
+          2.6666666666666665,
+          2.8,
+          2.966666666666667
+        ],
+        "shape": [
+          8,
+          224,
+          224,
+          3
+        ]
+      },
+      {
+        "source_fps": 30.0,
+        "duration": 10.0,
+        "original_size": [
+          1600,
+          800
+        ],
+        "crop_xyxy": [
+          800,
+          0,
+          1600,
+          800
+        ],
+        "timestamps": [
+          0.0,
+          1.4,
+          2.8333333333333335,
+          4.266666666666667,
+          5.666666666666667,
+          7.1,
+          8.533333333333333,
+          9.966666666666667
+        ],
+        "shape": [
+          8,
+          224,
+          224,
+          3
+        ]
+      },
+      {
+        "source_fps": 30.0,
+        "duration": 10.0,
+        "original_size": [
+          1600,
+          800
+        ],
+        "crop_xyxy": [
+          800,
+          0,
+          1600,
+          800
+        ],
+        "timestamps": [
+          2.0,
+          2.1333333333333333,
+          2.2666666666666666,
+          2.4,
+          2.533333333333333,
+          2.6666666666666665,
+          2.8,
+          2.966666666666667
+        ],
+        "shape": [
+          8,
+          224,
+          224,
+          3
+        ]
+      }
+    ]
+  },
+  "groups": [
+    {
+      "scores": [
+        1.0,
+        2.0,
+        1.0,
+        3.0
+      ],
+      "texts": [
+        "```json\n{\n  \"score\": 1.0\n}\n```",
+        "{\"score\": 2.0}",
+        "{\n    \"score\": 1.0\n}",
+        "```json\n{\n  \"score\": 3.0\n}\n```"
+      ],
+      "rewards": [
+        0.39831552057565756,
+        0.9172484647403575,
+        0.39831552057565756,
+        0.9993248230522296
+      ],
+      "advantages": [
+        -0.9946684788177145,
+        0.8488774494788293,
+        -0.9946684788177145,
+        1.1404595081566002
+      ],
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.1333333333333333,
+            2.2666666666666666,
+            2.4,
+            2.533333333333333,
+            2.6666666666666665,
+            2.8,
+            2.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "scores": [
+        1.0,
+        1.0,
+        2.0,
+        2.0
+      ],
+      "texts": [
+        "```json\n{\n  \"score\": 1.0\n}\n```",
+        "```json\n{\n    \"score\": 1.0\n}\n```",
+        "{\"score\": 2.0}",
+        "```json\n{\n    \"score\": 2.0\n}\n```"
+      ],
+      "rewards": [
+        0.9039600941740975,
+        0.9039600941740975,
+        0.6176668197956707,
+        0.6176668197956707
+      ],
+      "advantages": [
+        0.9999930142053363,
+        0.9999930142053363,
+        -0.9999930142053363,
+        -0.9999930142053363
+      ],
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.1333333333333333,
+            2.2666666666666666,
+            2.4,
+            2.533333333333333,
+            2.6666666666666665,
+            2.8,
+            2.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "update": {
+    "seconds": 54.452806413173676,
+    "grad_norm": 0.16818879544734955,
+    "parameter_delta_squared": 6.600184265655919e-05,
+    "loss_terms": [
+      0.12433356046676636,
+      -0.10610967874526978,
+      0.12433356046676636,
+      -0.14255744218826294,
+      -0.12499912828207016,
+      -0.12499912828207016,
+      0.12499912828207016,
+      0.12499912828207016
+    ]
+  },
+  "reload_max_abs_error": 0.0,
+  "checkpoint_bytes": 23277045,
+  "elapsed_seconds": 119.1059398651123,
+  "max_memory_allocated": [
+    1568279552,
+    2632045568,
+    2259741184,
+    2415374848
+  ],
+  "max_memory_reserved": [
+    1751121920,
+    2675965952,
+    2376073216,
+    2535456768
+  ],
+  "generation_timings": [
+    {
+      "seconds": 8.979133047163486,
+      "input_tokens": 1240,
+      "output_tokens": 8
+    },
+    {
+      "seconds": 3.748108498752117,
+      "input_tokens": 658,
+      "output_tokens": 16
+    },
+    {
+      "seconds": 3.0298850536346436,
+      "input_tokens": 658,
+      "output_tokens": 9
+    },
+    {
+      "seconds": 3.322901636362076,
+      "input_tokens": 658,
+      "output_tokens": 12
+    },
+    {
+      "seconds": 3.86114414781332,
+      "input_tokens": 658,
+      "output_tokens": 16
+    },
+    {
+      "seconds": 3.7338671162724495,
+      "input_tokens": 658,
+      "output_tokens": 16
+    },
+    {
+      "seconds": 4.2231569811701775,
+      "input_tokens": 658,
+      "output_tokens": 16
+    },
+    {
+      "seconds": 3.3173324912786484,
+      "input_tokens": 658,
+      "output_tokens": 9
+    },
+    {
+      "seconds": 3.721364974975586,
+      "input_tokens": 658,
+      "output_tokens": 16
+    }
+  ]
+}

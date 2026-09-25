@@ -30,7 +30,8 @@ def majority(labels):
     if not valid:
         return 'abstain', 0.
     label, count = collections.Counter(valid).most_common(1)[0]
-    return (label if count > len(valid)/2 else 'abstain'), count/len(valid)
+    # Missing/abstaining seats still count in the declared voting budget.
+    return (label if count > len(labels)/2 else 'abstain'), count/len(labels)
 
 
 class Evaluator:
@@ -67,19 +68,22 @@ class Evaluator:
                     f'Search for visual evidence that video {side} has better quality. '
                     'Keep contrary observations and acknowledge weak evidence; never invent defects. '+SCHEMA)
                 # Strip role identity and confidence from auditor input.
-                for claim in report.get('evidence', [])[:2]:
+                evidence = report.get('evidence', [])
+                for claim in (evidence if isinstance(evidence,list) else [])[:2]:
                     if isinstance(claim, dict):
                         claims.append({k:claim[k] for k in ('video','time','observation') if k in claim})
         # Deduplicate shared claims; repeated descriptions are not independent votes.
         claims = list({json.dumps(c,sort_keys=True):c for c in claims}.values())
         audit_prompt = ('Check these claims against the pixels: '+json.dumps(claims)+
-            '. Return JSON with supported (list of claim indices), contradicted (list), '
+            '. Indices are zero-based. Return JSON with supported (list of claim indices), contradicted (list), '
             'unresolved (list), and question (the decisive remaining visual issue, or empty string).')
         audit = call('auditor', audit_prompt)
         audits = [audit]
 
         def recurse(parent, depth):
             unresolved = parent.get('unresolved', [])
+            if not isinstance(unresolved,list):
+                return
             if not unresolved or depth > self.config['recursion_depth']:
                 return
             windows = {0:[], 1:[]}
@@ -92,7 +96,9 @@ class Evaluator:
                     start = max(0.,float(claim.get('time',2.))-.5)
                 except (ValueError,TypeError):
                     start = 2.
-                windows[side].append((start,1.))
+                windows[side].append((start,self.runner.observation['local_seconds']))
+            if not any(windows.values()):
+                return
             child = call('local_audit_depth_'+str(depth),
                 'Resolve this visual subquestion using the added local observations: '+
                 str(parent.get('question',''))+' '+audit_prompt, windows=windows)
@@ -108,12 +114,19 @@ class Evaluator:
         denominator = max(1,len(claims))
         supported, unresolved = set(), set(range(len(claims)))
         for a in audits:
-            valid = lambda key:{i for i in a.get(key,[]) if isinstance(i,int) and 0<=i<len(claims)}
+            valid = lambda key:{i for i in (a.get(key,[]) if isinstance(a.get(key,[]),list) else [])
+                               if isinstance(i,int) and 0<=i<len(claims)}
             s,c,u = valid('supported'),valid('contradicted'),valid('unresolved')
             supported = (supported | s) - c
             unresolved = (unresolved - s - c) | u
         support = len(supported)/denominator
         resolved = 1-len(unresolved)/denominator if claims else 0.
         reliability = agreement*(.5+.5*support)*(.5+.5*resolved)
+        evidence_ok = bool(claims) and any(isinstance(a.get('supported'),list) and
+                          isinstance(a.get('contradicted'),list) and isinstance(a.get('unresolved'),list)
+                          for a in audits)
+        if not evidence_ok:
+            label, reliability = 'abstain', 0.
         return {'label':label,'reliability':reliability,'hyperjudge_agreement':agreement,
-                'support_fraction':support,'resolved_fraction':resolved,'ledger':ledger,'records':records}
+                'support_fraction':support,'resolved_fraction':resolved,'evidence_interface_valid':evidence_ok,
+                'ledger':ledger,'records':records}

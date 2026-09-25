@@ -13,6 +13,7 @@ p = argparse.ArgumentParser()
 p.add_argument('--model', default='models/Qwen2.5-VL-3B-Instruct')
 p.add_argument('--videos', nargs=2, required=True)
 p.add_argument('--output', default='runs/smoke')
+p.add_argument('--config')
 args = p.parse_args()
 out = pathlib.Path(args.output)
 out.mkdir(parents=True, exist_ok=True)
@@ -30,8 +31,10 @@ def record():
 record()
 try:
     t = time.monotonic()
-    runner = VLM(args.model, lora=True, source_crop_right=True)
+    observation = json.loads(pathlib.Path(args.config).read_text())['observation'] if args.config else None
+    runner = VLM(args.model, lora=True, source_crop_right=True, observation=observation)
     result['load_seconds'] = time.monotonic() - t
+    result['attention_equivalence'] = runner.attention_checks
     result['device_map'] = {k: str(v) for k, v in runner.model.hf_device_map.items()}
     print('loaded', result['load_seconds'], result['device_map'], flush=True)
     teacher_inputs, traces = runner.inputs(args.videos,

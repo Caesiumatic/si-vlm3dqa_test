@@ -1,4 +1,5 @@
 {
+  "evoquality_eq2_both_variances": true,
   "reward_monotonicity": true,
   "swap_symmetry": true,
   "zero_variance": true,

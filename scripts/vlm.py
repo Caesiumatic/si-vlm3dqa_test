@@ -46,15 +46,27 @@ def decode(path, frames=8, start=0., duration=None, pixels=224, crop_right=False
 
 
 class VLM:
-    def __init__(self, model_path, lora=False, max_memory_gib=2.9, source_crop_right=False):
+    def __init__(self, model_path, lora=False, max_memory_gib=2.9, source_crop_right=False, observation=None):
+        from vision_attention import install_and_check
+        self.attention_checks = install_and_check()
         self.source_crop_right = source_crop_right
-        self.processor = AutoProcessor.from_pretrained(model_path, min_pixels=56*56, max_pixels=224*224)
+        self.observation = observation or {'global_frames':8,'local_frames':8,'local_seconds':1.,'pixels':224}
+        self.processor = AutoProcessor.from_pretrained(model_path, min_pixels=56*56,
+                          max_pixels=self.observation['pixels']**2)
         n = torch.cuda.device_count()
         self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
             model_path, torch_dtype=torch.float16, attn_implementation='eager',
             device_map='auto', max_memory={**{i: f'{max_memory_gib}GiB' for i in range(n)}, 'cpu': '24GiB'})
         if any(str(d) in ('cpu', 'disk') for d in self.model.hf_device_map.values()):
             raise RuntimeError(f'Model offload required: {self.model.hf_device_map}')
+        # Generation creates cache positions on the dispatch main device. Qwen requires
+        # that device to match text embeddings, even when the vision encoder is elsewhere.
+        from accelerate import dispatch_model
+        from accelerate.hooks import remove_hook_from_submodules
+        mapping = self.model.hf_device_map.copy()
+        main_device = self.model.get_input_embeddings().weight.device
+        remove_hook_from_submodules(self.model)
+        self.model = dispatch_model(self.model, device_map=mapping, main_device=main_device)
         if lora:
             from peft import LoraConfig, get_peft_model
             self.model = get_peft_model(self.model, LoraConfig(
@@ -70,10 +82,12 @@ class VLM:
         content, videos, fps, traces = [], [], [], []
         for index, path in enumerate(paths):
             content.append({'type': 'text', 'text': f'Video {chr(65+index)}: global overview.'})
-            extra = windows.get(index, []) if windows is not None else ([(2., 1.)] if local else [])
+            extra = windows.get(index, []) if windows is not None else ([(2., self.observation['local_seconds'])] if local else [])
             views = [(0., None)] + extra
             for start, duration in views:
-                array, frequency, trace = decode(path, start=start, duration=duration, crop_right=self.source_crop_right)
+                count = self.observation['global_frames'] if duration is None else self.observation['local_frames']
+                array, frequency, trace = decode(path, frames=count, start=start, duration=duration,
+                          pixels=self.observation['pixels'], crop_right=self.source_crop_right)
                 videos.append(array); fps.append(frequency); traces.append(trace)
                 content.append({'type':'text', 'text':f'Video {chr(65+index)} observation, original times '
                     f'{trace["timestamps"][0]:.3f} to {trace["timestamps"][-1]:.3f} seconds; '

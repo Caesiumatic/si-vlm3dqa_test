@@ -2,8 +2,8 @@
 #$ -S /bin/bash
 #$ -N sevlm_smoke
 #$ -q gpu1@compute-1-20.local
-#$ -pe cuda 1
-#$ -l gpu=1,slots_gpu=4,h_rt=02:00:00
+#$ -pe cuda 4
+#$ -l gpu=1,slots_gpu=1,h_rt=02:00:00
 #$ -cwd
 #$ -j y
 #$ -o reports/smoke-scheduler.log

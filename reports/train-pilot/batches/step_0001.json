@@ -1,0 +1,110 @@
+{
+  "completed_pairs": 2,
+  "total_pairs": 4,
+  "grad_norm": 0.0675186812877655,
+  "seconds": 160.53309417515993,
+  "pairs": [
+    {
+      "scores": [
+        [
+          3.0,
+          2.5,
+          2.5,
+          1.0
+        ],
+        [
+          1.0,
+          null,
+          1.0,
+          1.0
+        ]
+      ],
+      "texts": [
+        [
+          "```json\n{\n  \"score\": 3.0\n}\n```",
+          "```json\n{\n  \"score\": 2.5\n}\n```",
+          "{\"score\": 2.5}",
+          "{\"score\": 1.0}"
+        ],
+        [
+          "```json\n{\n  \"score\": 1.0\n}\n```",
+          "{\"score\": 0.5}",
+          "```json\n{\n    \"score\": 1.0\n}\n```",
+          "```json\n{\n  \"score\": 1.0\n}\n```"
+        ]
+      ],
+      "weight": 0.5,
+      "status": "invalid_rollout_pair_skipped",
+      "zero_variance_groups": null,
+      "pair_id": "engineering_repeat_0",
+      "label": "A",
+      "rollout_seed": 1347120764
+    },
+    {
+      "scores": [
+        [
+          2.0,
+          1.0,
+          1.0,
+          4.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "texts": [
+        [
+          "```json\n{\n  \"score\": 2.0\n}\n```",
+          "```json\n{\n  \"score\": 1.0\n}\n```",
+          "{\"score\": 1.0}",
+          "{\"score\": 4.0}"
+        ],
+        [
+          "```json\n{\n  \"score\": 1.0\n}\n```",
+          "{\"score\": 1.0}",
+          "```json\n{\n  \"score\": 1.0\n}\n```",
+          "```json\n{\n  \"score\": 1.0\n}\n```"
+        ]
+      ],
+      "weight": 0.5,
+      "rewards": [
+        [
+          0.8900095089705763,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.9963353244305846
+        ],
+        [
+          0.8900095089705763,
+          0.8900095089705763,
+          0.8900095089705763,
+          0.8900095089705763
+        ]
+      ],
+      "advantages": [
+        [
+          0.5236701885438243,
+          -0.9528341861956845,
+          -0.9528341861956845,
+          1.3819981838475475
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "zero_variance_groups": 1,
+      "policy": 7.450580596923828e-09,
+      "kl": 0.0,
+      "status": "processed",
+      "pair_id": "engineering_repeat_2",
+      "label": "A",
+      "rollout_seed": 3256785873
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "signature": "66c4ac56769e55405fa9e88a66df80880db2cae4a5eea2459405dcd006fce439",
+  "checkpoint": "step_0002",
+  "completed_pairs": 4,
+  "total_pairs": 4,
+  "status": "complete",
+  "arm": "T3",
+  "seed": 17,
+  "max_memory_allocated": [
+    1515026944,
+    2673067520,
+    2343823872,
+    2504168960
+  ]
+}

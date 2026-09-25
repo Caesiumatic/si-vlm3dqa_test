@@ -10,6 +10,8 @@ config='configs/experiment.json'
 cfg=json.loads(pathlib.Path(config).read_text())
 assert cfg['status']=='FROZEN'
 assert json.loads(pathlib.Path('runs/train-pilot/latest.json').read_text())['status']=='complete'
+audit_checks=list(pathlib.Path('runs/teacher-pilot-v3').glob('*_full.json'))
+assert len(audit_checks)==2 and any(json.loads(p.read_text())['evidence_interface_valid'] for p in audit_checks)
 root=pathlib.Path('runs/main');root.mkdir(parents=True,exist_ok=True)
 manifest='data/manifests/frozen'
 labels=str(root/'labels');bundle=str(root/'bundle.json')

@@ -78,25 +78,25 @@ class Evaluator:
                         claims.append({k:claim[k] for k in ('video','time','observation') if k in claim})
         # Deduplicate shared claims; repeated descriptions are not independent votes.
         claims = list({json.dumps(c,sort_keys=True):c for c in claims}.values())
-        audit_prompt = ('Check these claims against the pixels: '+json.dumps(claims)+
-            '. Indices are zero-based. Use EXACT JSON keys: '
-            '{"supported":[],"contradicted":[],"unresolved":[],"question":""}. '
-            'Place each claim index in exactly one of supported, contradicted, unresolved. '
-            'Use integer indices only. A temporal claim needs continuous-frame support; '
-            'if an event falls outside the local viewed interval, mark it unresolved. '
-            'question is the decisive remaining visual issue for local reinspection, or an empty string. '
-            'Do not rename keys.')
+        indexed_claims = {str(i):c for i,c in enumerate(claims)}
+        audit_template = {str(i):"?" for i in range(len(claims))}
+        audit_template['question'] = ''
+        audit_prompt = ('Verify the numbered claims against the video pixels: '+json.dumps(indexed_claims)+
+            '. Return EXACTLY this JSON structure: '+json.dumps(audit_template)+
+            '. Replace each ? with ONE string: supported, contradicted, or unresolved. '
+            'Keep each numbered key unchanged. Do not copy the claim text into your answer. '
+            'Judge visible quality evidence only; no audio was provided. '
+            'A temporal claim needs continuous-frame support; if an event falls outside the local viewed '
+            'interval, mark it unresolved. question is the decisive issue for local reinspection, or empty.')
         def normalize_audit(report):
-            """An omitted or conflicting claim status is unresolved, never implicitly verified."""
-            valid = lambda key:{i for i in (report.get(key,[]) if isinstance(report.get(key,[]),list) else [])
-                               if isinstance(i,int) and 0<=i<len(claims)}
-            s,c,u=valid('supported'),valid('contradicted'),valid('unresolved')
-            conflict=(s&c)|(s&u)|(c&u)
-            s-=conflict;c-=conflict
-            return dict(report,supported=sorted(s),contradicted=sorted(c),
-                        unresolved=sorted(set(range(len(claims)))-s-c),
-                        interface_valid=all(isinstance(report.get(k),list) for k in ('supported','contradicted','unresolved')),
-                        status_completion_rule='omitted_or_conflicting_means_unresolved')
+            statuses={i:report.get(str(i)) for i in range(len(claims))}
+            return {'supported':[i for i,v in statuses.items() if v=='supported'],
+                    'contradicted':[i for i,v in statuses.items() if v=='contradicted'],
+                    'unresolved':[i for i,v in statuses.items() if v not in ('supported','contradicted')],
+                    'question':report.get('question',''),
+                    'interface_valid':bool(claims) and all(v in ('supported','contradicted','unresolved')
+                                                        for v in statuses.values()),
+                    'status_completion_rule':'missing_or_invalid_numbered_verdict_means_unresolved'}
         audit = normalize_audit(call('auditor', audit_prompt))
         audits = [audit]
         recursion_stops=[];seen_windows=set()
@@ -144,7 +144,7 @@ class Evaluator:
             valid = lambda key:{i for i in (a.get(key,[]) if isinstance(a.get(key,[]),list) else [])
                                if isinstance(i,int) and 0<=i<len(claims)}
             s,c,u = valid('supported'),valid('contradicted'),valid('unresolved')
-            supported = (supported | s) - c
+            supported = (supported | s) - c - u
             unresolved = (unresolved - s - c) | u
         support = len(supported)/denominator
         resolved = 1-len(unresolved)/denominator if claims else 0.

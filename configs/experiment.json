@@ -1,0 +1,104 @@
+{
+  "observation": {
+    "global_frames": 8,
+    "local_frames": 16,
+    "local_seconds": 0.5333333333333333,
+    "pixels": 224
+  },
+  "teacher": {
+    "baseline_votes": 5,
+    "advocate_pairs": 1,
+    "hyperjudges": 3,
+    "recursion_depth": 2,
+    "branching_factor": 2,
+    "max_calls": 10,
+    "report_tokens": 224,
+    "temperature": 0.7
+  },
+  "seed": 701,
+  "interface_version": "numbered_audit_verdicts_v3",
+  "training": {
+    "rollouts": 4,
+    "score_tokens": 40,
+    "temperature": 1.0,
+    "gamma": 0.01,
+    "clip": 0.2,
+    "kl_beta": 0.04,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "pairs_per_batch": 4,
+    "pairs_total": 108,
+    "weight_shuffle_seed": 509
+  },
+  "test": {
+    "score_tokens": 40,
+    "temperature": 0.0,
+    "repeats": 1
+  },
+  "model": {
+    "name": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "dtype": "float16",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_targets": [
+      "q_proj",
+      "v_proj"
+    ],
+    "vision_frozen": true
+  },
+  "data": {
+    "source_per_group": 10,
+    "source_groups": 18,
+    "candidate_pairs": 198,
+    "target_per_group": 8,
+    "target_groups": 54,
+    "primary_target": "MUGSQA:main",
+    "source_reference_crop": "right_half"
+  },
+  "arms": [
+    "T0",
+    "T1",
+    "T2",
+    "T3",
+    "T5"
+  ],
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "statistics": {
+    "primary": "T3_minus_T1_SRCC",
+    "secondary": "raw_PLCC",
+    "bootstrap_unit": "paired_target_content_groups_and_training_seeds",
+    "bootstrap_repetitions": 2000,
+    "bootstrap_seed": 2026,
+    "confidence_level": 0.95
+  },
+  "checkpoint_rule": "final_fixed_108_pairs_27_batches_no_MOS_selection",
+  "status": "FROZEN",
+  "deadline_utc": "2026-09-28T22:00:06Z",
+  "label_policy": {
+    "target_encoding": {
+      "A": 1,
+      "B": 0,
+      "near_equal": 0.5
+    },
+    "abstain": "exclude from common subset",
+    "majority": "strictly more than half of allocated judge seats",
+    "schedule_selection": "greedy unseen-video coverage then low scene exposure, fixed 108 pairs; cycle if fewer common valid pairs",
+    "weight_mapping": "raw reliability divided by fixed schedule mean; T5 permutes schedule weights",
+    "reliability": "judge_agreement*(0.5+0.5*support_fraction)*(0.5+0.5*resolved_fraction)",
+    "audit_status": "latest verdict; missing or conflicting claims unresolved"
+  },
+  "scope_notes": [
+    "Small pilot with 27 optimizer updates per run, not convergence training.",
+    "Main student comparison uses common valid labels. Each method full teacher output retained; separate full-output student runs are extensions.",
+    "Teacher compute/observation matching and T4/recursion ablations remain separate extensions; no independent recursion-effect claim from main comparison.",
+    "Single teacher-label realization; three seeds vary student initialization of LoRA/order/sampling.",
+    "Tests use 224px, 8 global frames plus16 consecutive native-rate local frames; quality outside this observation budget is unmeasured."
+  ],
+  "frozen_utc": "2026-09-25T23:59:08.878467+00:00"
+}

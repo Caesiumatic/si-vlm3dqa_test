@@ -1,0 +1,39 @@
+{
+  "frozen_utc": "2026-09-25T23:49:11.960746+00:00",
+  "data": {
+    "source_train": {
+      "videos": 180,
+      "groups": 18
+    },
+    "target_test": {
+      "videos": 432,
+      "groups": 54
+    }
+  },
+  "candidate_pairs": 198,
+  "sha256": {
+    "configs/experiment.json": "d7f0242e37a7905b2ab62dbc25e2cc723135b0eafa1155fa3a6cbb6701317b25",
+    "configs/protocol.json": "53312e8ccf38dd7e20fddeca3ba338bddc7e2882f5a7efe0519f7b0edc286208",
+    "data/manifests/frozen/pairs.jsonl": "eba3145af033f052d419c122b4d873f9386940565b89a0bd797177ac0584ea9c",
+    "data/manifests/frozen/source_train.jsonl": "70723dfdb2d4c9f854b4c0cc2a2878de38ea6a1ea6791218116a9c7642caa07c",
+    "data/manifests/frozen/target_test.jsonl": "ab935109a12fb6effe46200aa7bbf423a31fc73b1b4d9c2c6c1660a1aed85bbb",
+    "scripts/acquire_target.py": "7bdbb4d21a738c16fced8f619b9a7d53f3726b050ceb5229c9671c6fdd20219b",
+    "scripts/budget.py": "14a66e5db5541c838347673e410a52a9449f371cf24d22bfcb74dbf9e7253e82",
+    "scripts/bundle.py": "b4555cd686c84ed032970a31d1a06761b90e09e577f04e76392855b588ce3c6b",
+    "scripts/evaluator.py": "5c98d4d09cc776c77fb29055d980733323acf3ac3f711a9bae70cabfca2a5e91",
+    "scripts/gpu.sge": "eb745e354bb1ff1b527dd5277157ec7628cb3bd6dbc36b2eef8d62072e6438ff",
+    "scripts/inventory.py": "b46ca6ed737f693a63a0f2b1e7c7caf423f6e5083acc91f9af09c02f7c74acbf",
+    "scripts/label.py": "25d0987e15c03107b110d43af91bd54a9643cd38c16c28854984b574efbd0704",
+    "scripts/make_pairs.py": "0c4f140d04566b77356bc126f7e57b9c8de659c565f0b76be9f16aad8bb1abf7",
+    "scripts/metrics.py": "edd3112facd0c7d22110625f4d167cb292fb566ffc27b641f15cee5690741957",
+    "scripts/pipeline.py": "1caa7dd21f47dbdf3f4ada287f9c93d25e46ac494f1f4a832e060c679ff038f9",
+    "scripts/predict.py": "e2140c12d28c0c04dfd828f56b26df3c93a074d795cd572c328b153aea87e14c",
+    "scripts/prepare.sge": "c341a8ebec69d52afec3b90a628714541a783183af00e7966a60c9f64f0d43d4",
+    "scripts/remote_zip.py": "02ae6196248374fe815c2c2c11a60d85bd850ef626bd587c8e2faa3927f4456d",
+    "scripts/reward.py": "2c8af52ed319ee8fd8df0d32c634d20a54598b3b51cb9c5e5c04d51d00a238a4",
+    "scripts/smoke.py": "13957e58e3672ec21d52058bdf7766f5a3920a982ed9d4ed58d5cb0d756c13fb",
+    "scripts/train.py": "3cc372d6cdc6acec8adc41c30871d8682b392f26f04b91d7fc04f91da794698a",
+    "scripts/vision_attention.py": "44f63860a0a41dcf9431b96f3e595a5fe21b820dac20d3349af9c30f893f4392",
+    "scripts/vlm.py": "1e861a048206a221c4820886c7556de535510c3ed619130d7cebaac89d0f6e76"
+  }
+}

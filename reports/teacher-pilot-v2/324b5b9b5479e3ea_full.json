@@ -1,0 +1,1385 @@
+{
+  "label": "near_equal",
+  "reliability": 0.25,
+  "hyperjudge_agreement": 1.0,
+  "support_fraction": 0.0,
+  "resolved_fraction": 0.0,
+  "evidence_interface_valid": true,
+  "ledger": {
+    "claims": [
+      {
+        "video": "A",
+        "time": 0.0,
+        "observation": "The audio and visual frames from Video A appear to match closely, indicating no significant differences in the rendering quality."
+      },
+      {
+        "video": "B",
+        "time": 0.0,
+        "observation": "Similar to Video A, the audio and visual frames from Video B show a close match, suggesting comparable rendering quality."
+      },
+      {
+        "video": "B",
+        "time": 0.0,
+        "observation": "The video B shows slight variations in the position and lighting of the gramophone compared to video A."
+      }
+    ],
+    "audits": [
+      {
+        "supported": [],
+        "contradicted": [],
+        "unresolved": [
+          0,
+          1,
+          2
+        ],
+        "interface_valid": true,
+        "status_completion_rule": "omitted_or_conflicting_means_unresolved"
+      },
+      {
+        "supported": [],
+        "contradicted": [],
+        "unresolved": [
+          0,
+          1,
+          2
+        ],
+        "question": "",
+        "interface_valid": true,
+        "status_completion_rule": "omitted_or_conflicting_means_unresolved"
+      }
+    ],
+    "independent_initial": {
+      "preference": "near_equal",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "video": "A",
+          "time": 0.0,
+          "observation": "The first frame shows a vintage gramophone with a horn and a wooden base. The horn is prominently displayed, and the device appears to be in a static position."
+        },
+        {
+          "video": "B",
+          "time": 0.0,
+          "observation": "The first frame also depicts an antique gramophone with a prominent horn and a wooden base. The horn's position and the gramophone's stance remain consistent with the previous frame."
+        }
+      ]
+    }
+  },
+  "records": [
+    {
+      "role": "neutral",
+      "swapped": false,
+      "output": "{\n  \"preference\": \"near_equal\",\n  \"confidence\": 0.8,\n  \"evidence\": [\n    {\n      \"video\": \"A\",\n      \"time\": 0.0,\n      \"observation\": \"The first frame shows a vintage gramophone with a horn and a wooden base. The horn is prominently displayed, and the device appears to be in a static position.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 0.0,\n      \"observation\": \"The first frame also depicts an antique gramophone with a prominent horn and a wooden base. The horn's position and the gramophone's stance remain consistent with the previous frame.\"\n    }\n  ]\n}",
+      "parsed": {
+        "preference": "near_equal",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The first frame shows a vintage gramophone with a horn and a wooden base. The horn is prominently displayed, and the device appears to be in a static position."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "The first frame also depicts an antique gramophone with a prominent horn and a wooden base. The horn's position and the gramophone's stance remain consistent with the previous frame."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 19.8764256387949,
+        "input_tokens": 1897,
+        "output_tokens": 147
+      }
+    },
+    {
+      "role": "advocate_A",
+      "swapped": false,
+      "output": "```json\n{\n  \"preference\": \"near_equal\",\n  \"confidence\": 0.5,\n  \"evidence\": [\n    {\n      \"video\": \"A\",\n      \"time\": 0.0,\n      \"observation\": \"The audio and visual frames from Video A appear to match closely, indicating no significant differences in the rendering quality.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 0.0,\n      \"observation\": \"Similar to Video A, the audio and visual frames from Video B show a close match, suggesting comparable rendering quality.\"\n    }\n  ]\n}\n```",
+      "parsed": {
+        "preference": "near_equal",
+        "confidence": 0.5,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The audio and visual frames from Video A appear to match closely, indicating no significant differences in the rendering quality."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "Similar to Video A, the audio and visual frames from Video B show a close match, suggesting comparable rendering quality."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 18.195091046392918,
+        "input_tokens": 1920,
+        "output_tokens": 128
+      }
+    },
+    {
+      "role": "advocate_B",
+      "swapped": false,
+      "output": "```json\n{\n  \"preference\": \"B\",\n  \"confidence\": 0.8,\n  \"evidence\": [\n    {\n      \"video\": \"B\",\n      \"time\": 0.0,\n      \"observation\": \"The video B shows slight variations in the position and lighting of the gramophone compared to video A.\"\n    }\n  ]\n}\n```",
+      "parsed": {
+        "preference": "B",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "The video B shows slight variations in the position and lighting of the gramophone compared to video A."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 13.938414230942726,
+        "input_tokens": 1920,
+        "output_tokens": 77
+      }
+    },
+    {
+      "role": "auditor",
+      "swapped": false,
+      "output": "{\n  \"supported\": [\n    {\n      \"video\": \"A\",\n      \"time\": 2.5,\n      \"observation\": \"The audio and visual frames from Video A show no significant differences in the rendering quality.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 2.5,\n      \"observation\": \"The video B shows slight variations in the position and lighting of the gramophone compared to video A.\"\n    }\n  ],\n  \"contradicted\": [],\n  \"unresolved\": []\n}",
+      "parsed": {
+        "supported": [
+          {
+            "video": "A",
+            "time": 2.5,
+            "observation": "The audio and visual frames from Video A show no significant differences in the rendering quality."
+          },
+          {
+            "video": "B",
+            "time": 2.5,
+            "observation": "The video B shows slight variations in the position and lighting of the gramophone compared to video A."
+          }
+        ],
+        "contradicted": [],
+        "unresolved": []
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 16.82049783319235,
+        "input_tokens": 1968,
+        "output_tokens": 110
+      }
+    },
+    {
+      "role": "local_audit_depth_1",
+      "swapped": false,
+      "output": "{\n    \"supported\": [],\n    \"contradicted\": [],\n    \"unresolved\": [],\n    \"question\": \"\"\n}",
+      "parsed": {
+        "supported": [],
+        "contradicted": [],
+        "unresolved": [],
+        "question": ""
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            0.03333333333333333,
+            0.06666666666666667,
+            0.1,
+            0.13333333333333333,
+            0.16666666666666666,
+            0.2,
+            0.23333333333333334,
+            0.26666666666666666,
+            0.3,
+            0.3333333333333333,
+            0.36666666666666664,
+            0.4,
+            0.43333333333333335,
+            0.4666666666666667,
+            0.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            0.03333333333333333,
+            0.06666666666666667,
+            0.1,
+            0.13333333333333333,
+            0.16666666666666666,
+            0.2,
+            0.23333333333333334,
+            0.26666666666666666,
+            0.3,
+            0.3333333333333333,
+            0.36666666666666664,
+            0.4,
+            0.43333333333333335,
+            0.4666666666666667,
+            0.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 9.98250164091587,
+        "input_tokens": 1980,
+        "output_tokens": 26
+      }
+    },
+    {
+      "role": "hyperjudge",
+      "swapped": false,
+      "output": "```json\n{\n  \"preference\": \"near_equal\",\n  \"confidence\": 0.7,\n  \"evidence\": [\n    {\n      \"video\": \"A\",\n      \"time\": 0.0,\n      \"observation\": \"The audio and visual frames from Video A appear to match closely, indicating no significant differences in the rendering quality.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 0.0,\n      \"observation\": \"Similar to Video A, the audio and visual frames from Video B show a close match, suggesting comparable rendering quality.\"\n    }\n  ]\n}\n```",
+      "parsed": {
+        "preference": "near_equal",
+        "confidence": 0.7,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The audio and visual frames from Video A appear to match closely, indicating no significant differences in the rendering quality."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "Similar to Video A, the audio and visual frames from Video B show a close match, suggesting comparable rendering quality."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 19.393585473299026,
+        "input_tokens": 2273,
+        "output_tokens": 128
+      }
+    },
+    {
+      "role": "hyperjudge",
+      "swapped": false,
+      "output": "```json\n{\n  \"preference\": \"near_equal\",\n  \"confidence\": 0.8,\n  \"evidence\": [\n    {\n      \"video\": \"A\",\n      \"time\": 0.0,\n      \"observation\": \"The first frame shows a vintage gramophone with a horn and a wooden base. The horn is prominently displayed, and the device appears to be in a static position.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 0.0,\n      \"observation\": \"The first frame also depicts an antique gramophone with a prominent horn and a wooden base. The horn's position and the gramophone's stance remain consistent with the previous frame.\"\n    }\n  ]\n}\n```",
+      "parsed": {
+        "preference": "near_equal",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The first frame shows a vintage gramophone with a horn and a wooden base. The horn is prominently displayed, and the device appears to be in a static position."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "The first frame also depicts an antique gramophone with a prominent horn and a wooden base. The horn's position and the gramophone's stance remain consistent with the previous frame."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 21.31470699608326,
+        "input_tokens": 2273,
+        "output_tokens": 151
+      }
+    },
+    {
+      "role": "hyperjudge",
+      "swapped": false,
+      "output": "{\n  \"preference\": \"near_equal\",\n  \"confidence\": 0.8,\n  \"evidence\": [\n    {\n      \"video\": \"A\",\n      \"time\": 0.0,\n      \"observation\": \"The first frame shows a vintage gramophone with a horn and a wooden base. The horn is prominently displayed, and the device appears to be in a static position.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 0.0,\n      \"observation\": \"The first frame also depicts an antique gramophone with a prominent horn and a wooden base. The horn's position and the gramophone's stance remain consistent with the previous frame.\"\n    }\n  ]\n}",
+      "parsed": {
+        "preference": "near_equal",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The first frame shows a vintage gramophone with a horn and a wooden base. The horn is prominently displayed, and the device appears to be in a static position."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "The first frame also depicts an antique gramophone with a prominent horn and a wooden base. The horn's position and the gramophone's stance remain consistent with the previous frame."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 20.962295927107334,
+        "input_tokens": 2273,
+        "output_tokens": 147
+      }
+    }
+  ],
+  "recursion_stop_reasons": [
+    "no_new_observation"
+  ],
+  "pair": {
+    "pair_id": "324b5b9b5479e3ea",
+    "a": "s_18b21c32818c2911",
+    "b": "s_27b65028bb9e4a31"
+  },
+  "method": "full",
+  "seed": 4156115159,
+  "config_sha256": "e7e0cb5dd41b2db02b9e7f4d66a5871a27a4f43c9717501137f01368d71cfdd0",
+  "elapsed_seconds": 143.2422227114439,
+  "max_memory_allocated": [
+    1681390592,
+    2821654016,
+    2766981632,
+    2925506048
+  ]
+}

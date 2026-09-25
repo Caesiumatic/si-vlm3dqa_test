@@ -1,0 +1,1222 @@
+{
+  "label": "near_equal",
+  "reliability": 0.5,
+  "hyperjudge_agreement": 0.6666666666666666,
+  "support_fraction": 0.5,
+  "resolved_fraction": 1.0,
+  "evidence_interface_valid": true,
+  "ledger": {
+    "claims": [
+      {
+        "video": "A",
+        "time": 2.0,
+        "observation": "The chair in Video A appears slightly more detailed and less distorted compared to the corresponding frame in Video B."
+      },
+      {
+        "video": "B",
+        "time": 2.0,
+        "observation": "The chair in Video B has noticeable distortion, making it appear less sharp than the corresponding frame in Video A."
+      },
+      {
+        "video": "A",
+        "time": 0.0,
+        "observation": "The chair in Video A appears to be slightly more detailed with clearer texture on the fabric and finer detailing on the armrests."
+      },
+      {
+        "video": "B",
+        "time": 0.0,
+        "observation": "The chair in Video B seems to have a smoother texture on the fabric and less detailed armrests."
+      }
+    ],
+    "audits": [
+      {
+        "supported": [
+          1,
+          2
+        ],
+        "contradicted": [
+          0,
+          3
+        ],
+        "unresolved": [],
+        "question": "",
+        "interface_valid": true,
+        "status_completion_rule": "missing_or_invalid_numbered_verdict_means_unresolved"
+      }
+    ],
+    "independent_initial": {
+      "preference": "near_equal",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "video": "A",
+          "time": 0.0,
+          "observation": "The chair's texture and color match those of Video B."
+        },
+        {
+          "video": "B",
+          "time": 0.0,
+          "observation": "The chair's texture and color match those of Video A."
+        }
+      ]
+    }
+  },
+  "records": [
+    {
+      "role": "neutral",
+      "swapped": false,
+      "output": "```json\n{\n  \"preference\": \"near_equal\",\n  \"confidence\": 0.8,\n  \"evidence\": [\n    {\n      \"video\": \"A\",\n      \"time\": 0.0,\n      \"observation\": \"The chair's texture and color match those of Video B.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 0.0,\n      \"observation\": \"The chair's texture and color match those of Video A.\"\n    }\n  ]\n}\n```",
+      "parsed": {
+        "preference": "near_equal",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The chair's texture and color match those of Video B."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "The chair's texture and color match those of Video A."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 44.93799313902855,
+        "input_tokens": 1897,
+        "output_tokens": 107
+      }
+    },
+    {
+      "role": "advocate_A",
+      "swapped": false,
+      "output": "```json\n{\n  \"preference\": \"near_equal\",\n  \"confidence\": 0.6,\n  \"evidence\": [\n    {\n      \"video\": \"A\",\n      \"time\": 2.0,\n      \"observation\": \"The chair in Video A appears slightly more detailed and less distorted compared to the corresponding frame in Video B.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 2.0,\n      \"observation\": \"The chair in Video B has noticeable distortion, making it appear less sharp than the corresponding frame in Video A.\"\n    }\n  ]\n}\n```",
+      "parsed": {
+        "preference": "near_equal",
+        "confidence": 0.6,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 2.0,
+            "observation": "The chair in Video A appears slightly more detailed and less distorted compared to the corresponding frame in Video B."
+          },
+          {
+            "video": "B",
+            "time": 2.0,
+            "observation": "The chair in Video B has noticeable distortion, making it appear less sharp than the corresponding frame in Video A."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 17.892626985907555,
+        "input_tokens": 1920,
+        "output_tokens": 126
+      }
+    },
+    {
+      "role": "advocate_B",
+      "swapped": false,
+      "output": "{\n  \"preference\": \"A\",\n  \"confidence\": 0.8,\n  \"evidence\": [\n    {\n      \"video\": \"A\",\n      \"time\": 0.0,\n      \"observation\": \"The chair in Video A appears to be slightly more detailed with clearer texture on the fabric and finer detailing on the armrests.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 0.0,\n      \"observation\": \"The chair in Video B seems to have a smoother texture on the fabric and less detailed armrests.\"\n    }\n  ]\n}",
+      "parsed": {
+        "preference": "A",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The chair in Video A appears to be slightly more detailed with clearer texture on the fabric and finer detailing on the armrests."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "The chair in Video B seems to have a smoother texture on the fabric and less detailed armrests."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 17.78628358244896,
+        "input_tokens": 1920,
+        "output_tokens": 125
+      }
+    },
+    {
+      "role": "auditor",
+      "swapped": false,
+      "output": "{\"0\": \"contradicted\", \"1\": \"supported\", \"2\": \"supported\", \"3\": \"contradicted\"}",
+      "parsed": {
+        "0": "contradicted",
+        "1": "supported",
+        "2": "supported",
+        "3": "contradicted"
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 10.800480119884014,
+        "input_tokens": 2045,
+        "output_tokens": 29
+      }
+    },
+    {
+      "role": "hyperjudge",
+      "swapped": false,
+      "output": "{\"preference\": \"near_equal\", \"confidence\": 0.8, \"evidence\": [{\"video\": \"A\", \"time\": 0.0, \"observation\": \"The chair's texture and color match those of Video B.\"}, {\"video\": \"B\", \"time\": 0.0, \"observation\": \"The chair's texture and color match those of Video A.\"}]}",
+      "parsed": {
+        "preference": "near_equal",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The chair's texture and color match those of Video B."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "The chair's texture and color match those of Video A."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 15.741928488016129,
+        "input_tokens": 2233,
+        "output_tokens": 84
+      }
+    },
+    {
+      "role": "hyperjudge",
+      "swapped": false,
+      "output": "{\n  \"preference\": \"A\",\n  \"confidence\": 0.8,\n  \"evidence\": [\n    {\n      \"video\": \"A\",\n      \"time\": 0.0,\n      \"observation\": \"The chair's texture and color match those of Video B.\"\n    },\n    {\n      \"video\": \"B\",\n      \"time\": 0.0,\n      \"observation\": \"The chair's texture and color match those of Video A.\"\n    }\n  ]\n}",
+      "parsed": {
+        "preference": "A",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The chair's texture and color match those of Video B."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "The chair's texture and color match those of Video A."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 17.05081506818533,
+        "input_tokens": 2233,
+        "output_tokens": 102
+      }
+    },
+    {
+      "role": "hyperjudge",
+      "swapped": false,
+      "output": "{\n    \"preference\": \"near_equal\",\n    \"confidence\": 0.8,\n    \"evidence\": [\n        {\n            \"video\": \"A\",\n            \"time\": 0.0,\n            \"observation\": \"The chair's texture and color match those of Video B.\"\n        },\n        {\n            \"video\": \"B\",\n            \"time\": 0.0,\n            \"observation\": \"The chair's texture and color match those of Video A.\"\n        }\n    ]\n}",
+      "parsed": {
+        "preference": "near_equal",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "video": "A",
+            "time": 0.0,
+            "observation": "The chair's texture and color match those of Video B."
+          },
+          {
+            "video": "B",
+            "time": 0.0,
+            "observation": "The chair's texture and color match those of Video A."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            0.0,
+            1.4,
+            2.8333333333333335,
+            4.266666666666667,
+            5.666666666666667,
+            7.1,
+            8.533333333333333,
+            9.966666666666667
+          ],
+          "shape": [
+            8,
+            224,
+            224,
+            3
+          ]
+        },
+        {
+          "source_fps": 30.0,
+          "duration": 10.0,
+          "original_size": [
+            1600,
+            800
+          ],
+          "crop_xyxy": [
+            800,
+            0,
+            1600,
+            800
+          ],
+          "timestamps": [
+            2.0,
+            2.033333333333333,
+            2.066666666666667,
+            2.1,
+            2.1333333333333333,
+            2.1666666666666665,
+            2.2,
+            2.2333333333333334,
+            2.2666666666666666,
+            2.3,
+            2.3333333333333335,
+            2.3666666666666667,
+            2.4,
+            2.433333333333333,
+            2.466666666666667,
+            2.5
+          ],
+          "shape": [
+            16,
+            224,
+            224,
+            3
+          ]
+        }
+      ],
+      "cost": {
+        "seconds": 17.098784424364567,
+        "input_tokens": 2233,
+        "output_tokens": 103
+      }
+    }
+  ],
+  "recursion_stop_reasons": [
+    "resolved"
+  ],
+  "pair": {
+    "pair_id": "e1a666c651c2a37c",
+    "a": "s_01c0944bdf071f07",
+    "b": "s_037f5f75e07182aa"
+  },
+  "method": "full",
+  "seed": 3394185979,
+  "config_sha256": "d7aaec1aaf95242a2e0d53f61451a9433f00f30d7707931da794c7fd17a2e29b",
+  "elapsed_seconds": 147.99337232857943,
+  "max_memory_allocated": [
+    1681390592,
+    2796241920,
+    2742313472,
+    2898403840
+  ]
+}

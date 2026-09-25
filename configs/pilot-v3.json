@@ -1,0 +1,20 @@
+{
+  "observation": {
+    "global_frames": 8,
+    "local_frames": 16,
+    "local_seconds": 0.5333333333333333,
+    "pixels": 224
+  },
+  "teacher": {
+    "baseline_votes": 5,
+    "advocate_pairs": 1,
+    "hyperjudges": 3,
+    "recursion_depth": 2,
+    "branching_factor": 2,
+    "max_calls": 10,
+    "report_tokens": 224,
+    "temperature": 0.7
+  },
+  "seed": 701,
+  "interface_version": "numbered_audit_verdicts_v3"
+}

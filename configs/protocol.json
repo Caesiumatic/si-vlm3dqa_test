@@ -10,10 +10,23 @@
   "input": "RGB_video_only_no_reference",
   "teacher_mode": "same_initial_checkpoint_as_student",
   "training_interface": "pair_centric_per_rollout_reward",
-  "arms": ["T0", "T1", "T2", "T3", "T5"],
-  "training_seed_goal": [17, 29, 43],
+  "arms": [
+    "T0",
+    "T1",
+    "T2",
+    "T3",
+    "T5"
+  ],
+  "training_seed_goal": [
+    17,
+    29,
+    43
+  ],
   "self_training_rounds": 1,
   "primary_contrast": "T3_minus_T1_SRCC",
   "mac_role": "auxiliary",
-  "formal_sizes_frozen": false
+  "formal_sizes_frozen": false,
+  "primary_target": "Solivition/MUGSQA:main",
+  "primary_target_reason": "3DGS-QA HF release has no ready RGB videos; MUGSQA main provides them. Chosen before any model metrics.",
+  "source_transform": "right_half_of_side_by_side_PVS_before_model_processing"
 }

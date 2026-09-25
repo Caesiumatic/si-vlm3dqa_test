@@ -66,14 +66,18 @@ class VLM:
         self.model.eval()
         self.timings = []
 
-    def inputs(self, paths, prompt, local=False):
+    def inputs(self, paths, prompt, local=False, windows=None):
         content, videos, fps, traces = [], [], [], []
         for index, path in enumerate(paths):
             content.append({'type': 'text', 'text': f'Video {chr(65+index)}: global overview.'})
-            views = [(0., None)] + ([(2., 1.)] if local else [])
+            extra = windows.get(index, []) if windows is not None else ([(2., 1.)] if local else [])
+            views = [(0., None)] + extra
             for start, duration in views:
                 array, frequency, trace = decode(path, start=start, duration=duration, crop_right=self.source_crop_right)
                 videos.append(array); fps.append(frequency); traces.append(trace)
+                content.append({'type':'text', 'text':f'Video {chr(65+index)} observation, original times '
+                    f'{trace["timestamps"][0]:.3f} to {trace["timestamps"][-1]:.3f} seconds; '
+                    f'{frequency:.3f} sampled frames/second.'})
                 content.append({'type':'video'})
         content.append({'type': 'text', 'text': prompt})
         text = self.processor.apply_chat_template([{'role':'user','content':content}],

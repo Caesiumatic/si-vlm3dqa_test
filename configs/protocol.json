@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-09-25T22:00:06Z",
+  "deadline_utc": "2026-09-28T22:00:06Z",
+  "phase": "compatibility_and_data",
+  "source": "Chole12/Explicit-NeRF-QA",
+  "preferred_target": "dyn2024/3DGS-QA",
+  "fallback_target": "Solivition/MUGSQA",
+  "candidate_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "source_label_access": "sealed_until_configuration_and_predictions_frozen",
+  "input": "RGB_video_only_no_reference",
+  "teacher_mode": "same_initial_checkpoint_as_student",
+  "training_interface": "pair_centric_per_rollout_reward",
+  "arms": ["T0", "T1", "T2", "T3", "T5"],
+  "training_seed_goal": [17, 29, 43],
+  "self_training_rounds": 1,
+  "primary_contrast": "T3_minus_T1_SRCC",
+  "mac_role": "auxiliary",
+  "formal_sizes_frozen": false
+}

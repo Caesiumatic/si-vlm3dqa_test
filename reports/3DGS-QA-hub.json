@@ -1,0 +1,707 @@
+{
+  "_id": "69147903cfee6c331496b0b1",
+  "id": "dyn2024/3DGS-QA",
+  "author": "dyn2024",
+  "sha": "f35683e629abadfe76a5f75a1a283e67eb2c76b8",
+  "lastModified": "2025-11-12T12:52:19.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "downloads": 114,
+  "likes": 3,
+  "cardData": {
+    "license": "apache-2.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "3DGS_MOS.csv"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "model/bag.ply"
+    },
+    {
+      "rfilename": "model/bag_180_30k.ply"
+    },
+    {
+      "rfilename": "model/bag_180_7k.ply"
+    },
+    {
+      "rfilename": "model/bag_25.ply"
+    },
+    {
+      "rfilename": "model/bag_270_30k.ply"
+    },
+    {
+      "rfilename": "model/bag_270_7k.ply"
+    },
+    {
+      "rfilename": "model/bag_360_7k.ply"
+    },
+    {
+      "rfilename": "model/bag_50.ply"
+    },
+    {
+      "rfilename": "model/bag_75.ply"
+    },
+    {
+      "rfilename": "model/bag_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/bag_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/bag_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/bag_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/bag_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/bag_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/bench.ply"
+    },
+    {
+      "rfilename": "model/bench_180_30k.ply"
+    },
+    {
+      "rfilename": "model/bench_180_7k.ply"
+    },
+    {
+      "rfilename": "model/bench_25.ply"
+    },
+    {
+      "rfilename": "model/bench_270_30k.ply"
+    },
+    {
+      "rfilename": "model/bench_270_7k.ply"
+    },
+    {
+      "rfilename": "model/bench_360_7k.ply"
+    },
+    {
+      "rfilename": "model/bench_50.ply"
+    },
+    {
+      "rfilename": "model/bench_75.ply"
+    },
+    {
+      "rfilename": "model/bench_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/bench_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/bench_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/bench_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/bench_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/bench_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/boat.ply"
+    },
+    {
+      "rfilename": "model/boat_180_30k.ply"
+    },
+    {
+      "rfilename": "model/boat_180_7k.ply"
+    },
+    {
+      "rfilename": "model/boat_25.ply"
+    },
+    {
+      "rfilename": "model/boat_270_30k.ply"
+    },
+    {
+      "rfilename": "model/boat_270_7k.ply"
+    },
+    {
+      "rfilename": "model/boat_360_7k.ply"
+    },
+    {
+      "rfilename": "model/boat_50.ply"
+    },
+    {
+      "rfilename": "model/boat_75.ply"
+    },
+    {
+      "rfilename": "model/boat_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/boat_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/boat_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/boat_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/boat_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/boat_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/bottle.ply"
+    },
+    {
+      "rfilename": "model/bottle_180_30k.ply"
+    },
+    {
+      "rfilename": "model/bottle_180_7k.ply"
+    },
+    {
+      "rfilename": "model/bottle_25.ply"
+    },
+    {
+      "rfilename": "model/bottle_270_30k.ply"
+    },
+    {
+      "rfilename": "model/bottle_270_7k.ply"
+    },
+    {
+      "rfilename": "model/bottle_360_7k.ply"
+    },
+    {
+      "rfilename": "model/bottle_50.ply"
+    },
+    {
+      "rfilename": "model/bottle_75.ply"
+    },
+    {
+      "rfilename": "model/bottle_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/bottle_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/bottle_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/bottle_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/bottle_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/bottle_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/car.ply"
+    },
+    {
+      "rfilename": "model/car_180_30k.ply"
+    },
+    {
+      "rfilename": "model/car_180_7k.ply"
+    },
+    {
+      "rfilename": "model/car_25.ply"
+    },
+    {
+      "rfilename": "model/car_270_30k.ply"
+    },
+    {
+      "rfilename": "model/car_270_7k.ply"
+    },
+    {
+      "rfilename": "model/car_360_7k.ply"
+    },
+    {
+      "rfilename": "model/car_50.ply"
+    },
+    {
+      "rfilename": "model/car_75.ply"
+    },
+    {
+      "rfilename": "model/car_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/car_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/car_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/car_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/car_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/car_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/earphone.ply"
+    },
+    {
+      "rfilename": "model/earphone_180_30k.ply"
+    },
+    {
+      "rfilename": "model/earphone_180_7k.ply"
+    },
+    {
+      "rfilename": "model/earphone_25.ply"
+    },
+    {
+      "rfilename": "model/earphone_270_30k.ply"
+    },
+    {
+      "rfilename": "model/earphone_270_7k.ply"
+    },
+    {
+      "rfilename": "model/earphone_360_7k.ply"
+    },
+    {
+      "rfilename": "model/earphone_50.ply"
+    },
+    {
+      "rfilename": "model/earphone_75.ply"
+    },
+    {
+      "rfilename": "model/earphone_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/earphone_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/earphone_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/earphone_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/earphone_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/earphone_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/hat.ply"
+    },
+    {
+      "rfilename": "model/hat_180_30k.ply"
+    },
+    {
+      "rfilename": "model/hat_180_7k.ply"
+    },
+    {
+      "rfilename": "model/hat_25.ply"
+    },
+    {
+      "rfilename": "model/hat_270_30k.ply"
+    },
+    {
+      "rfilename": "model/hat_270_7k.ply"
+    },
+    {
+      "rfilename": "model/hat_360_7k.ply"
+    },
+    {
+      "rfilename": "model/hat_50.ply"
+    },
+    {
+      "rfilename": "model/hat_75.ply"
+    },
+    {
+      "rfilename": "model/hat_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/hat_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/hat_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/hat_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/hat_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/hat_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/helmet.ply"
+    },
+    {
+      "rfilename": "model/helmet_180_30k.ply"
+    },
+    {
+      "rfilename": "model/helmet_180_7k.ply"
+    },
+    {
+      "rfilename": "model/helmet_25.ply"
+    },
+    {
+      "rfilename": "model/helmet_270_30k.ply"
+    },
+    {
+      "rfilename": "model/helmet_270_7k.ply"
+    },
+    {
+      "rfilename": "model/helmet_360_7k.ply"
+    },
+    {
+      "rfilename": "model/helmet_50.ply"
+    },
+    {
+      "rfilename": "model/helmet_75.ply"
+    },
+    {
+      "rfilename": "model/helmet_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/helmet_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/helmet_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/helmet_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/helmet_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/helmet_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/lamp.ply"
+    },
+    {
+      "rfilename": "model/lamp_180_30k.ply"
+    },
+    {
+      "rfilename": "model/lamp_180_7k.ply"
+    },
+    {
+      "rfilename": "model/lamp_25.ply"
+    },
+    {
+      "rfilename": "model/lamp_270_30k.ply"
+    },
+    {
+      "rfilename": "model/lamp_270_7k.ply"
+    },
+    {
+      "rfilename": "model/lamp_360_7k.ply"
+    },
+    {
+      "rfilename": "model/lamp_50.ply"
+    },
+    {
+      "rfilename": "model/lamp_75.ply"
+    },
+    {
+      "rfilename": "model/lamp_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/lamp_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/lamp_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/lamp_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/lamp_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/lamp_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/microphone.ply"
+    },
+    {
+      "rfilename": "model/microphone_180_30k.ply"
+    },
+    {
+      "rfilename": "model/microphone_180_7k.ply"
+    },
+    {
+      "rfilename": "model/microphone_25.ply"
+    },
+    {
+      "rfilename": "model/microphone_270_30k.ply"
+    },
+    {
+      "rfilename": "model/microphone_270_7k.ply"
+    },
+    {
+      "rfilename": "model/microphone_360_7k.ply"
+    },
+    {
+      "rfilename": "model/microphone_50.ply"
+    },
+    {
+      "rfilename": "model/microphone_75.ply"
+    },
+    {
+      "rfilename": "model/microphone_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/microphone_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/microphone_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/microphone_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/microphone_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/microphone_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/motorbike.ply"
+    },
+    {
+      "rfilename": "model/motorbike_180_30k.ply"
+    },
+    {
+      "rfilename": "model/motorbike_180_7k.ply"
+    },
+    {
+      "rfilename": "model/motorbike_25.ply"
+    },
+    {
+      "rfilename": "model/motorbike_270_30k.ply"
+    },
+    {
+      "rfilename": "model/motorbike_270_7k.ply"
+    },
+    {
+      "rfilename": "model/motorbike_360_7k.ply"
+    },
+    {
+      "rfilename": "model/motorbike_50.ply"
+    },
+    {
+      "rfilename": "model/motorbike_75.ply"
+    },
+    {
+      "rfilename": "model/motorbike_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/motorbike_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/motorbike_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/motorbike_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/motorbike_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/motorbike_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/piano.ply"
+    },
+    {
+      "rfilename": "model/piano_180_30k.ply"
+    },
+    {
+      "rfilename": "model/piano_180_7k.ply"
+    },
+    {
+      "rfilename": "model/piano_25.ply"
+    },
+    {
+      "rfilename": "model/piano_270_30k.ply"
+    },
+    {
+      "rfilename": "model/piano_270_7k.ply"
+    },
+    {
+      "rfilename": "model/piano_360_30k.ply"
+    },
+    {
+      "rfilename": "model/piano_50.ply"
+    },
+    {
+      "rfilename": "model/piano_75.ply"
+    },
+    {
+      "rfilename": "model/piano_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/piano_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/piano_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/piano_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/piano_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/piano_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/pillar.ply"
+    },
+    {
+      "rfilename": "model/pillar_180_30k.ply"
+    },
+    {
+      "rfilename": "model/pillar_180_7k.ply"
+    },
+    {
+      "rfilename": "model/pillar_25.ply"
+    },
+    {
+      "rfilename": "model/pillar_270_30k.ply"
+    },
+    {
+      "rfilename": "model/pillar_270_7k.ply"
+    },
+    {
+      "rfilename": "model/pillar_360_7k.ply"
+    },
+    {
+      "rfilename": "model/pillar_50.ply"
+    },
+    {
+      "rfilename": "model/pillar_75.ply"
+    },
+    {
+      "rfilename": "model/pillar_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/pillar_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/pillar_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/pillar_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/pillar_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/pillar_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/rocket.ply"
+    },
+    {
+      "rfilename": "model/rocket_180_30k.ply"
+    },
+    {
+      "rfilename": "model/rocket_180_7k.ply"
+    },
+    {
+      "rfilename": "model/rocket_25.ply"
+    },
+    {
+      "rfilename": "model/rocket_270_30k.ply"
+    },
+    {
+      "rfilename": "model/rocket_270_7k.ply"
+    },
+    {
+      "rfilename": "model/rocket_360_7k.ply"
+    },
+    {
+      "rfilename": "model/rocket_50.ply"
+    },
+    {
+      "rfilename": "model/rocket_75.ply"
+    },
+    {
+      "rfilename": "model/rocket_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/rocket_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/rocket_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/rocket_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/rocket_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/rocket_gaussian_0.01.ply"
+    },
+    {
+      "rfilename": "model/train.ply"
+    },
+    {
+      "rfilename": "model/train_180_30k.ply"
+    },
+    {
+      "rfilename": "model/train_180_7k.ply"
+    },
+    {
+      "rfilename": "model/train_25.ply"
+    },
+    {
+      "rfilename": "model/train_270_30k.ply"
+    },
+    {
+      "rfilename": "model/train_270_7k.ply"
+    },
+    {
+      "rfilename": "model/train_360_7k.ply"
+    },
+    {
+      "rfilename": "model/train_50.ply"
+    },
+    {
+      "rfilename": "model/train_75.ply"
+    },
+    {
+      "rfilename": "model/train_color_0.01.ply"
+    },
+    {
+      "rfilename": "model/train_color_0.05.ply"
+    },
+    {
+      "rfilename": "model/train_color_0.1.ply"
+    },
+    {
+      "rfilename": "model/train_gaussian_0.001.ply"
+    },
+    {
+      "rfilename": "model/train_gaussian_0.005.ply"
+    },
+    {
+      "rfilename": "model/train_gaussian_0.01.ply"
+    }
+  ],
+  "createdAt": "2025-11-12T12:09:39.000Z",
+  "usedStorage": 9138635031
+}

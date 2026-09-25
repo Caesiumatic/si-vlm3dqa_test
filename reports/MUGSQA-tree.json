@@ -1,0 +1,716 @@
+[
+  {
+    "type": "directory",
+    "oid": "9f573fcf2ad361b72d7eceb4ceba0a5c9608149e",
+    "size": 0,
+    "path": "reference"
+  },
+  {
+    "type": "file",
+    "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+    "size": 2504,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "105e38dd25d63a7298000d39e5221d6020ca9006",
+    "size": 5159,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "e08ec4af070900690628ad86865fd8d9c8e6ff42",
+    "size": 7101795621,
+    "lfs": {
+      "oid": "5f2b3d15fdd0695068f518d488eed7bee4b1f21499b0ec86fbe0213c60a842cc",
+      "size": 7101795621,
+      "pointerSize": 135
+    },
+    "xetHash": "6ea0ddf5445cae4f928bc1251d74e4824fdaaa3bc0ae7140898d9f5c1dd9fe0c",
+    "path": "additional.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "3c219876bf1d60f8959db502dd34166b34534b7b",
+    "size": 13202692013,
+    "lfs": {
+      "oid": "018c924cf289b08d1b0da863406ce75190d3fb1d0cbf6323b26b909aab39db3d",
+      "size": 13202692013,
+      "pointerSize": 136
+    },
+    "xetHash": "e065c735466ec5dec790627b961c1420012235f686798974b6c3d5057fd33da5",
+    "path": "main.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "2d0c1b47bb401d70d3d6034e63be3d916f52df1d",
+    "size": 13261,
+    "path": "mos_additional.xlsx"
+  },
+  {
+    "type": "file",
+    "oid": "2a7bde122884588bc38f8242e785708151a44355",
+    "size": 41741,
+    "path": "mos_main.xlsx"
+  },
+  {
+    "type": "file",
+    "oid": "d0d35838462f5b02dcfacd929a35727c0969a030",
+    "size": 2158328,
+    "lfs": {
+      "oid": "99d4f01b94289b60786438d83ec7e499b59141d01b50954622cd6a1a0f2c2a3d",
+      "size": 2158328,
+      "pointerSize": 132
+    },
+    "xetHash": "5629dda0afb1115b1a4650b9f3b315671ff40a2f3a18b3744f73dc6410f04d2c",
+    "path": "reference/12th-c-ce-water-moon-guanyin_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "bdfbb851d9653e7e3b107f7b8bebf7f7621d6a25",
+    "size": 2168947,
+    "lfs": {
+      "oid": "7fa263c4c3645a12630f70b378971cf8ef54f023fbb8edfd1aacbd72627774d8",
+      "size": 2168947,
+      "pointerSize": 132
+    },
+    "xetHash": "daa95e3c8d18335c870fbe632ab448750305b6766aa9eaa251435dca0670df71",
+    "path": "reference/19153382-deity-earring_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "0e4ab9eed8f4b5027efa5e9edf272aacf064fafe",
+    "size": 2565154,
+    "lfs": {
+      "oid": "06387756c486db4a63f84e40b78d2d90f4f4e53a4dae8654ccd6bc1348d30a85",
+      "size": 2565154,
+      "pointerSize": 132
+    },
+    "xetHash": "1a3ee762e4c204ca8e30adc7c2f53ec825adfc1e06200f08c318cfc9a95c5984",
+    "path": "reference/197016-neck-amphora_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "f72badd6c2658568a7ec7ddbdfb8cf5149138f15",
+    "size": 866416,
+    "lfs": {
+      "oid": "b779b440904a55507b066735989930538d79cae9eb0e2eff870244aa85c15cb7",
+      "size": 866416,
+      "pointerSize": 131
+    },
+    "xetHash": "11ece83450c41572031f7bcf80fa960236df2617923a94330293d8b3b0b95376",
+    "path": "reference/Bread_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "eecaf802879cb2b6d079bf014b0a6cf913fbfd2a",
+    "size": 1882059,
+    "lfs": {
+      "oid": "688f4493518d26a3b45575ccbfec2ddd8418a8fa9352a75c09237cb2547768b4",
+      "size": 1882059,
+      "pointerSize": 132
+    },
+    "xetHash": "b2825661a13d5333c561722b84d8728290a3199d8477fbffe6deca639c61e929",
+    "path": "reference/Orchid_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "a2955c5ded38ff43dd782b8148f46e5ab0044b3a",
+    "size": 1089163,
+    "lfs": {
+      "oid": "55ddf0e7296f0bed9a162987941cb19a3442a1bc9ec4fe100bee867c38e68990",
+      "size": 1089163,
+      "pointerSize": 132
+    },
+    "xetHash": "6a75cad6aafd8f6cb0f7bd3eb3a1e7f2342cb74c6094bac7fd4e0cac8a6c5143",
+    "path": "reference/abel-cable-mascot_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "bb405964285faad43ba502a799334ba5383695c9",
+    "size": 1310451,
+    "lfs": {
+      "oid": "bfc369f309452c27415a08e944217d99d533f3eecd25daafcd4d141502bb2b3c",
+      "size": 1310451,
+      "pointerSize": 132
+    },
+    "xetHash": "d5e79e5283ef1952e808b16fba206d50638c61761c0708b72171a230a0bc3b99",
+    "path": "reference/adorno-con-forma-de-pez-mexico_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "483e6a6a727769a93168ae9816e37992a5b5d4da",
+    "size": 981465,
+    "lfs": {
+      "oid": "24047355886aeaeb225290c4901fd69bc5b4ba2d6ea1552b72117e145b5825d0",
+      "size": 981465,
+      "pointerSize": 131
+    },
+    "xetHash": "d98460335ca5a28bd2220f50c2417c23dcf7f0c5c96f906008a2a37eace8887d",
+    "path": "reference/ailurodus-maculosus-spotted-catbird_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "edd61953596cf57ce4eea1dc2fdf01a75e5fada2",
+    "size": 1484654,
+    "lfs": {
+      "oid": "831d8dbd277760a9fa88da0971b4b3d000607c7f27f4478a48cdce8f974e9baa",
+      "size": 1484654,
+      "pointerSize": 132
+    },
+    "xetHash": "c297b71c74824eb65837be42ca41659b9d04de9088a3ea0ce5c46690ec6559a6",
+    "path": "reference/air-sea-rescue-craft-asr-10_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "b2426bd43c3d6bf36a7aabaf341363dfd57229ec",
+    "size": 2102842,
+    "lfs": {
+      "oid": "845bee7490754945e855d9642edbd7e351d85f9cd52e31efbef80c820ecb9dd0",
+      "size": 2102842,
+      "pointerSize": 132
+    },
+    "xetHash": "6a73c88b2d00ee92f03fef641a16afb161a608d31b5a95aae08623032d202d1b",
+    "path": "reference/alnus-japonica-cone-398-cameras_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "5fc2f32748f8426fae7b159a9520e844f250976f",
+    "size": 1199909,
+    "lfs": {
+      "oid": "0b65d934dc3cb78f3083462b7b90e0e8156ec401c6eebbb826f5c7785cfa1178",
+      "size": 1199909,
+      "pointerSize": 132
+    },
+    "xetHash": "1dfa058f17f3c2d8ed21613c3adcc1d31dc0038637b4d6e557d392c6a7543b55",
+    "path": "reference/amurosaurus-riabinini_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "254c612e74f2b313519b41d98aed44783cffb3aa",
+    "size": 1652906,
+    "lfs": {
+      "oid": "fb37404324cf6c740e2c9a57faf90fdf0b7436306b53e12d6499a79152bbc416",
+      "size": 1652906,
+      "pointerSize": 132
+    },
+    "xetHash": "15a7e1fb1264ea99d92c29065f1850a055e8427c77ef0ae2cfd13789eb1303f8",
+    "path": "reference/arthropod-hepatus-epheliticus_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "84794eb1655e091f67613055950c244aa0e5f350",
+    "size": 1217199,
+    "lfs": {
+      "oid": "5471b4936fb2c0e0e11d790d9405257d6c5226443ef13d8bbafd78bc5930a6e8",
+      "size": 1217199,
+      "pointerSize": 132
+    },
+    "xetHash": "0908b5181c7493fc057969044dee4aba611bd11cb232e9fed2bf9d4dcd9bd8dc",
+    "path": "reference/baluster-vase-one-of-three-in-a-five-piece_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "d3700eee3575d35166743a8008d0ea1c2980d483",
+    "size": 998246,
+    "lfs": {
+      "oid": "b02294a2c6835aa9d6fea51d2f3cb9511098ac96bc988dd1693ae1728d61ff72",
+      "size": 998246,
+      "pointerSize": 131
+    },
+    "xetHash": "0e2afaa2b687fee7e2ac91f6c5285b1c8aa697f672ade416886774da34376f31",
+    "path": "reference/belleek-candelabrum-stags-head_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "9e48b255bcbf69545fedeb204083a050664507cd",
+    "size": 1021360,
+    "lfs": {
+      "oid": "37e96bb03c99b86e05299004be0f27d2a86d835f907883db26ca2ff337377d19",
+      "size": 1021360,
+      "pointerSize": 132
+    },
+    "xetHash": "12a1762755a96afeb2590ebebec9c63079cd6825ce00fda4bd8d5cb57edfe45e",
+    "path": "reference/boiler-from-the-puffer-vic-32_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "2fc216afd62d86dbb2fd3ce844003f4c2a748f2e",
+    "size": 1894875,
+    "lfs": {
+      "oid": "436b9196aff92ec8788862b25b1df840be669ad1c17b318759f942684f05aded",
+      "size": 1894875,
+      "pointerSize": 132
+    },
+    "xetHash": "e5a7735aa2bc8957894f82c76e66b83c6c507fc9ebf96a02b3acc2728d9f5c92",
+    "path": "reference/bronze-cat_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "50908c372d4dbe38f5d3544fc32eaee9b539bac2",
+    "size": 727914,
+    "lfs": {
+      "oid": "51c08074fbd868f0ef05aa17cc71b752f55a3ca97130e3df6b4a233bce5e3def",
+      "size": 727914,
+      "pointerSize": 131
+    },
+    "xetHash": "2339a91bd7d6544ff5b866fa83704ae141c9f900c3fc947b9fa485f701c90cc3",
+    "path": "reference/charlie-chaplin-waterville_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "c3f06abe245f8bc183ac2a162faf3e44673ee4af",
+    "size": 2622458,
+    "lfs": {
+      "oid": "3e42e4c13b212253978fb3aaa510171c8d074511f8ac6acaad1bf57cb616d622",
+      "size": 2622458,
+      "pointerSize": 132
+    },
+    "xetHash": "89c92df5b8c1fad3fe7c9c795e5109f67cd765d7478250188309095e05cffd8e",
+    "path": "reference/coptic-prayer-book_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "d0da7116efd05160828387b7e5e47d3633736ba8",
+    "size": 462848,
+    "lfs": {
+      "oid": "62e697aeda7a844342707822741e36bc70346cf7ae073c8ec484a5f1c9c9ca85",
+      "size": 462848,
+      "pointerSize": 131
+    },
+    "xetHash": "f945d15c62d531ca2206c4be9e922f3e5fd1dc034f985de46258f2e986ad9b3a",
+    "path": "reference/cretoxyrhina_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "d279227003b065ad85af4fd1389e24e1e9a35697",
+    "size": 1725196,
+    "lfs": {
+      "oid": "4e4282777aefa6e63a8963014d1a9f56bc7e216411aec644b69afcff4ca8761e",
+      "size": 1725196,
+      "pointerSize": 132
+    },
+    "xetHash": "5c7b15024e890149f9797afaacd020de4608556cd4fb7787f73b3d2b03f26b83",
+    "path": "reference/der-ackerbau_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "81ef4a6673f94fcfde1490c57283b3cdade95547",
+    "size": 1164755,
+    "lfs": {
+      "oid": "23711b70a79621508c536ba6073db97aa725ce7dee28e1478b1be91ec6107323",
+      "size": 1164755,
+      "pointerSize": 132
+    },
+    "xetHash": "ff7b2d01a4962c5ad3843833b00d4d1615934e5cc3673043ea67e08ba492ecbb",
+    "path": "reference/dom-utka-domestic-duck_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "086ba91cd60773fd99e66a7611b54025eda8a360",
+    "size": 1669596,
+    "lfs": {
+      "oid": "e7de78aac843041ec6172af6317ea5e867199a7763dccd3ee28a99c517d1cd52",
+      "size": 1669596,
+      "pointerSize": 132
+    },
+    "xetHash": "dc4be4bf14b0c0e727b13f545de46a8f273555bf3b68dbd4dfb33a3a5745ca6a",
+    "path": "reference/dorfkirche-warchau_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "da803d243695e97e684fe2d0bd8607db0735e146",
+    "size": 1979056,
+    "lfs": {
+      "oid": "b0459c1d7cf309df2d98dc619a8d01068f3c4c83947d3e3580a2df153b90ff46",
+      "size": 1979056,
+      "pointerSize": 132
+    },
+    "xetHash": "e0a8924d8ea2d73c1d4a46daa6192626aa2c828137ad158ed6cbd8eefeab5db5",
+    "path": "reference/emberiza-calandra_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "4e0db8b377470707bec3f2e944576726ca8a02a4",
+    "size": 427225,
+    "lfs": {
+      "oid": "5715386c90a9d63144eae7ca0892fbd0f869aafa7bf4101e8ee8c90d32677d95",
+      "size": 427225,
+      "pointerSize": 131
+    },
+    "xetHash": "6f0e0c51873bd2f3aa0e3ee10cb35fa845061206586985ec82b1fae1feb30276",
+    "path": "reference/flintlock-pistol_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "0632fc16dfba31549d2db9ea98dd33e011b142ad",
+    "size": 1363802,
+    "lfs": {
+      "oid": "f9b3c4656faed63898305da64a06e88a6b0be52e7e350fecbd8bea0bf2b3f2c7",
+      "size": 1363802,
+      "pointerSize": 132
+    },
+    "xetHash": "95feff2bf5cfcafdb4f7c463e77df88c2527b8c41c17379c4962ede138f6c748",
+    "path": "reference/front-parlor-chair_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "8883120c2695059efc63fc4f0a98286bea51377b",
+    "size": 736347,
+    "lfs": {
+      "oid": "ec794757459448e996d52cf8e0dadbb59e30054199989be4e891b2114f3fcd89",
+      "size": 736347,
+      "pointerSize": 131
+    },
+    "xetHash": "5cee609451f1fc998ced8b0578808aa68515899a7723576a8180bf82b68fa039",
+    "path": "reference/george-washington-bust_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "a560b8f7b121649393e9c2c154166e8ffbc6f322",
+    "size": 1402865,
+    "lfs": {
+      "oid": "f85279dcfb5032dbcea0c278ef41cb0b75a7ab8eba009d093aeb01ba25457d92",
+      "size": 1402865,
+      "pointerSize": 132
+    },
+    "xetHash": "61d67c28146ba69206b20427272a9e46682e3b66665ea36f6505327e5d605831",
+    "path": "reference/graphosoma-lineatum_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "4157506dd67dcd242b18c23174dfb971c0a157d4",
+    "size": 549622,
+    "lfs": {
+      "oid": "ef1038f2cef5a38e594e5c070cad4e4b0158884723ead0068a5c562d05f436a7",
+      "size": 549622,
+      "pointerSize": 131
+    },
+    "xetHash": "83f12e3774d29af72b1b2688700fe5fe0277f42c576b5da03de6ebef590c9e8a",
+    "path": "reference/high-resolution-doryphoros_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "7c2c976dfd5e1ead5bfcd702b182ec64b042e651",
+    "size": 1735809,
+    "lfs": {
+      "oid": "384d2b188133982b8c433ef40ca2ca69225807d7a597a0b738a179ac09792e83",
+      "size": 1735809,
+      "pointerSize": 132
+    },
+    "xetHash": "913897fcee7199997b74da15ed94ba3f0078b1475984c3da4722a2fab6ded5f1",
+    "path": "reference/horizontal-and-vertical-planing-machine_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "9133b127c5f27dfbe313ec43d249201589c50478",
+    "size": 416730,
+    "lfs": {
+      "oid": "017ecfa5e8289fb142dbaa3523027f5cb7828d479fc662a86ea6a14a941e7b94",
+      "size": 416730,
+      "pointerSize": 131
+    },
+    "xetHash": "0c2911943fc420177e05b1097cbeae547e76f1d00faef54bd490350ca0ad6047",
+    "path": "reference/ibanez-jem-guitar_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "fa028b760010cdcccfde80537e3ab4791dd16227",
+    "size": 1750634,
+    "lfs": {
+      "oid": "7a9e0cb673cb9a1f8307b7ee78609906346ba31d3b27bf1a85d3ee1b1b375e0a",
+      "size": 1750634,
+      "pointerSize": 132
+    },
+    "xetHash": "8cd6922149d77b3d3dbab66b15f4ae50d331e10402f791b251351aa818057234",
+    "path": "reference/jomon-figurine_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "8feeb83103b23ef229217eb957295cfeae059795",
+    "size": 1432118,
+    "lfs": {
+      "oid": "7402747e08fddb86178e5d026e7325ced55c5d5be08b7ec9f389c4e0c0cfc7ce",
+      "size": 1432118,
+      "pointerSize": 132
+    },
+    "xetHash": "9d80920afea8587be550fa24c9d7db1733f625dfc80368eb22a613d974db5acb",
+    "path": "reference/juan-pablo-duarte_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "2291389b6ffd9ee217e6f53089993f23191db707",
+    "size": 1813644,
+    "lfs": {
+      "oid": "cb974c7ad92ac230849f2e4c161560eeba826c56d037212efa5294d92c9809df",
+      "size": 1813644,
+      "pointerSize": 132
+    },
+    "xetHash": "e2fa690ee1751b05059f265bb0110fb68346bc85c799bc9a5dd476f47b959db8",
+    "path": "reference/lidded-ritual-ewer-guang_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "734e3d20ca8940c0bca8184468f2e396fbfe9a9a",
+    "size": 1953042,
+    "lfs": {
+      "oid": "8f19e45db94475c0d083b1574472dc02ea029f7a3c4d37ab50f91258d0e09395",
+      "size": 1953042,
+      "pointerSize": 132
+    },
+    "xetHash": "a49989f2f326ef3aa069b28454b53fac844864a9c78f89f6f4038224c9e2defe",
+    "path": "reference/lidded-ritual-ewer-huo_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "6894c148a641a4c3a77b185ac6e066397dbae487",
+    "size": 1290303,
+    "lfs": {
+      "oid": "82210f7cde9e55d6997f41108ed1dffab7f543784d58ca9671770f0f792bdfd8",
+      "size": 1290303,
+      "pointerSize": 132
+    },
+    "xetHash": "5708972dcc3f32830adf708738ec4baf58227ff1ba499ab6f43d126fa8292ae4",
+    "path": "reference/lowe-von-asparn_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "8bcb0102ebc7ed593657f3e2f7698afcee978234",
+    "size": 914828,
+    "lfs": {
+      "oid": "09cbcff0b095bea4f4e6b862f46edf23b68f0b5458ac3fa2fa49b2f27371118f",
+      "size": 914828,
+      "pointerSize": 131
+    },
+    "xetHash": "0083ed0c753c901e068e41f41fd56edf230203fc08ec3846bae5294c2cee681d",
+    "path": "reference/ludwig-van-beethoven_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "d9458b60d91fd6c9a29efc3acbfe529d06c24ef9",
+    "size": 1050942,
+    "lfs": {
+      "oid": "0d4e6f279de04240f59d84d194cdf044bc8524b7887a6a7803c17209b2cf4797",
+      "size": 1050942,
+      "pointerSize": 132
+    },
+    "xetHash": "358f31ce11ee9fce2a0599275eb4768560fea06fa990c00f1bfe35809e5c5344",
+    "path": "reference/malay-bear_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "2554c949798f309e63a98e3f60ecc3bb21049eaf",
+    "size": 1627936,
+    "lfs": {
+      "oid": "dee06a45d2e34f1179284401bba8e6316f6cdfb083baa259a73f2734e7e02797",
+      "size": 1627936,
+      "pointerSize": 132
+    },
+    "xetHash": "de1562334ed90a96f20a16f4e712c954bd4eaf8700a19c74dbd41093f956b846",
+    "path": "reference/mask-from-madang-province_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "8057fa37ba35e4c143dc68ebaf54e78f4074613b",
+    "size": 421132,
+    "lfs": {
+      "oid": "3d65ec16df4289c585b5e5371b1d713c7ac43285b9c9e1202f758901c40342c6",
+      "size": 421132,
+      "pointerSize": 131
+    },
+    "xetHash": "d6e71921377fedb940687f2f02884779379c3bb60a74d6d53512fd88842fd819",
+    "path": "reference/model-59a-sling-tailed-agama_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "733779acef1e18ecc84a000a5a585922ccb56016",
+    "size": 740252,
+    "lfs": {
+      "oid": "ce19ef15b923dcbe36ac1ecce65bd554a9c9be4c7306ed6ff9549a98a16b0d22",
+      "size": 740252,
+      "pointerSize": 131
+    },
+    "xetHash": "5c7d16a1667e2b9dcff83535b2cf3c66a7a3230771ef54b7c9b49e2978c64eab",
+    "path": "reference/orbiter-space-shuttle-ov-103-discovery_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "330cac4e2f155cc48e78ac3281a7372db8eb2b75",
+    "size": 889136,
+    "lfs": {
+      "oid": "86253e6a55b1cb6e70f38eb51d5e2953cf0d8bae9499bae8ed89977a5a1c5ed2",
+      "size": 889136,
+      "pointerSize": 131
+    },
+    "xetHash": "16e6c834b5cd20695572aa7a3b1c286c5d159fbf11b71643449019e8ceb36782",
+    "path": "reference/pastries_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "2229fee7af62ca58910014bff98a2046b8f4e31c",
+    "size": 1934898,
+    "lfs": {
+      "oid": "5f023470189e7e6b224a7ba90bbd7b44cc39d1024c9b52755124d3ed2dc539bd",
+      "size": 1934898,
+      "pointerSize": 132
+    },
+    "xetHash": "3f9c8b4b4b55e2bde9d1fffba29630517dbf054d0f9e49369992952101c36080",
+    "path": "reference/pizza_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "9db4ed9397bd4fcdd6d6d83cb26668250bc115a5",
+    "size": 862714,
+    "lfs": {
+      "oid": "3d74cdfb36738c790ce29a8f158614503e95a04c07788b714956b6c610d4cc0b",
+      "size": 862714,
+      "pointerSize": 131
+    },
+    "xetHash": "205bf3d730bd3f714b43b0cde6e6513434f6ff364d508cceffe81d2db2e5a243",
+    "path": "reference/rnlb-jane-anne_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "a8377e9853c54c0dadc63814c5af1ee34d20e0cd",
+    "size": 2329580,
+    "lfs": {
+      "oid": "95fb88e7e19ec250c67c8a902e038474b310221153e56914848cdc5b9e5a5df2",
+      "size": 2329580,
+      "pointerSize": 132
+    },
+    "xetHash": "39d4d2e25534d7b5665db1ef4c61815f5069c2551cd47d0c250514c183c0fd62",
+    "path": "reference/sitzender-knabe_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "d9b8de956557308a5c5d3384ec0844e76eff1d4e",
+    "size": 2280867,
+    "lfs": {
+      "oid": "3da3f8364ad412d4f99a95214b03a7f17e8676d013c83c460ec78862d2b165c6",
+      "size": 2280867,
+      "pointerSize": 132
+    },
+    "xetHash": "5da784609cb3588fe99261a187bb33d206687e5a47c320c548daf05ada46e18e",
+    "path": "reference/ski-boots-worn-by-seba-johnson_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "8c146b91b8573ff0756beaca337a9db68d0b52e0",
+    "size": 1130512,
+    "lfs": {
+      "oid": "51b3002ab52bd5a0acef5c4f485cbd535355f07251a366100e2cc10826847fec",
+      "size": 1130512,
+      "pointerSize": 132
+    },
+    "xetHash": "4a8804c70ce854f3eebb9110196b1349c4cf3f1f61e0fc9ee12f032eb7fe2717",
+    "path": "reference/skulptur_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "e5e880fdec9709cc2d637568815034e7cad99a25",
+    "size": 748723,
+    "lfs": {
+      "oid": "1ca737bf9b9a9c06c3c594f6f11c57d86f60a62ccadae252dd775fa2e77c3977",
+      "size": 748723,
+      "pointerSize": 131
+    },
+    "xetHash": "c0034b5dd54e9531ed2b02c103447aa17f6fe767c4ca8fdd34a6b57502dbbdb4",
+    "path": "reference/statue-chiriqui_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "c7e6393d20bbd2bc7d1921737388770a3d56423b",
+    "size": 646609,
+    "lfs": {
+      "oid": "5497f124f8319bd401d677525061264af87ac08098daf1e85467529627cd9bed",
+      "size": 646609,
+      "pointerSize": 131
+    },
+    "xetHash": "6cdb0b1708c5bf85faa56f9e75feda58d177c0022403f1ec03a1dcb497449669",
+    "path": "reference/streblognathus-peetersi_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "df7bab33569b8979f3a612852c345cecd8130a03",
+    "size": 1987561,
+    "lfs": {
+      "oid": "c8bdd5eca7db4c436c07a055090a8607a530b14b69af776288f7e0a2c49a573d",
+      "size": 1987561,
+      "pointerSize": 132
+    },
+    "xetHash": "243a4b7b47d7cbd84352af7c1bc7e3e90c22223f4a283e5d719b5d0120ebe9d3",
+    "path": "reference/sylvania-pathmaker_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "527abe1ad7d770703475659b42f3c5f4d3f3c7d5",
+    "size": 1007118,
+    "lfs": {
+      "oid": "3009770dbe1b937ad1387109a41192acfb0c4fa1136c29f6022ee1b89072758e",
+      "size": 1007118,
+      "pointerSize": 132
+    },
+    "xetHash": "e2aefa64bff7affe4620535ad88b01f492ee52d8e1f9d0e6cd107099f64a8145",
+    "path": "reference/the-skull-of-the-polar-bear_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "823505cdcaa446104ea6b73c1d979398e95067c3",
+    "size": 688707,
+    "lfs": {
+      "oid": "e0dce556f14106949f5042f3836e3b4554567ed1d589fe5a8380aee64e2fd779",
+      "size": 688707,
+      "pointerSize": 131
+    },
+    "xetHash": "af8096706b5e7dcf20665aecef5a54bc8b8753b50069fd99d1c25fa73b267101",
+    "path": "reference/time-warner-sa-remote_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "25de72b5a36c23125cea61b87b5296a42e2fe944",
+    "size": 1634110,
+    "lfs": {
+      "oid": "d6029cd5b285ed36ce222e915800bc857bf00b35499d5944279f99cd80ed5c6b",
+      "size": 1634110,
+      "pointerSize": 132
+    },
+    "xetHash": "adc594bb67d6684c4c243ea8fe3195e1ea9445fda383103fc174e65be0ea7ed6",
+    "path": "reference/tonna-galea_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "51fc2288fbfe9f6f8fb4dce953fcaffac21a1702",
+    "size": 1555905,
+    "lfs": {
+      "oid": "62f291bfc9f87aa8777ce1c3585b70749d326fa7bc6f9a2feb0559493f55e215",
+      "size": 1555905,
+      "pointerSize": 132
+    },
+    "xetHash": "4c51f4882f7132d70470b9ccc81af9a5d9efa9aebcc02297a5da07430187f703",
+    "path": "reference/triceratops-horridus-marsh_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "9549e293b7ca8c89289c36ffe57448b56bc36c38",
+    "size": 1768490,
+    "lfs": {
+      "oid": "f0da55cf6466a1b64e31f74f93aa35d94a09dc7a00956f3c2065c1c9df31791e",
+      "size": 1768490,
+      "pointerSize": 132
+    },
+    "xetHash": "d947dc0bcac38f5dceb04b3d139099711f8d2ab94908e031386e72c062472012",
+    "path": "reference/upright-piano_GT.mp4"
+  },
+  {
+    "type": "file",
+    "oid": "97db11341f786b4df397481bbc3e204c825fabc9",
+    "size": 1726361,
+    "lfs": {
+      "oid": "0617e3c9b6b09e1570b7d3b976a8f5df42275ab9f60f1986f23caa9adf876a9a",
+      "size": 1726361,
+      "pointerSize": 132
+    },
+    "xetHash": "b022c4b01500e2da80fd7b789446dd9370d5b51b65bb7dc61258c36d1012621c",
+    "path": "reference/vincent-jetprince-1967-dream-bike_GT.mp4"
+  }
+]

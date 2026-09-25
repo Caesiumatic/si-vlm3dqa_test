@@ -1,0 +1,6 @@
+{
+  "reward_monotonicity": true,
+  "swap_symmetry": true,
+  "zero_variance": true,
+  "post_normalization_scaling": true
+}

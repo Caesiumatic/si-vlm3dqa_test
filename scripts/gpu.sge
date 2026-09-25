@@ -1,0 +1,19 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -N sevlm_smoke
+#$ -q gpu1@compute-1-20.local
+#$ -pe cuda 1
+#$ -l gpu=1,slots_gpu=4,h_rt=02:00:00
+#$ -cwd
+#$ -j y
+#$ -o reports/smoke-scheduler.log
+set -euo pipefail
+BASE=/home/shic4/.cache/rl_verified_agent_20260911/conda
+export LD_LIBRARY_PATH="$BASE/lib:${LD_LIBRARY_PATH:-}" PYTHONPATH="$PWD/runtime_deps:$PWD/scripts"
+export OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 TOKENIZERS_PARALLELISM=false
+export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1 CUDA_DEVICE_ORDER=PCI_BUS_ID
+[[ -s "$TMPDIR/cuda_devices" ]]
+DEVICES=$(xargs < "$TMPDIR/cuda_devices" | tr ' ' ',')
+export CUDA_VISIBLE_DEVICES=$(nvidia-smi --id="$DEVICES" --query-gpu=uuid --format=csv,noheader | tr -d ' ' | paste -sd, -)
+nvidia-smi --query-gpu=index,uuid,name,memory.total,memory.free --format=csv > "reports/gpu_${JOB_ID}.csv"
+"$BASE/bin/python" -u "scripts/$1" "${@:2}"

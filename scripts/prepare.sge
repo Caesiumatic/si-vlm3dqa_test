@@ -1,0 +1,29 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -N sevlm_prepare
+#$ -q intel24
+#$ -pe smp 2
+#$ -l h_rt=02:00:00
+#$ -cwd
+#$ -j y
+#$ -o reports/prepare.log
+set -euo pipefail
+BASE=/home/shic4/.cache/rl_verified_agent_20260911/conda
+export LD_LIBRARY_PATH="$BASE/lib:${LD_LIBRARY_PATH:-}"
+export PYTHONPATH="$PWD/runtime_deps" HF_HUB_DISABLE_XET=1 HF_HUB_DISABLE_IMPLICIT_TOKEN=1
+export OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2
+"$BASE/bin/python" -m pip install --only-binary=:all: --no-deps --target runtime_deps \
+  transformers==4.51.3 tokenizers==0.21.4 peft==0.15.2 accelerate==1.6.0 \
+  numpy==1.26.4 pillow==10.4.0 psutil==6.1.1 safetensors==0.5.3 \
+  scipy==1.15.3 imageio==2.37.0 imageio-ffmpeg==0.6.0
+"$BASE/bin/python" -m pip install --no-deps --target runtime_deps \
+  torchvision==0.19.1+cu118 --index-url https://download.pytorch.org/whl/cu118
+"$BASE/bin/python" -c 'import torch,torchvision,transformers,peft; print(torch.__version__,torchvision.__version__,transformers.__version__,peft.__version__)'
+"$BASE/bin/python" -m pip list --path runtime_deps --format=json > reports/runtime-packages.json
+"$BASE/bin/python" - <<'PY'
+from huggingface_hub import snapshot_download
+snapshot_download('Qwen/Qwen2.5-VL-3B-Instruct',
+    revision='66285546d2b821cf421d4f5eb2576359d3770cd3',
+    local_dir='models/Qwen2.5-VL-3B-Instruct', max_workers=2,
+    allow_patterns=['*.json','*.safetensors','*.txt','LICENSE','README.md'])
+PY

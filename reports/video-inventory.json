@@ -95,5 +95,5 @@
   "overlap_review_groups": [
     "pizza"
   ],
-  "deduplication": "Exact SHA256 and conservative name overlap; visual near-duplicate audit pending."
+  "deduplication": "Exact SHA256; all22 source and55 target groups visually reviewed; similar-name piano/vase/chair/motorbike inspected; pizza conservatively excluded; no further apparent shared objects."
 }

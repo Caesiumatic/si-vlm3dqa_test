@@ -8,6 +8,7 @@ import numpy as np
 import torch
 from evaluator import Evaluator
 from vlm import VLM
+from budget import check_deadline
 
 p = argparse.ArgumentParser()
 p.add_argument('--config',required=True)
@@ -24,6 +25,7 @@ config_hash = hashlib.sha256(config_path.read_bytes()).hexdigest()
 videos = {r['video_id']:r for r in map(json.loads,pathlib.Path(a.videos).read_text().splitlines())}
 pairs = list(map(json.loads,pathlib.Path(a.pairs).read_text().splitlines()))
 out = pathlib.Path(a.output); out.mkdir(parents=True,exist_ok=True)
+check_deadline()
 runner = VLM(a.model,observation=cfg['observation'],source_crop_right=True)
 evaluator = Evaluator(runner,cfg['teacher'])
 started = time.monotonic()
@@ -33,6 +35,7 @@ for pair in pairs:
         if path.exists():
             assert json.loads(path.read_text())['config_sha256']==config_hash, 'Config changed on resume'
             continue
+        check_deadline()
         if time.monotonic()-started > a.hours*3600:
             print('TIME_BUDGET_STOP',flush=True); raise SystemExit(0)
         seed = int(hashlib.sha256(f"{cfg['seed']}:{pair['pair_id']}:{method}".encode()).hexdigest()[:8],16)

@@ -1,0 +1,8 @@
+{
+  "name_rows": 1970,
+  "unique_name_keys": 1970,
+  "candidate_target_videos": 432,
+  "matched": 432,
+  "missing": [],
+  "read_scope": "header and dis_name column A only; no MOS cell values consumed"
+}

@@ -6,6 +6,7 @@ import pathlib
 import time
 import torch
 from vlm import VLM, SCORE_PROMPT, parse_score
+from budget import check_deadline
 
 p=argparse.ArgumentParser()
 p.add_argument('--config',required=True);p.add_argument('--videos',required=True)
@@ -18,6 +19,7 @@ signature=hashlib.sha256(raw).hexdigest()
 videos=list(map(json.loads,pathlib.Path(a.videos).read_text().splitlines()))
 assert all(v['domain']=='target' for v in videos)
 out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True)
+check_deadline()
 runner=VLM(a.model,observation=cfg['observation'])
 if a.adapter:
     from peft import PeftModel
@@ -28,6 +30,7 @@ for row in videos:
     if path.exists():
         assert json.loads(path.read_text())['config_sha256']==signature
         continue
+    check_deadline()
     if time.monotonic()-started>a.hours*3600:
         print('TIME_BUDGET_STOP',flush=True);break
     torch.manual_seed(int(row['video_id'][2:10],16))

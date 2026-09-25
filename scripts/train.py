@@ -10,6 +10,7 @@ import numpy as np
 import torch
 from reward import fidelity, advantages, check
 from vlm import VLM, SCORE_PROMPT, parse_score
+from budget import check_deadline
 
 
 def update_pair(runner, paths, label, weight, cfg, denominator):
@@ -74,6 +75,7 @@ def main():
     assert len(pairs)%train['pairs_per_batch']==0
     out=pathlib.Path(a.output); out.mkdir(parents=True,exist_ok=True)
     torch.manual_seed(a.seed); np.random.seed(a.seed)
+    check_deadline()
     runner=VLM(a.model,lora=True,source_crop_right=True,observation=cfg['observation'])
     params=[p for p in runner.model.parameters() if p.requires_grad]
     optimizer=torch.optim.AdamW(params,lr=train['learning_rate'],betas=(.9,.999),
@@ -92,6 +94,7 @@ def main():
     check()
     started=time.monotonic()
     for offset in range(completed,len(pairs),train['pairs_per_batch']):
+        check_deadline()
         optimizer.zero_grad(set_to_none=True)
         batch=pairs[offset:offset+train['pairs_per_batch']]
         t=time.monotonic(); summaries=[]

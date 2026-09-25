@@ -16,6 +16,10 @@ p.add_argument('--hours',type=float,default=1.8)
 a=p.parse_args()
 raw=pathlib.Path(a.config).read_bytes(); cfg=json.loads(raw)
 signature=hashlib.sha256(raw).hexdigest()
+adapter_hash=None
+if a.adapter:
+    with (pathlib.Path(a.adapter)/'adapter_model.safetensors').open('rb') as stream:
+        adapter_hash=hashlib.file_digest(stream,'sha256').hexdigest()
 videos=list(map(json.loads,pathlib.Path(a.videos).read_text().splitlines()))
 assert all(v['domain']=='target' for v in videos)
 out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True)
@@ -28,7 +32,9 @@ started=time.monotonic()
 for row in videos:
     path=out/(row['video_id']+'.json')
     if path.exists():
-        assert json.loads(path.read_text())['config_sha256']==signature
+        existing=json.loads(path.read_text())
+        assert existing['config_sha256']==signature and existing['video_sha256']==row['sha256']
+        assert existing.get('adapter_sha256')==adapter_hash, 'Prediction checkpoint changed on resume'
         continue
     check_deadline()
     if time.monotonic()-started>a.hours*3600:
@@ -42,6 +48,9 @@ for row in videos:
         score=None;status='invalid_score'
     record={'video_id':row['video_id'],'video_sha256':row['sha256'],'score':score,'status':status,
             'output':text,'observations':trace,'cost':runner.timings[-1],'config_sha256':signature,
-            'adapter':a.adapter}
+            'adapter':a.adapter,'adapter_sha256':adapter_hash}
     temp=path.with_suffix('.tmp');temp.write_text(json.dumps(record,indent=2));temp.replace(path)
     print(row['video_id'],status,flush=True)
+missing=[r['video_id'] for r in videos if not (out/(r['video_id']+'.json')).exists()]
+if missing:
+    raise SystemExit(f'INCOMPLETE_PREDICTIONS: {len(missing)} remaining; resume before advancing the pipeline')

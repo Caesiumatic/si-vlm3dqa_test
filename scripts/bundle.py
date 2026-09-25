@@ -43,6 +43,7 @@ if len(chosen)<budget:
     original=chosen.copy()
     while len(chosen)<budget:
         chosen.append(original[(len(chosen)-len(original))%len(original)].copy())
+group_counts=collections.Counter(videos[p[k]]['group'] for p in chosen for k in ('a','b'))
 weights=np.array([r['raw_reliability'] for r in chosen],float)
 assert np.all(np.isfinite(weights)) and weights.mean()>0
 weights/=weights.mean()

@@ -1,59 +1,52 @@
 # Execution status
 
-Start: 2026-09-25 22:00:06 UTC. Deadline: 2026-09-28 22:00:06 UTC (Monday 17:00 Chicago).
-Updated during initial execution, ~22:41 UTC. Workdir `/Users/shichen/GitHub/SE-VLM3DQA-1`; Lop `/home/shic4/SE-VLM3DQA-1`. Main branch, no remote/push. Autonomous execution authorized; Mac auxiliary.
+Updated2026-09-26 00:00 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
-## Verified progress
+## Current stage: main experiment submitted
 
-- All 440 source videos (22 groups, 3.126 GB) and 1,970 MUGSQA main videos (55 groups, 2.234 GB) downloaded on Mac. No source MOS accessed. Target MOS sealed in `data/sealed/mos_main.xlsx`; no values used.
-- All source groups visually checked: left reference/right degraded PVS. Model crops right half before processing. Original crop coordinates/timestamps preserved. Full source contact sheet in reports.
-- Source train: 18 groups / 360 videos; dev: chair, phonograph, pizza, sofa / 80. Target pizza (33 videos) conservatively excluded. Target pool 54 groups / 1,937 videos. Similar-name piano/vase/chair/motorcycle subjects visually compared and differ; see audit images. No claim that names alone establish independence.
-- Main target prospectively selected MUGSQA main: public 3DGS-QA HF release has no ready RGB videos. No target model metrics have been computed.
-- Candidate minimum manifests: 180 source videos (10/group), 198 pairs, 432 target videos (8/group). Recommended candidate: 360 source, 378 pairs, 864 target. **Formal sizes not frozen.**
-- Full video → teacher → student G=4 → nonzero gradient/update → adapter save/reload smoke passed on four GTX980: job427520, 119.1 seconds, max allocated2.45GiB/card, reload difference0. See reports/smoke-aligned.json.
-- Exact segmented vision-attention implementation avoids masked cross-block allocations; forward/input-gradient agreement tested. Dispatch main device aligned with language embedding to fix Qwen cross-GPU cache position mismatch.
-- Reward formula corrected before formal experiment to EvoQuality Eq.(2): both rollout-group variances + gamma. Initial engineering smoke used partner variance only, and is excluded from results. Numeric formula check added. See METHOD_NOTES.md.
+**Main SGE job427527 is submitted, initially dependent on427526.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
 
-## Job ledger
+The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submission succeeded. No user reauthorization needed.
 
-- 427516 failed CPU install: missing PyAV wheel. Preserved failure; replaced PyAV with imageio-ffmpeg.
-- 427517 CPU preparation COMPLETE: model pinned revision66285546d2b821cf421d4f5eb2576359d3770cd3, 7.1GiB; isolated runtime imports passed.
-- 427518 GPU FAILED global attention allocation/old NVML error.
-- 427519 GPU FAILED cache position CUDA device mismatch; segmented attention check passed.
-- 427520 GPU COMPLETE: full aligned smoke passed.
-- 427521 dense local observation smoke COMPLETE (retrieve result); 8 global +16 native contiguous local frames at224px. Uses old engineering reward, not final formula.
-- 427522 teacher development pilot RUNNING: two held-out pairs (chair, phonograph), baseline5 votes and full roles including conditional recursion. Log reports/teacher-pilot.log, outputs runs/teacher-pilot. Must inspect actual evidence/parse rates/calls/cost before freeze.
-- Hourly app heartbeat `se-vlm3dqa-72` ACTIVE. Quiet unchanged; pause on completion/deadline. No new jobs after deadline.
+## Frozen protocol
+
+Commit `5971b83`; `configs/experiment.json` status FROZEN, interface numbered_audit_verdicts_v3. `reports/frozen-manifest.json` records exact code/config/data-manifest hashes; all635 checks (including612 videos) passed remotely. Do not silently change frozen core code during production.
+
+- Source180 videos across18 groups,198 candidate pairs; source PVS right-half only, no reference pixels. Four separate development groups.
+- Target MUGSQA main,432 videos across54 groups; pizza excluded conservatively. All groups visually audited,432/432 name-only MOS mappings match. Human numeric values remain sealed.
+- Same pinned Qwen2.5-VL-3B teacher/student.224px,8 global +16 native consecutive local frames. Bilateral evidence search, numbered video audit, up to2 recursion depths,3 hyperjudges; baseline5 independent votes.
+- Frozen labels → common valid schedule108 pair presentations,27 batches of4, G4/video. T1/T2/T3/T5 × seeds17/29/43. T2/T3/T5 identical labels/schedule; weights normalized globally; T5 shuffled distribution. LoRA r8/alpha16 q/v; lr1e-5; fixed-base KL.04.
+- T0 plus12 final students, same greedy single-video test. Prediction/config/video/adapter hashes checked; incomplete prediction stages fail resumably, never mark done.
+- Main contrast T3−T1 SRCC; raw PLCC and other contrasts. Group/seed paired bootstrap2000; no best-checkpoint selection.27 updates is a bounded pilot, not demonstrated convergence. Full-output student views, T4 and matched-compute/observation controls are extensions; main result alone cannot isolate recursion's effect.
+- Details: `RUN_PROTOCOL.md`. Larger candidate exceeds conservative four-GTX980 budget. Main estimated57–65h from first measurements, including teacher, train and test; actual cost may differ. Model work stops30min before deadline.
+
+## Verification and job ledger
+
+| Job | Verified state/result |
+|---|---|
+|427516–427519|Earlier engineering failures fixed; retained in Git/logs. No formal outputs.|
+|427520|Full video/update/save/reload smoke passed119sec.|
+|427521|Dense temporal input smoke passed155sec, max allocated2.49GiB/card, exact reload.|
+|427522|Initial teacher format failure; never used as formal labels.|
+|427523|V2 finished exit0; raw audit inspection exposed text/objects in index lists. This version is excluded.|
+|427524|First corrected-reward/KL update + optimizer checkpoint succeeded.|
+|427525|Resume and second update succeeded, exit0; grad_norm0.554, nonzero fixed-base KL≈3e-5–5e-5. Both batches160/240sec for2 pairs.|
+|427526|V3 numbered-audit dev check. First real pair passed: all4 verdicts bind correctly; support.5, resolved1, judge agreement2/3, reliability.5. Second pair running at last check.|
+|427527|MAIN submitted; waits for427526. Pipeline also verifies two dev records and a valid numbered audit before running.|
+
+V3 CPU contract check covered quorum, numbered evidence binding, local recursion and known reliability; actual V2 had local video reinspection, V3 first pair resolved at root (conditional recursion still enabled). Source teacher/student and all model computation are onLop. Mac handled files, hashes and CPU math only.
 
 ## Next actions
 
-1. Retrieve dense smoke and teacher pilot; inspect role outputs and actual recursion. Fix interfaces using only label-free dev evidence; do not tune to MOS. Record any engineering changes.
-2. Test multi-pair/multi-step train.py with corrected reward and fixed-base KL, save/resume, real nonzero gradients. Current train.py/predict.py implemented but not run yet. Use batch >=2 pairs so reliability meaningfully changes relative gradient contributions under Adam. Limit checkpoint storage (current draft saves all batches; fix before formal).
-3. Freeze numeric protocol using end-to-end costs. Primary common-coverage T0/T1/T2/T3/T5; three seeds goal. T2/T3/T5 share exact labels/schedule, weights globally normalized once; T5 permutes weights. No early selection on target metrics. Ensure training schedule covers selected scenes/videos at bounded pair budget. Clearly report actual training exposures/steps.
-4. Complete all-target-group visual overlap review. Finalize and hash manifests/code/prompts/config, transfer selected data to Lop. Freeze labels and schedule, implement lightweight bundle creation/statistics and final metrics.
-5. Submit bounded SGE label/train/test stages; inspect existing jobs before submission. Formal prediction outputs must be complete/frozen before target MOS metrics are read. Report raw PLCC, SRCC, paired content-group bootstrap intervals, coverage, weights/ESS, cost, failed/zero variance updates, limited claims.
+1. Confirm427526 completes; inspect second V3 record/SGE accounting. Confirm427527 transitions to running and `STAGE label.py` appears. If pipeline fails, inspect actual traceback; preserve outputs before fixing/restarting. Do not resubmit while427527 exists.
+2. During main label generation, monitor progress/cost, parse failure/abstention distribution and audit/recursion execution without MOS. Preserve actual denominators and explain any degenerate weight distribution; don't tune labels to obtain desired results. Frozen stage runs automatically, no hourly resubmission needed.
+3. `pipeline.py` generates `runs/main/bundle.json`, then T0 predictions, and trains/tests all arms/seeds serially. Stage failures exit; restart uses frozen existing outputs and latest optimizer boundary. Observe bundle's actual video/scene coverage and repeats, not nominal180 alone.
+4. After GPU_STAGES_COMPLETE, synchronize predictions, bundle, training logs/checkpoints/accounting; verify all expected outputs. Only then run Mac `.venv/bin/python scripts/metrics.py` with configs/experiment.json, frozen target manifest, a local-path run index, and sealed MOS. Metrics runner currently requires full planned matrix. If deadline forces incomplete matrix, explicitly close/report incomplete scope before a separate final analysis; never present unfinished arms as completed.
+5. Produce report with positive/null/negative findings, cost, coverage, weight ESS, gradient/zero-variance/invalid rollout rates and intervals. Claim only completed controls. Pause heartbeat at completion/deadline; no new experiment jobs afterward.
 
-## Access/environment
+## Access
 
-SSH multiplex socket `/private/tmp/sevlm3dqa-ssh`, interactive exec session50846. Reuse while alive; credentials authorized in original user context, never persist in files.
-SGE: export SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
-Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; LD_LIBRARY_PATH=base/lib, PYTHONPATH=project/runtime_deps:project/scripts. Base untouched. Project transformers4.51.3, torch2.4.1cu118, peft0.15.2.
-GPU script: cuda PE4, slots_gpu1 (four GPUs), gpu1@compute-1-20.local. Default2h walltime; override only within actual queue limits/deadline. Latest code staged remotely; Mac files canonical. Remote currently only six development videos; most data on Mac.
-
-## Latest continuation (~22:55 UTC)
-
-- Dense smoke427521 confirmed passed:154.85sec, max allocated2.49GiB/card, exact reload.
-- All55 target groups visually reviewed; no further apparent shared subjects. MOS file header and **name column only** audited:1,970 unique keys,432/432 candidate test names match; MOS numerical cells not consumed. Mapping report saved.
-- Initial teacher427522 COMPLETE: all4 method/pair labels abstained primarily due key-name errors. Full raw outputs retained under reports/teacher-pilot.
-- V2 teacher427523 RUNNING. First pair: baseline valid JSON but 2–2–1 disagreement → abstain; full near_equal,8 calls146sec with local recursion. Explicit schema and missing-status normalization fixed before this job. Preserve this as dev evidence; don't merge with formal labels.
-- Train pilot427524 queued after427523: two-pair accumulated update with corrected Eq.(2) reward and fixed-base KL, then budget exit/save. Resume pilot427525 queued after427524: reload optimizer+adapter and perform second update. Outputs runs/train-pilot, logs reports/train-pilot-{1,2}.log. Uses repeated real-smoke teacher label only for engineering; never count as scientific training. Inspect grad_norm, second-update KL, memory, checkpoint and batch logs.
-- Candidate minimum data transfer COMPLETE (1.877GB,615files):180 source +432 target and manifests now onLop in original relative paths.
-- Draft numerical config configs/experiment-draft.json; not frozen. scripts/pipeline.py implements serial resumable label→bundle→T0→train/test across arms/seeds and never submits jobs. Not submitted yet. scripts/metrics.py implemented but not run; exact full prediction matrix required before MOS opening. Add deadline/partial-matrix reporting path if needed, without concealing unfinished arms.
-- Checkpoint storage fixed: only latest two optimizer/adapter snapshots retained per run; all batch logs kept. Deadline buffer stops new model work30min before72hdeadline. Current queue permits h_rt=INFINITY; request a bounded duration for main pipeline within remaining deadline.
-- Next: finish/check current pilot jobs; inspect real role records and training/resume; freeze final numeric config as configs/experiment.json (status FROZEN), manifests as data/manifests/frozen, source/code hashes and Git commit. Then upload latest scripts/configs and submit main pipeline once via gpu.sge with suitable bounded walltime, e.g.≤69h remaining. Record jobid. Main pipeline requires completed train-pilot status and exact frozen config. Do not run or select using target MOS before predictions freeze.
-
-## Continuation 2026-09-25 23:42 UTC — tool authentication blocker
-
-The attempted read-only SSH status check was NOT executed. Automatic approval review failed with HTTP401 authentication error from the review service. This is a service authentication failure, not a safety denial or Lop login failure. Do not bypass the approval review through another transport/session. Restore service authentication before the next remote operation. No duplicate jobs were submitted, no running Lop job was stopped, and actual statuses of427523/427524/427525 remain unverified.
-
-Local work completed meanwhile: prediction resume now checks video/config/checkpoint hashes; a partial prediction stage exits unsuccessfully instead of letting the pipeline mark GPU stages complete. Bundle exposure counts include repeated training pairs. Python compilation, reward formula/normalization checks, and git diff checks passed. These latest code fixes still need synchronization to Lop after access is restored. Formal numeric freeze/main submission remain pending real train/resume results; no MOS values inspected. The original deadline is unchanged.
+SSH multiplex `/private/tmp/sevlm3dqa-ssh` (original interactive session50846); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
+SGE env: SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
+Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; project runtime_deps isolated. GPU script sets LD_LIBRARY_PATH/PYTHONPATH and assigned GPU UUIDs. Main70-ish-hour scheduling remains within original72hdeadline through per-stage deadline checks.
+Hourly heartbeat `se-vlm3dqa-72` active. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.

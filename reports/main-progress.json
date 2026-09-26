@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-09-26T22:48:57.177489+00:00",
+  "checked_utc": "2026-09-26T23:49:00.045888+00:00",
   "job_id": 427527,
   "scheduler_state": "running",
   "stage": "T3_17_training",
@@ -53,20 +53,20 @@
   "current_training": {
     "arm": "T3",
     "seed": 17,
-    "completed_pairs": 52,
+    "completed_pairs": 80,
     "total_pairs": 108,
-    "completed_updates": 13,
+    "completed_updates": 20,
     "planned_updates": 27,
     "recent_batches": 5,
-    "mean_batch_seconds": 474.5409763738513,
-    "estimated_remaining_hours": 1.8454371303427552,
-    "estimated_finish_utc": "2026-09-27T00:39:40.751158+00:00",
+    "mean_batch_seconds": 493.1961697876453,
+    "estimated_remaining_hours": 0.9589925523648659,
+    "estimated_finish_utc": "2026-09-27T00:46:32.419077+00:00",
     "pair_status_counts": {
-      "processed": 50,
-      "invalid_rollout_pair_skipped": 2
+      "processed": 77,
+      "invalid_rollout_pair_skipped": 3
     },
     "zero_variance_groups": 4,
-    "rollout_groups_observed": 100,
+    "rollout_groups_observed": 154,
     "grad_norm_min": 0.11324179917573929,
     "grad_norm_max": 0.2821708619594574,
     "max_memory_allocated": [
@@ -75,50 +75,50 @@
       2345293312,
       2505623040
     ],
-    "observed_weights_min": 0.5547351524879616,
+    "observed_weights_min": 0.520064205457464,
     "observed_weights_max": 1.2481540930979136,
     "frozen_label_weight_and_T2_order_verified": true
   },
   "provisional_remaining_stage_forecast": {
     "T3_17": {
-      "hours_from_check": 2.5963420027325466,
-      "estimated_prediction_finish_utc": "2026-09-27T01:24:44.008699+00:00"
+      "hours_from_check": 1.709897424754657,
+      "estimated_prediction_finish_utc": "2026-09-27T01:31:35.676617+00:00"
     },
     "T5_17": {
-      "hours_from_check": 6.94196751555422,
-      "estimated_prediction_finish_utc": "2026-09-27T05:45:28.260545+00:00"
+      "hours_from_check": 6.055522937576331,
+      "estimated_prediction_finish_utc": "2026-09-27T05:52:19.928463+00:00"
     },
     "T1_29": {
-      "hours_from_check": 11.287593028375893,
-      "estimated_prediction_finish_utc": "2026-09-27T10:06:12.512391+00:00"
+      "hours_from_check": 10.401148450398004,
+      "estimated_prediction_finish_utc": "2026-09-27T10:13:04.180309+00:00"
     },
     "T2_29": {
-      "hours_from_check": 15.633218541197566,
-      "estimated_prediction_finish_utc": "2026-09-27T14:26:56.764237+00:00"
+      "hours_from_check": 14.746773963219677,
+      "estimated_prediction_finish_utc": "2026-09-27T14:33:48.432156+00:00"
     },
     "T3_29": {
-      "hours_from_check": 19.97884405401924,
-      "estimated_prediction_finish_utc": "2026-09-27T18:47:41.016083+00:00"
+      "hours_from_check": 19.092399476041354,
+      "estimated_prediction_finish_utc": "2026-09-27T18:54:32.684002+00:00"
     },
     "T5_29": {
-      "hours_from_check": 24.324469566840918,
-      "estimated_prediction_finish_utc": "2026-09-27T23:08:25.267930+00:00"
+      "hours_from_check": 23.43802498886303,
+      "estimated_prediction_finish_utc": "2026-09-27T23:15:16.935848+00:00"
     },
     "T1_43": {
-      "hours_from_check": 28.670095079662595,
-      "estimated_prediction_finish_utc": "2026-09-28T03:29:09.519776+00:00"
+      "hours_from_check": 27.783650501684708,
+      "estimated_prediction_finish_utc": "2026-09-28T03:36:01.187694+00:00"
     },
     "T2_43": {
-      "hours_from_check": 33.015720592484264,
-      "estimated_prediction_finish_utc": "2026-09-28T07:49:53.771622+00:00"
+      "hours_from_check": 32.12927601450638,
+      "estimated_prediction_finish_utc": "2026-09-28T07:56:45.439540+00:00"
     },
     "T3_43": {
-      "hours_from_check": 37.361346105305934,
-      "estimated_prediction_finish_utc": "2026-09-28T12:10:38.023468+00:00"
+      "hours_from_check": 36.47490152732805,
+      "estimated_prediction_finish_utc": "2026-09-28T12:17:29.691386+00:00"
     },
     "T5_43": {
-      "hours_from_check": 41.706971618127604,
-      "estimated_prediction_finish_utc": "2026-09-28T16:31:22.275314+00:00"
+      "hours_from_check": 40.82052704014972,
+      "estimated_prediction_finish_utc": "2026-09-28T16:38:13.943233+00:00"
     }
   },
   "completed_student_runs": [

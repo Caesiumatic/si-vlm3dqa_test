@@ -1,10 +1,10 @@
 # Execution status
 
-Updated2026-09-26 15:43 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 16:46 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
-## Current stage: T1 seed17 training
+## Current stage: T2 seed17 training
 
-**Main SGE job427527 is RUNNING since2026-09-26 00:00:27 UTC. Supervision and432 T0 predictions completed; `STAGE train.py` for T1 seed17, gradients and checkpoints are verified.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
+**Main SGE job427527 is RUNNING since2026-09-26 00:00:27 UTC. Supervision, T0 and T1 seed17 training/predictions completed; `STAGE train.py` for T2 seed17 and model loading are verified.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
 
 The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submission succeeded. No user reauthorization needed.
 
@@ -16,9 +16,11 @@ Frozen schedule:108 unique pairs,165 videos/18 source groups, no repeats; weight
 
 T0 predictions complete432/432, all valid with matching video/config hashes and no adapter. Completed at2026-09-26T12:18:23+00:00; no MOS read and no quality metrics computed.
 
-15:43 UTC: T1 seed17 training active, 100/108 pair presentations, 25/27 updates saved. Recent5 batches average477.7sec/4 pairs. All gradients finite/nonzero (range0.080–0.272); all logged KL values finite. Pair statuses: {'processed': 97, 'invalid_rollout_pair_skipped': 3}; zero-variance groups5/194 processed rollout groups. Estimated current training remaining0.27h; following prediction roughly0.73h. No stage failure or new submission.
+16:46 UTC: T1 seed17 COMPLETE:27/27 updates,108 presentations;104 processed pairs and4 invalid-rollout pairs skipped under the frozen rule. All27 gradient norms finite/nonzero, KL finite;6/208 processed rollout groups had zero advantage variance. Batch computation totaled3.62h. All432 final predictions valid; video/config/adapter hashes checked against locally backed-up final LoRA weights. Prediction completion2026-09-26 16:42:33 UTC. Completion record: reports/T1_17-completion.json. No MOS accessed or model-quality metrics computed.
 
-Throughput extrapolation from latest5 batches, excluding future startup overhead: first seed all four arms finishes about13.9h from this check; second seed about31.2h; all three seeds about48.4h, around2026-09-28T16:10:20.322371+00:00. Later-arm speeds remain unmeasured. Retain hourly monitoring and frozen scientific configuration.
+T2 seed17 started automatically and model is loaded; first checkpoint not yet present in this snapshot. Original job427527 remains healthy. SSH master expired, restored through authorized authentication (new session90741); original job unaffected, no resubmission.
+
+Using the entire completed T1 run as timing basis: typical remaining training3.62h plus prediction0.75h per arm. T2 train+prediction roughly4.4h from this check; seed17 all arms13.1h; all three seeds48.0h, around2026-09-28T16:48:27.450922+00:00. Forecast excludes future startup overhead and remains provisional until later arms are measured. Keep hourly checks and frozen configuration.
 
 ## Frozen protocol
 
@@ -44,7 +46,7 @@ Commit `5971b83`; `configs/experiment.json` status FROZEN, interface numbered_au
 |427524|First corrected-reward/KL update + optimizer checkpoint succeeded.|
 |427525|Resume and second update succeeded, exit0; grad_norm0.554, nonzero fixed-base KL≈3e-5–5e-5. Both batches160/240sec for2 pairs.|
 |427526|V3 numbered-audit dev check. First real pair passed: all4 verdicts bind correctly; support.5, resolved1, judge agreement2/3, reliability.5. Second pair also passed: reliability1.0; both numbered audit interfaces valid; exit complete.|
-|427527|MAIN RUNNING: supervision and T0 prediction complete; T1 seed17 training/checkpoints verified.|
+|427527|MAIN RUNNING: supervision, T0 and T1 seed17 complete; T2 seed17 training started.|
 
 V3 CPU contract check covered quorum, numbered evidence binding, local recursion and known reliability; actual V2 had local video reinspection, V3 first pair resolved at root (conditional recursion still enabled). Source teacher/student and all model computation are onLop. Mac handled files, hashes and CPU math only.
 
@@ -58,7 +60,7 @@ V3 CPU contract check covered quorum, numbered evidence binding, local recursion
 
 ## Access
 
-SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session9968 with server keepalive; older20420 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
+SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session90741 with server keepalive; older9968 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
 SGE env: SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
 Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; project runtime_deps isolated. GPU script sets LD_LIBRARY_PATH/PYTHONPATH and assigned GPU UUIDs. Main70-ish-hour scheduling remains within original72hdeadline through per-stage deadline checks.
 Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every1h for student training/test. Use every2h only for stable teacher generation with >3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.

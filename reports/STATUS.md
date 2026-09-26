@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-26 00:17 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 02:36 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: main experiment submitted
 
@@ -10,7 +10,9 @@ The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submis
 
 ## Latest operational snapshot
 
-00:17 UTC: job427527 remains running. Synced5 baseline +4 full records; all4 full audits have valid numbered interfaces,3 exercised local recursion. Three completed pairs are common-valid; raw full reliability spans0.296–1.0 (including abstaining records). Early labels are predominantly near_equal; sample is too small for a distribution/quality conclusion. No MOS read and no frozen settings changed. Mean baseline99sec/full119sec implies roughly12h total teacher time at this early rate, consistent with prior estimate. Detailed snapshot: reports/main-progress.json. Final dev427526 qacct confirms exit0 (reports/pilot-v3-accounting.txt).
+02:36 UTC: original job427527 remains running;44/198 pairs finished under both teachers (88 records). All44 full audits have valid numbered interfaces;11 exercised local recursion. Common-valid pairs34, spanning63 videos and16 source groups;5 common pairs have different baseline/full labels. Baseline counts:33 near_equal,2 A,9 abstain. Full counts:37 near_equal,6 A,1 abstain. Raw full reliability spans0.296–1.0. This is an interim label-only snapshot, not human quality evidence; no MOS read or frozen setting changed.
+
+Recent20 pairs average207.87sec for both methods: estimated teacher remaining8.89h, finish around2026-09-26 11:30 UTC (Saturday06:30 Chicago). Keep2h checks because >3h remains. Stage timing is consistent with prior budget. Snapshot: reports/main-progress.json. SSH idle session expired and was reauthenticated successfully; original job was unaffected and no new job submitted. Current interactive master session20420.
 
 ## Frozen protocol
 
@@ -50,7 +52,7 @@ V3 CPU contract check covered quorum, numbered evidence binding, local recursion
 
 ## Access
 
-SSH multiplex `/private/tmp/sevlm3dqa-ssh` (original interactive session50846); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
+SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session20420; older50846 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
 SGE env: SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
 Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; project runtime_deps isolated. GPU script sets LD_LIBRARY_PATH/PYTHONPATH and assigned GPU UUIDs. Main70-ish-hour scheduling remains within original72hdeadline through per-stage deadline checks.
 Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every2h while stable teacher generation has >3h remaining; switch to every1h for training/test or a phase with <=3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.

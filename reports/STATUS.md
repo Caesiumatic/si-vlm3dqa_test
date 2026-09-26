@@ -1,10 +1,10 @@
 # Execution status
 
-Updated2026-09-26 00:00 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 00:01 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: main experiment submitted
 
-**Main SGE job427527 is submitted, initially dependent on427526.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
+**Main SGE job427527 is RUNNING since2026-09-26 00:00:27 UTC. `STAGE label.py` and successful model loading are verified in the live log.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
 
 The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submission succeeded. No user reauthorization needed.
 
@@ -31,14 +31,14 @@ Commit `5971b83`; `configs/experiment.json` status FROZEN, interface numbered_au
 |427523|V2 finished exit0; raw audit inspection exposed text/objects in index lists. This version is excluded.|
 |427524|First corrected-reward/KL update + optimizer checkpoint succeeded.|
 |427525|Resume and second update succeeded, exit0; grad_norm0.554, nonzero fixed-base KL≈3e-5–5e-5. Both batches160/240sec for2 pairs.|
-|427526|V3 numbered-audit dev check. First real pair passed: all4 verdicts bind correctly; support.5, resolved1, judge agreement2/3, reliability.5. Second pair running at last check.|
-|427527|MAIN submitted; waits for427526. Pipeline also verifies two dev records and a valid numbered audit before running.|
+|427526|V3 numbered-audit dev check. First real pair passed: all4 verdicts bind correctly; support.5, resolved1, judge agreement2/3, reliability.5. Second pair also passed: reliability1.0; both numbered audit interfaces valid; exit complete.|
+|427527|MAIN RUNNING: real pre-supervision label.py stage, model loaded; prerequisites passed.|
 
 V3 CPU contract check covered quorum, numbered evidence binding, local recursion and known reliability; actual V2 had local video reinspection, V3 first pair resolved at root (conditional recursion still enabled). Source teacher/student and all model computation are onLop. Mac handled files, hashes and CPU math only.
 
 ## Next actions
 
-1. Confirm427526 completes; inspect second V3 record/SGE accounting. Confirm427527 transitions to running and `STAGE label.py` appears. If pipeline fails, inspect actual traceback; preserve outputs before fixing/restarting. Do not resubmit while427527 exists.
+1. Monitor427527 and its actual output counts/log. Retrieve427526 accounting when convenient; both V3 dev outputs are saved locally. If pipeline fails, inspect traceback; preserve outputs before fixing/restarting. Do not resubmit while427527 exists.
 2. During main label generation, monitor progress/cost, parse failure/abstention distribution and audit/recursion execution without MOS. Preserve actual denominators and explain any degenerate weight distribution; don't tune labels to obtain desired results. Frozen stage runs automatically, no hourly resubmission needed.
 3. `pipeline.py` generates `runs/main/bundle.json`, then T0 predictions, and trains/tests all arms/seeds serially. Stage failures exit; restart uses frozen existing outputs and latest optimizer boundary. Observe bundle's actual video/scene coverage and repeats, not nominal180 alone.
 4. After GPU_STAGES_COMPLETE, synchronize predictions, bundle, training logs/checkpoints/accounting; verify all expected outputs. Only then run Mac `.venv/bin/python scripts/metrics.py` with configs/experiment.json, frozen target manifest, a local-path run index, and sealed MOS. Metrics runner currently requires full planned matrix. If deadline forces incomplete matrix, explicitly close/report incomplete scope before a separate final analysis; never present unfinished arms as completed.

@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-26 18:47 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 19:48 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: T2 seed17 training
 
@@ -18,9 +18,9 @@ T0 predictions complete432/432, all valid with matching video/config hashes and 
 
 16:46 UTC: T1 seed17 COMPLETE:27/27 updates,108 presentations;104 processed pairs and4 invalid-rollout pairs skipped under the frozen rule. All27 gradient norms finite/nonzero, KL finite;6/208 processed rollout groups had zero advantage variance. Batch computation totaled3.62h. All432 final predictions valid; video/config/adapter hashes checked against locally backed-up final LoRA weights. Prediction completion2026-09-26 16:42:33 UTC. Completion record: reports/T1_17-completion.json. No MOS accessed or model-quality metrics computed.
 
-18:47 UTC: T2 seed17 training active, 60/108 pair presentations, 15/27 updates saved. Recent5 batches average455.1sec/4 pairs; all gradients finite/nonzero (range0.096–0.268), KL finite. Pair statuses: {'processed': 57, 'invalid_rollout_pair_skipped': 3}; zero-variance groups3/114 processed rollout groups. Current training estimated remaining1.52h, then prediction about0.75h. Original job427527 healthy, SSH available, no resubmission.
+19:48 UTC: T2 seed17 training active, 92/108 pair presentations, 23/27 updates saved. Recent5 batches average477.5sec/4 pairs; all gradients finite/nonzero (range0.096–0.268), KL finite. Pair statuses: {'processed': 88, 'invalid_rollout_pair_skipped': 4}; zero-variance groups4/176 processed rollout groups. Current training estimated remaining0.53h, then prediction about0.75h. Original job427527 healthy, SSH available, no resubmission.
 
-Forecast uses recent T2 batches for current remainder and completed T1 for future full runs: T2 train+prediction2.3h from this check; seed17 all arms11.0h; all three seeds45.9h, around2026-09-28T16:42:49.339438+00:00. Future startup overhead excluded; later-arm throughput remains provisional. Keep hourly checks and frozen configuration.
+Forecast uses recent T2 batches for current remainder and completed T1 for future full runs: T2 train+prediction1.3h from this check; seed17 all arms10.0h; all three seeds44.9h, around2026-09-28T16:44:44.560522+00:00. Future startup overhead excluded; later-arm throughput remains provisional. Keep hourly checks and frozen configuration.
 
 ## Frozen protocol
 

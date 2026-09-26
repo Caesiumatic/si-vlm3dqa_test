@@ -1,44 +1,54 @@
 {
-  "checked_utc": "2026-09-26T10:40:18.050296+00:00",
+  "checked_utc": "2026-09-26T11:42:06.171008+00:00",
   "job_id": 427527,
   "scheduler_state": "running",
+  "stage": "T0_prediction",
   "candidate_pairs": 198,
-  "completed_pair_both_methods": 183,
-  "records": 366,
+  "completed_pair_both_methods": 198,
+  "records": 396,
   "methods": {
     "baseline": {
-      "completed": 183,
+      "completed": 198,
       "label_counts": {
-        "near_equal": 132,
-        "abstain": 39,
+        "near_equal": 140,
+        "abstain": 45,
         "A": 10,
-        "B": 2
+        "B": 3
       },
-      "mean_seconds": 92.45911648319881
+      "mean_seconds": 92.46249377125442
     },
     "full": {
-      "completed": 183,
+      "completed": 198,
       "label_counts": {
-        "near_equal": 159,
-        "A": 21,
-        "B": 2,
-        "abstain": 1
+        "near_equal": 173,
+        "abstain": 1,
+        "A": 22,
+        "B": 2
       },
-      "mean_seconds": 116.61971247012987
+      "mean_seconds": 117.32992673123425
     }
   },
-  "full_interface_valid": 183,
-  "full_with_local_recursion": 29,
+  "full_interface_valid": 198,
+  "full_with_local_recursion": 37,
   "reliability_min": 0.29629629629629634,
   "reliability_max": 1.0,
-  "common_valid_completed_pairs": 143,
-  "common_label_disagreements": 31,
-  "common_source_videos": 162,
+  "common_valid_completed_pairs": 152,
+  "common_label_disagreements": 33,
+  "common_source_videos": 165,
   "common_source_groups": 18,
-  "recent_pairs": 20,
-  "recent_mean_combined_seconds": 205.33094265945255,
-  "estimated_teacher_remaining_hours": 0.8555455944143856,
-  "estimated_teacher_finish_utc": "2026-09-26T11:31:38.014436+00:00",
+  "teacher_completed_utc": "2026-09-26T11:33:47.226689+00:00",
+  "bundle_sha256": "ff7d80df01a31eb7f4f12a1cfb5861080116808c0d05b6c95fd954410a3bd71d",
+  "T0_prediction": {
+    "completed": 62,
+    "total": 432,
+    "status_counts": {
+      "valid": 62
+    },
+    "recent_intercompletion_seconds": 6.05,
+    "estimated_remaining_hours": 0.6218055555555555,
+    "estimated_finish_utc": "2026-09-26T12:19:24.671008+00:00",
+    "note": "Measured output-file intervals include decoding and inference; early-stage estimate."
+  },
   "monitor_interval_hours": 1,
-  "interpretation": "Interim label-only operational snapshot; no MOS read and no frozen setting changed."
+  "interpretation": "Supervision complete; T0 inference underway. No MOS read and no frozen setting changed."
 }

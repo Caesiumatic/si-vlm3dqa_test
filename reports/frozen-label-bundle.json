@@ -1,0 +1,2575 @@
+{
+  "report": {
+    "candidate_pairs": 198,
+    "common_valid_pairs": 152,
+    "valid_by_method": {
+      "baseline": 153,
+      "full": 197
+    },
+    "label_counts": {
+      "baseline": {
+        "near_equal": 140,
+        "abstain": 45,
+        "A": 10,
+        "B": 3
+      },
+      "full": {
+        "near_equal": 173,
+        "abstain": 1,
+        "A": 22,
+        "B": 2
+      }
+    },
+    "teacher_seconds": {
+      "baseline": 18307.573766708374,
+      "full": 23231.32549278438
+    },
+    "schedule_pairs": 108,
+    "schedule_unique_pairs": 108,
+    "exposed_videos": 165,
+    "exposed_groups": 18,
+    "video_exposures_by_group": {
+      "ship": 12,
+      "materials": 13,
+      "piano": 13,
+      "lionfish": 11,
+      "fruit": 11,
+      "hotdog": 11,
+      "sakura": 12,
+      "lego": 13,
+      "car": 12,
+      "elena": 13,
+      "motorbike": 11,
+      "vase": 13,
+      "drums": 9,
+      "mic": 12,
+      "pipeorgan": 12,
+      "kitchenset": 13,
+      "ficus": 12,
+      "bowl": 13
+    },
+    "weight_mean": 1.0000000000000002,
+    "weight_min": 0.520064205457464,
+    "weight_max": 1.2481540930979136,
+    "weight_ess": 102.43573502243339,
+    "weight_top10pct_share": 0.11556982343499196,
+    "own_full_output_view": "All teacher records retained; student runs use common valid subset. Full-output student view requires separate runs."
+  },
+  "common": [
+    {
+      "pair_id": "0c9eeed5f424682e",
+      "a": "s_03dc9d6de253abf6",
+      "b": "s_de22a2cf33a865b9",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "7f0774b51b163ea3",
+      "a": "s_4154172ead680b4e",
+      "b": "s_467f557827e25f82",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "d2ee725410b92d67",
+      "a": "s_6026a0f55252a8a3",
+      "b": "s_803a2e91abbd8577",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "fa797bbacd7ed728",
+      "a": "s_06c7e2ee1323861f",
+      "b": "s_f0e649d942060f54",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "5874efee4dfb303b",
+      "a": "s_42ccc01c3af885fa",
+      "b": "s_d26b2cb4421b28e3",
+      "baseline_label": "near_equal",
+      "full_label": "B",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "2a6bae7eb1d662bf",
+      "a": "s_960978587dbc9fbe",
+      "b": "s_fd3b72eb68c0156e",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "2165311030160e66",
+      "a": "s_85169cc71a1e5578",
+      "b": "s_d26b2cb4421b28e3",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "a7038e65d48e58d1",
+      "a": "s_04e96c532799146c",
+      "b": "s_ea85158d5d7e1675",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "4e5f3ee72f4c6f7b",
+      "a": "s_1f2c758b2f5e0aea",
+      "b": "s_577413df47f1df36",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "77f4384f4cf69971",
+      "a": "s_5d68428785bfc64e",
+      "b": "s_aaf569e95bd63667",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "c9bad2b9f1477ccf",
+      "a": "s_4091fff09af19fe9",
+      "b": "s_bf305c8817a9578f",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 0.5547351524879616
+    },
+    {
+      "pair_id": "6bba0194d93f1299",
+      "a": "s_1fbd03d7cf89601b",
+      "b": "s_e358496dc157c836",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "d7055dbb8c2356b1",
+      "a": "s_1282358d400ce2ea",
+      "b": "s_c6db463ae4ca00f0",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "79093f8dfe699409",
+      "a": "s_2eafe34906310480",
+      "b": "s_d0944f65124a8649",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "7e3c7556c673f7ca",
+      "a": "s_0b2dddc85f934a8f",
+      "b": "s_51f18541e74588cc",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "3d353f6521a348d1",
+      "a": "s_79ddb7f5694293a7",
+      "b": "s_f1c2c10c5a163156",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "74d80c25299a5b2e",
+      "a": "s_1a88884014f79b33",
+      "b": "s_7e8309f8b6201d44",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "c34e8d22f5372f10",
+      "a": "s_a82079fbc1e52724",
+      "b": "s_f088509517bec7e4",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "8e57da851091cee3",
+      "a": "s_67bb1a7ab7751929",
+      "b": "s_7b5e7d1441efea31",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.4444444444444444,
+      "weight": 0.5547351524879616,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "e143bf52865fc53e",
+      "a": "s_04e96c532799146c",
+      "b": "s_de22a2cf33a865b9",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666
+    },
+    {
+      "pair_id": "eac5e41587806c11",
+      "a": "s_10c313497973f043",
+      "b": "s_85169cc71a1e5578",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.520064205457464
+    },
+    {
+      "pair_id": "d36ec433ef3e07eb",
+      "a": "s_d0944f65124a8649",
+      "b": "s_fd3b72eb68c0156e",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666
+    },
+    {
+      "pair_id": "d886a8978dcd91cf",
+      "a": "s_97f563198f4decd5",
+      "b": "s_abd6e46c51a210ec",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "6b4f21975d56274e",
+      "a": "s_7572e5643f79f7af",
+      "b": "s_d875e3b327f962ab",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "d3651e904a938d57",
+      "a": "s_4e167aef6f8f7b33",
+      "b": "s_54e94da763390ce3",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "4332f99b8160f36f",
+      "a": "s_16d1c6b26406177a",
+      "b": "s_e1a5605b5ce5ee5c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "8804f97287cfc187",
+      "a": "s_d0c24fdc5f9fbf95",
+      "b": "s_ebfe3f7e8a858cad",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "4ae95f1ba6fa501f",
+      "a": "s_a2ad3a63afeaaa32",
+      "b": "s_a463ec3a0efb8142",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "6bf6c3a4cd856544",
+      "a": "s_2801b6b722a29b23",
+      "b": "s_d9ab9c3ff6b01a71",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "1b2e21f454e572c2",
+      "a": "s_c62ba69832939569",
+      "b": "s_fe625ce3c947868d",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "85b910137f1cd2d0",
+      "a": "s_61691bd01e5c24c2",
+      "b": "s_989d2a5dd96f050a",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "401b06e9a7c6125a",
+      "a": "s_3560257b0a90b5ec",
+      "b": "s_64634dc0cc99d37c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.625,
+      "weight": 0.780096308186196,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "c82ffedbf97b5d6e",
+      "a": "s_8fb4e989b6255ef2",
+      "b": "s_9a46f4f57a9aa389",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "679f01b9a25338aa",
+      "a": "s_c90e9a7bfe367e28",
+      "b": "s_d0b1cac1b3dbf247",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "86f2c69f0ec353bc",
+      "a": "s_6cb16261f429255f",
+      "b": "s_de22a2cf33a865b9",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "0571397dbdf3c927",
+      "a": "s_bf305c8817a9578f",
+      "b": "s_e71ca436f86194be",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666
+    },
+    {
+      "pair_id": "3c1d94bf16384f61",
+      "a": "s_46cbf869166cb44b",
+      "b": "s_aa52970f3a9cbd30",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "3ba75f1dce95e645",
+      "a": "s_5b57785e18dc0e9a",
+      "b": "s_eae67034d90a620a",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "915afdc227ab70d8",
+      "a": "s_aa52970f3a9cbd30",
+      "b": "s_c0dc326f2e4a03ea",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "87b374b1f19442bc",
+      "a": "s_290971cefeb794f6",
+      "b": "s_abd6e46c51a210ec",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "4e862e5f08bc115c",
+      "a": "s_cd6e1d3945c2be65",
+      "b": "s_e71ca436f86194be",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "b7c5856b6b6d7fb4",
+      "a": "s_1f453dd32a6534ed",
+      "b": "s_6744a883a40d3b29",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "92809af7604f5586",
+      "a": "s_1d40dd3d9acf95f2",
+      "b": "s_579c3b20dfcd01e7",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "6f4ead93c0513433",
+      "a": "s_52d7ab96a982e281",
+      "b": "s_e1a5605b5ce5ee5c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.8333333333333333,
+      "weight": 1.040128410914928,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "0f0eee16fc5ce8c3",
+      "a": "s_1f2c758b2f5e0aea",
+      "b": "s_433861a840dcbd4c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.780096308186196
+    },
+    {
+      "pair_id": "46301fbd3b5ed878",
+      "a": "s_709851ab751a80ff",
+      "b": "s_8f8dc0787cd0644f",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "0aaebfa8cfefd2e8",
+      "a": "s_1d167c80baf12ee3",
+      "b": "s_5bb30a56e4fbb44e",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "d136b58babc84889",
+      "a": "s_35cbfce4017bd559",
+      "b": "s_e5505979f09a0c14",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "60b68ed2a84d9515",
+      "a": "s_007a24aba768c4dc",
+      "b": "s_5b57785e18dc0e9a",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "1a7acfdd651d5b92",
+      "a": "s_3ac094f8be2d6b2f",
+      "b": "s_467f557827e25f82",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "d7d372557badf748",
+      "a": "s_6c3be6781b37bd9f",
+      "b": "s_9f26af21390fc308",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.8333333333333333,
+      "weight": 1.040128410914928,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "2f336888be963c2d",
+      "a": "s_9d272c6cc071753c",
+      "b": "s_f7075ab4e08fd922",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "0864cf1f5ad27598",
+      "a": "s_217dfa326b9c571d",
+      "b": "s_8401aa6484b37e66",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "0b30fff9af8c34c5",
+      "a": "s_cbc358b9630e2547",
+      "b": "s_dadd8d69455dd2fd",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 1.040128410914928
+    },
+    {
+      "pair_id": "c1e7176643164d48",
+      "a": "s_1ed087b6046da178",
+      "b": "s_466f30df52a85404",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "702abafce321a0de",
+      "a": "s_275c7005e087c0f1",
+      "b": "s_4d8125aed8d98d77",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.040128410914928
+    },
+    {
+      "pair_id": "c0d303c43054dfb8",
+      "a": "s_7bf3fd65dccb123e",
+      "b": "s_c90e9a7bfe367e28",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875
+    },
+    {
+      "pair_id": "02db00a3ee05fb8f",
+      "a": "s_10c313497973f043",
+      "b": "s_c2ca9fa6fabeaa57",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "de8bd9ca6893a3a3",
+      "a": "s_248ae95fcbc6d9b7",
+      "b": "s_96ce1ee0c41da225",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 0.5547351524879616
+    },
+    {
+      "pair_id": "74bccd4e6b66501a",
+      "a": "s_972af846400445d2",
+      "b": "s_d3311d265673434b",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "a1f835d3ec7e3d75",
+      "a": "s_275c7005e087c0f1",
+      "b": "s_7d89a1414229de6c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "9df6ac3da69378c0",
+      "a": "s_8b343e6d803f7c96",
+      "b": "s_9ca59b2765143cbb",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "eabb6f691a500515",
+      "a": "s_290971cefeb794f6",
+      "b": "s_e358496dc157c836",
+      "baseline_label": "A",
+      "full_label": "A",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "dec7cd90b22e284c",
+      "a": "s_cd6e1d3945c2be65",
+      "b": "s_fd66e43b8d22233e",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "4e41e7e8d9e0834e",
+      "a": "s_2b50f3d9fb60c058",
+      "b": "s_e71ca436f86194be",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "9433d791846d5d3b",
+      "a": "s_641dca8723296fd0",
+      "b": "s_e042951f640e1768",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "251fe7b6a7f44c03",
+      "a": "s_558f62876a7ec97c",
+      "b": "s_7d2bc86618a3a261",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "55b5a55f58d4598d",
+      "a": "s_180a84de3188bc30",
+      "b": "s_dadd8d69455dd2fd",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "26b67b6e31dd9350",
+      "a": "s_08d808b2798b76a4",
+      "b": "s_1ed087b6046da178",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "4e37a7a45691140c",
+      "a": "s_9a46f4f57a9aa389",
+      "b": "s_b4f114d94196eb62",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "2397c2fa735e63dc",
+      "a": "s_7e8309f8b6201d44",
+      "b": "s_c6db463ae4ca00f0",
+      "baseline_label": "B",
+      "full_label": "near_equal",
+      "raw_reliability": 0.41666666666666663,
+      "weight": 0.520064205457464,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "d45d71b4c5965a5c",
+      "a": "s_132f642094ff05e4",
+      "b": "s_a82079fbc1e52724",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "b7a6ceef51429544",
+      "a": "s_048a843a8d11d7e5",
+      "b": "s_85169cc71a1e5578",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "de93a1039c3920d5",
+      "a": "s_a463ec3a0efb8142",
+      "b": "s_c90e9a7bfe367e28",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75
+    },
+    {
+      "pair_id": "d81970f3db313150",
+      "a": "s_132f642094ff05e4",
+      "b": "s_cd6e1d3945c2be65",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "dfe39a41c94ec350",
+      "a": "s_0188b698aca9159f",
+      "b": "s_7b5e7d1441efea31",
+      "baseline_label": "B",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "bcc3eb2229caa8e0",
+      "a": "s_0f7a3d523066cee7",
+      "b": "s_5bb30a56e4fbb44e",
+      "baseline_label": "B",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "4615aca1e2fded38",
+      "a": "s_577413df47f1df36",
+      "b": "s_742d439eb5788e51",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "e2a43465bc5a5a46",
+      "a": "s_1d40dd3d9acf95f2",
+      "b": "s_51f18541e74588cc",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "c01d16b7d1a2ab5c",
+      "a": "s_8fb4e989b6255ef2",
+      "b": "s_c9d3d3334a9ee0c1",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "13947b75e999968c",
+      "a": "s_08d808b2798b76a4",
+      "b": "s_9ca59b2765143cbb",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "cf7e164ddf2265ff",
+      "a": "s_03dc9d6de253abf6",
+      "b": "s_cbc358b9630e2547",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5833333333333333
+    },
+    {
+      "pair_id": "ddf4e7ef67eaf831",
+      "a": "s_aaf569e95bd63667",
+      "b": "s_fa109f0e01815f43",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5833333333333333
+    },
+    {
+      "pair_id": "d00d55a5ba04106f",
+      "a": "s_8ad5a0a3a6a7d4a3",
+      "b": "s_9c9cd18bc6439dcd",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.040128410914928
+    },
+    {
+      "pair_id": "05054be97ca73299",
+      "a": "s_748811b4780107ea",
+      "b": "s_fd140f49e943e642",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "4645c43c88e3acf2",
+      "a": "s_c9d3d3334a9ee0c1",
+      "b": "s_d0944f65124a8649",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333
+    },
+    {
+      "pair_id": "a119f3ef37b61483",
+      "a": "s_c2ca9fa6fabeaa57",
+      "b": "s_f0e649d942060f54",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875
+    },
+    {
+      "pair_id": "e2c19be95783f038",
+      "a": "s_14b7c6b314810ff8",
+      "b": "s_93c35166bec879d1",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "df0dcd0aec31733c",
+      "a": "s_14b7c6b314810ff8",
+      "b": "s_641dca8723296fd0",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "a728778e5a7517e9",
+      "a": "s_0b2dddc85f934a8f",
+      "b": "s_c9f27ef9b106d58b",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "6a1751c496a514de",
+      "a": "s_1f453dd32a6534ed",
+      "b": "s_d382ad9e0deca565",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "0be30c19cfc93558",
+      "a": "s_04e96c532799146c",
+      "b": "s_64634dc0cc99d37c",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875
+    },
+    {
+      "pair_id": "f8fe7bf78647e0ba",
+      "a": "s_10bc994aaea6a7f7",
+      "b": "s_46cbf869166cb44b",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "7185baf3b78b1e78",
+      "a": "s_6abc652312f4ac77",
+      "b": "s_bf305c8817a9578f",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "8cc8e47064d3a379",
+      "a": "s_2eafe34906310480",
+      "b": "s_433861a840dcbd4c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "6e42972a2dffe7dc",
+      "a": "s_3560257b0a90b5ec",
+      "b": "s_63b5c9fa073058d6",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "5dc31eff92f22035",
+      "a": "s_359d03fb8df01cc1",
+      "b": "s_fd3b72eb68c0156e",
+      "baseline_label": "near_equal",
+      "full_label": "B",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "76206b50d6b81cec",
+      "a": "s_6744a883a40d3b29",
+      "b": "s_803a2e91abbd8577",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "51c0c54c7e9c7d68",
+      "a": "s_06c7e2ee1323861f",
+      "b": "s_31f418c6ec898bb8",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "78ccee02fa7206a8",
+      "a": "s_1a88884014f79b33",
+      "b": "s_8401aa6484b37e66",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "c7469b36b66442c4",
+      "a": "s_44df3a2664896df3",
+      "b": "s_d0b1cac1b3dbf247",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "558173150f7e7ed8",
+      "a": "s_140b4a44e80e7eec",
+      "b": "s_5d68428785bfc64e",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "a1e754d9995e71c0",
+      "a": "s_658835943a2676e5",
+      "b": "s_709851ab751a80ff",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "0505db0c13119ffd",
+      "a": "s_241f6954e0d484ff",
+      "b": "s_a463ec3a0efb8142",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "d417f47ce5dbade1",
+      "a": "s_10c313497973f043",
+      "b": "s_ff94cd0bb24cb53c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "cd85448577162a3b",
+      "a": "s_8b343e6d803f7c96",
+      "b": "s_ce6efd76a50ba4d0",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875
+    },
+    {
+      "pair_id": "b83f939575acb789",
+      "a": "s_326b7a61544070b4",
+      "b": "s_fd140f49e943e642",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.29629629629629634
+    },
+    {
+      "pair_id": "21b8e662e6335ac8",
+      "a": "s_6c3be6781b37bd9f",
+      "b": "s_728daaac0ce7b5fd",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "3a29b69f76a1c639",
+      "a": "s_44df3a2664896df3",
+      "b": "s_e042951f640e1768",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75
+    },
+    {
+      "pair_id": "38ea0a6a15053316",
+      "a": "s_10bc994aaea6a7f7",
+      "b": "s_3b803e56a369734b",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "8b1fa7a034cd841b",
+      "a": "s_332831c2bb102f13",
+      "b": "s_54e94da763390ce3",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5555555555555555
+    },
+    {
+      "pair_id": "0652eae692f73f09",
+      "a": "s_19856dedef13c1b7",
+      "b": "s_748811b4780107ea",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "02e9d5b6ee9d70c2",
+      "a": "s_2801b6b722a29b23",
+      "b": "s_c0dc326f2e4a03ea",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "39b2ec05c3f9be2d",
+      "a": "s_04e96c532799146c",
+      "b": "s_c9f27ef9b106d58b",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333
+    },
+    {
+      "pair_id": "93353ac389900a46",
+      "a": "s_2b50f3d9fb60c058",
+      "b": "s_ce6efd76a50ba4d0",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "dd604144d740fe3e",
+      "a": "s_20ee59327cb3dde4",
+      "b": "s_326b7a61544070b4",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "52807189086cd098",
+      "a": "s_7d89a1414229de6c",
+      "b": "s_b3929c1aa6802326",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "7c271b92243adbfc",
+      "a": "s_91a4b87b447401be",
+      "b": "s_96a912338a099d0c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "5874b0222f43b75d",
+      "a": "s_434b8d09933b7e51",
+      "b": "s_7bf3fd65dccb123e",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "3d075ac55cd86aa7",
+      "a": "s_b3929c1aa6802326",
+      "b": "s_fb6bd76973690a7d",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "c3c05813ea066c33",
+      "a": "s_217dfa326b9c571d",
+      "b": "s_f1c2c10c5a163156",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666
+    },
+    {
+      "pair_id": "6ca4b8dd1d4b0ee0",
+      "a": "s_31f418c6ec898bb8",
+      "b": "s_84ce82b9df308db5",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "e73a955dec5c769b",
+      "a": "s_cd6e1d3945c2be65",
+      "b": "s_de22a2cf33a865b9",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.75
+    },
+    {
+      "pair_id": "91fddb463a18982c",
+      "a": "s_0f7a3d523066cee7",
+      "b": "s_579c3b20dfcd01e7",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "482080df106b9fd0",
+      "a": "s_315fd85596ddab21",
+      "b": "s_e2e9a07a87dd8a74",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "d68091fa5c28115b",
+      "a": "s_1a88884014f79b33",
+      "b": "s_6026a0f55252a8a3",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666
+    },
+    {
+      "pair_id": "2d3a2bd256926724",
+      "a": "s_658835943a2676e5",
+      "b": "s_96ce1ee0c41da225",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.8333333333333333
+    },
+    {
+      "pair_id": "228eea7f201e417c",
+      "a": "s_a081f5ca3742a0db",
+      "b": "s_aa73a1edbcf8bc80",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "27cc497ecdcc40a4",
+      "a": "s_52d7ab96a982e281",
+      "b": "s_7572e5643f79f7af",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666
+    },
+    {
+      "pair_id": "37b0d6597ae1e0a9",
+      "a": "s_7d2bc86618a3a261",
+      "b": "s_fd66e43b8d22233e",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "b96087cd4b50c421",
+      "a": "s_10c313497973f043",
+      "b": "s_eae67034d90a620a",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666
+    },
+    {
+      "pair_id": "2901c1854c5200ef",
+      "a": "s_1f602e57fcbde322",
+      "b": "s_2eafe34906310480",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333
+    },
+    {
+      "pair_id": "cc8c22bf1c5d62e4",
+      "a": "s_960978587dbc9fbe",
+      "b": "s_9f26af21390fc308",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "afc826f80188b33e",
+      "a": "s_19856dedef13c1b7",
+      "b": "s_abd3920911b4101f",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "308874e2fcc24cb6",
+      "a": "s_2eafe34906310480",
+      "b": "s_85169cc71a1e5578",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875
+    },
+    {
+      "pair_id": "8e17f5e80b4e5b30",
+      "a": "s_16d1c6b26406177a",
+      "b": "s_a081f5ca3742a0db",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.375
+    },
+    {
+      "pair_id": "ba1d2928d999163b",
+      "a": "s_048a843a8d11d7e5",
+      "b": "s_8ad5a0a3a6a7d4a3",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555556
+    },
+    {
+      "pair_id": "070ebad4bf526721",
+      "a": "s_1f602e57fcbde322",
+      "b": "s_fa109f0e01815f43",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.8333333333333333,
+      "weight": 1.040128410914928,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "c30656f303ed5f9d",
+      "a": "s_06598adb211d276d",
+      "b": "s_97f563198f4decd5",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "ed29995a05d5e2ba",
+      "a": "s_248ae95fcbc6d9b7",
+      "b": "s_fe625ce3c947868d",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666
+    },
+    {
+      "pair_id": "1fc07f13b489a48e",
+      "a": "s_9c9cd18bc6439dcd",
+      "b": "s_df5a220995bc37ea",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "9a54b42a01cf29d8",
+      "a": "s_332831c2bb102f13",
+      "b": "s_b052c6dec1763cce",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "b627f974a5d80344",
+      "a": "s_960978587dbc9fbe",
+      "b": "s_baa86811b8e30a53",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "7db015d736d989e6",
+      "a": "s_6cb16261f429255f",
+      "b": "s_b052c6dec1763cce",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75
+    },
+    {
+      "pair_id": "df01754c9333dba1",
+      "a": "s_35cbfce4017bd559",
+      "b": "s_e71ca436f86194be",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "54cfb819409ce0c5",
+      "a": "s_63b5c9fa073058d6",
+      "b": "s_c0116f48bb55866c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "2ad0fd8d17f08df0",
+      "a": "s_93c35166bec879d1",
+      "b": "s_b1eb0f86efc92c4b",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.4444444444444444,
+      "weight": 0.5547351524879616,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "366d0a86d64b5b7c",
+      "a": "s_79ddb7f5694293a7",
+      "b": "s_d382ad9e0deca565",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0
+    },
+    {
+      "pair_id": "32c9d88c6c07bcfd",
+      "a": "s_989d2a5dd96f050a",
+      "b": "s_9d272c6cc071753c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "cb29bd6ba7c47ea9",
+      "a": "s_3ac094f8be2d6b2f",
+      "b": "s_ff94cd0bb24cb53c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "65d79769b13bfda3",
+      "a": "s_d0944f65124a8649",
+      "b": "s_fb6bd76973690a7d",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5
+    },
+    {
+      "pair_id": "d458b17551b23ab4",
+      "a": "s_20ee59327cb3dde4",
+      "b": "s_c0116f48bb55866c",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666
+    }
+  ],
+  "schedule": [
+    {
+      "pair_id": "0c9eeed5f424682e",
+      "a": "s_03dc9d6de253abf6",
+      "b": "s_de22a2cf33a865b9",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "7f0774b51b163ea3",
+      "a": "s_4154172ead680b4e",
+      "b": "s_467f557827e25f82",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "d2ee725410b92d67",
+      "a": "s_6026a0f55252a8a3",
+      "b": "s_803a2e91abbd8577",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "5874efee4dfb303b",
+      "a": "s_42ccc01c3af885fa",
+      "b": "s_d26b2cb4421b28e3",
+      "baseline_label": "near_equal",
+      "full_label": "B",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "2a6bae7eb1d662bf",
+      "a": "s_960978587dbc9fbe",
+      "b": "s_fd3b72eb68c0156e",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "a7038e65d48e58d1",
+      "a": "s_04e96c532799146c",
+      "b": "s_ea85158d5d7e1675",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "4e5f3ee72f4c6f7b",
+      "a": "s_1f2c758b2f5e0aea",
+      "b": "s_577413df47f1df36",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "c9bad2b9f1477ccf",
+      "a": "s_4091fff09af19fe9",
+      "b": "s_bf305c8817a9578f",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 0.5547351524879616
+    },
+    {
+      "pair_id": "6bba0194d93f1299",
+      "a": "s_1fbd03d7cf89601b",
+      "b": "s_e358496dc157c836",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "d7055dbb8c2356b1",
+      "a": "s_1282358d400ce2ea",
+      "b": "s_c6db463ae4ca00f0",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "c34e8d22f5372f10",
+      "a": "s_a82079fbc1e52724",
+      "b": "s_f088509517bec7e4",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "8e57da851091cee3",
+      "a": "s_67bb1a7ab7751929",
+      "b": "s_7b5e7d1441efea31",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.4444444444444444,
+      "weight": 0.5547351524879616,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "6bf6c3a4cd856544",
+      "a": "s_2801b6b722a29b23",
+      "b": "s_d9ab9c3ff6b01a71",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "401b06e9a7c6125a",
+      "a": "s_3560257b0a90b5ec",
+      "b": "s_64634dc0cc99d37c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.625,
+      "weight": 0.780096308186196,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "c82ffedbf97b5d6e",
+      "a": "s_8fb4e989b6255ef2",
+      "b": "s_9a46f4f57a9aa389",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "679f01b9a25338aa",
+      "a": "s_c90e9a7bfe367e28",
+      "b": "s_d0b1cac1b3dbf247",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "d136b58babc84889",
+      "a": "s_35cbfce4017bd559",
+      "b": "s_e5505979f09a0c14",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "1b2e21f454e572c2",
+      "a": "s_c62ba69832939569",
+      "b": "s_fe625ce3c947868d",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "d7d372557badf748",
+      "a": "s_6c3be6781b37bd9f",
+      "b": "s_9f26af21390fc308",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.8333333333333333,
+      "weight": 1.040128410914928,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "fa797bbacd7ed728",
+      "a": "s_06c7e2ee1323861f",
+      "b": "s_f0e649d942060f54",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "77f4384f4cf69971",
+      "a": "s_5d68428785bfc64e",
+      "b": "s_aaf569e95bd63667",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "7e3c7556c673f7ca",
+      "a": "s_0b2dddc85f934a8f",
+      "b": "s_51f18541e74588cc",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "3d353f6521a348d1",
+      "a": "s_79ddb7f5694293a7",
+      "b": "s_f1c2c10c5a163156",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "d886a8978dcd91cf",
+      "a": "s_97f563198f4decd5",
+      "b": "s_abd6e46c51a210ec",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "6b4f21975d56274e",
+      "a": "s_7572e5643f79f7af",
+      "b": "s_d875e3b327f962ab",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "d3651e904a938d57",
+      "a": "s_4e167aef6f8f7b33",
+      "b": "s_54e94da763390ce3",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "8804f97287cfc187",
+      "a": "s_d0c24fdc5f9fbf95",
+      "b": "s_ebfe3f7e8a858cad",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "85b910137f1cd2d0",
+      "a": "s_61691bd01e5c24c2",
+      "b": "s_989d2a5dd96f050a",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "3c1d94bf16384f61",
+      "a": "s_46cbf869166cb44b",
+      "b": "s_aa52970f3a9cbd30",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "4e862e5f08bc115c",
+      "a": "s_cd6e1d3945c2be65",
+      "b": "s_e71ca436f86194be",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "702abafce321a0de",
+      "a": "s_275c7005e087c0f1",
+      "b": "s_4d8125aed8d98d77",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.040128410914928
+    },
+    {
+      "pair_id": "9433d791846d5d3b",
+      "a": "s_641dca8723296fd0",
+      "b": "s_e042951f640e1768",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "b7a6ceef51429544",
+      "a": "s_048a843a8d11d7e5",
+      "b": "s_85169cc71a1e5578",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "05054be97ca73299",
+      "a": "s_748811b4780107ea",
+      "b": "s_fd140f49e943e642",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "46301fbd3b5ed878",
+      "a": "s_709851ab751a80ff",
+      "b": "s_8f8dc0787cd0644f",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "c1e7176643164d48",
+      "a": "s_1ed087b6046da178",
+      "b": "s_466f30df52a85404",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "74bccd4e6b66501a",
+      "a": "s_972af846400445d2",
+      "b": "s_d3311d265673434b",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "7c271b92243adbfc",
+      "a": "s_91a4b87b447401be",
+      "b": "s_96a912338a099d0c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "79093f8dfe699409",
+      "a": "s_2eafe34906310480",
+      "b": "s_d0944f65124a8649",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "74d80c25299a5b2e",
+      "a": "s_1a88884014f79b33",
+      "b": "s_7e8309f8b6201d44",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "4332f99b8160f36f",
+      "a": "s_16d1c6b26406177a",
+      "b": "s_e1a5605b5ce5ee5c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "4ae95f1ba6fa501f",
+      "a": "s_a2ad3a63afeaaa32",
+      "b": "s_a463ec3a0efb8142",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "3ba75f1dce95e645",
+      "a": "s_5b57785e18dc0e9a",
+      "b": "s_eae67034d90a620a",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "92809af7604f5586",
+      "a": "s_1d40dd3d9acf95f2",
+      "b": "s_579c3b20dfcd01e7",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "0b30fff9af8c34c5",
+      "a": "s_cbc358b9630e2547",
+      "b": "s_dadd8d69455dd2fd",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 1.040128410914928
+    },
+    {
+      "pair_id": "02db00a3ee05fb8f",
+      "a": "s_10c313497973f043",
+      "b": "s_c2ca9fa6fabeaa57",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "d00d55a5ba04106f",
+      "a": "s_8ad5a0a3a6a7d4a3",
+      "b": "s_9c9cd18bc6439dcd",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.040128410914928
+    },
+    {
+      "pair_id": "e2c19be95783f038",
+      "a": "s_14b7c6b314810ff8",
+      "b": "s_93c35166bec879d1",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "dd604144d740fe3e",
+      "a": "s_20ee59327cb3dde4",
+      "b": "s_326b7a61544070b4",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "482080df106b9fd0",
+      "a": "s_315fd85596ddab21",
+      "b": "s_e2e9a07a87dd8a74",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "b7c5856b6b6d7fb4",
+      "a": "s_1f453dd32a6534ed",
+      "b": "s_6744a883a40d3b29",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "2f336888be963c2d",
+      "a": "s_9d272c6cc071753c",
+      "b": "s_f7075ab4e08fd922",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "de8bd9ca6893a3a3",
+      "a": "s_248ae95fcbc6d9b7",
+      "b": "s_96ce1ee0c41da225",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 0.5547351524879616
+    },
+    {
+      "pair_id": "9df6ac3da69378c0",
+      "a": "s_8b343e6d803f7c96",
+      "b": "s_9ca59b2765143cbb",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "251fe7b6a7f44c03",
+      "a": "s_558f62876a7ec97c",
+      "b": "s_7d2bc86618a3a261",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "52807189086cd098",
+      "a": "s_7d89a1414229de6c",
+      "b": "s_b3929c1aa6802326",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "070ebad4bf526721",
+      "a": "s_1f602e57fcbde322",
+      "b": "s_fa109f0e01815f43",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.8333333333333333,
+      "weight": 1.040128410914928,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "0aaebfa8cfefd2e8",
+      "a": "s_1d167c80baf12ee3",
+      "b": "s_5bb30a56e4fbb44e",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "38ea0a6a15053316",
+      "a": "s_10bc994aaea6a7f7",
+      "b": "s_3b803e56a369734b",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "5874b0222f43b75d",
+      "a": "s_434b8d09933b7e51",
+      "b": "s_7bf3fd65dccb123e",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "6ca4b8dd1d4b0ee0",
+      "a": "s_31f418c6ec898bb8",
+      "b": "s_84ce82b9df308db5",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "228eea7f201e417c",
+      "a": "s_a081f5ca3742a0db",
+      "b": "s_aa73a1edbcf8bc80",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "afc826f80188b33e",
+      "a": "s_19856dedef13c1b7",
+      "b": "s_abd3920911b4101f",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "9a54b42a01cf29d8",
+      "a": "s_332831c2bb102f13",
+      "b": "s_b052c6dec1763cce",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "0864cf1f5ad27598",
+      "a": "s_217dfa326b9c571d",
+      "b": "s_8401aa6484b37e66",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "93353ac389900a46",
+      "a": "s_2b50f3d9fb60c058",
+      "b": "s_ce6efd76a50ba4d0",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "54cfb819409ce0c5",
+      "a": "s_63b5c9fa073058d6",
+      "b": "s_c0116f48bb55866c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "cb29bd6ba7c47ea9",
+      "a": "s_3ac094f8be2d6b2f",
+      "b": "s_ff94cd0bb24cb53c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "21b8e662e6335ac8",
+      "a": "s_6c3be6781b37bd9f",
+      "b": "s_728daaac0ce7b5fd",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "87b374b1f19442bc",
+      "a": "s_290971cefeb794f6",
+      "b": "s_abd6e46c51a210ec",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 0.6934189406099519
+    },
+    {
+      "pair_id": "dfe39a41c94ec350",
+      "a": "s_0188b698aca9159f",
+      "b": "s_7b5e7d1441efea31",
+      "baseline_label": "B",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "1fc07f13b489a48e",
+      "a": "s_9c9cd18bc6439dcd",
+      "b": "s_df5a220995bc37ea",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "0f0eee16fc5ce8c3",
+      "a": "s_1f2c758b2f5e0aea",
+      "b": "s_433861a840dcbd4c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.780096308186196
+    },
+    {
+      "pair_id": "dec7cd90b22e284c",
+      "a": "s_cd6e1d3945c2be65",
+      "b": "s_fd66e43b8d22233e",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "4e37a7a45691140c",
+      "a": "s_9a46f4f57a9aa389",
+      "b": "s_b4f114d94196eb62",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "5dc31eff92f22035",
+      "a": "s_359d03fb8df01cc1",
+      "b": "s_fd3b72eb68c0156e",
+      "baseline_label": "near_equal",
+      "full_label": "B",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "b627f974a5d80344",
+      "a": "s_960978587dbc9fbe",
+      "b": "s_baa86811b8e30a53",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5555555555555555,
+      "weight": 0.6934189406099519,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "86f2c69f0ec353bc",
+      "a": "s_6cb16261f429255f",
+      "b": "s_de22a2cf33a865b9",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "915afdc227ab70d8",
+      "a": "s_aa52970f3a9cbd30",
+      "b": "s_c0dc326f2e4a03ea",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "6f4ead93c0513433",
+      "a": "s_52d7ab96a982e281",
+      "b": "s_e1a5605b5ce5ee5c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.8333333333333333,
+      "weight": 1.040128410914928,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "bcc3eb2229caa8e0",
+      "a": "s_0f7a3d523066cee7",
+      "b": "s_5bb30a56e4fbb44e",
+      "baseline_label": "B",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "c7469b36b66442c4",
+      "a": "s_44df3a2664896df3",
+      "b": "s_d0b1cac1b3dbf247",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "0505db0c13119ffd",
+      "a": "s_241f6954e0d484ff",
+      "b": "s_a463ec3a0efb8142",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "26b67b6e31dd9350",
+      "a": "s_08d808b2798b76a4",
+      "b": "s_1ed087b6046da178",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "d45d71b4c5965a5c",
+      "a": "s_132f642094ff05e4",
+      "b": "s_a82079fbc1e52724",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "4615aca1e2fded38",
+      "a": "s_577413df47f1df36",
+      "b": "s_742d439eb5788e51",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.7280898876404496
+    },
+    {
+      "pair_id": "c01d16b7d1a2ab5c",
+      "a": "s_8fb4e989b6255ef2",
+      "b": "s_c9d3d3334a9ee0c1",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.9361155698234352
+    },
+    {
+      "pair_id": "6a1751c496a514de",
+      "a": "s_1f453dd32a6534ed",
+      "b": "s_d382ad9e0deca565",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "a1e754d9995e71c0",
+      "a": "s_658835943a2676e5",
+      "b": "s_709851ab751a80ff",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.875,
+      "weight": 1.0921348314606745,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "c30656f303ed5f9d",
+      "a": "s_06598adb211d276d",
+      "b": "s_97f563198f4decd5",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "60b68ed2a84d9515",
+      "a": "s_007a24aba768c4dc",
+      "b": "s_5b57785e18dc0e9a",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "55b5a55f58d4598d",
+      "a": "s_180a84de3188bc30",
+      "b": "s_dadd8d69455dd2fd",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "a728778e5a7517e9",
+      "a": "s_0b2dddc85f934a8f",
+      "b": "s_c9f27ef9b106d58b",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "7185baf3b78b1e78",
+      "a": "s_6abc652312f4ac77",
+      "b": "s_bf305c8817a9578f",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "2ad0fd8d17f08df0",
+      "a": "s_93c35166bec879d1",
+      "b": "s_b1eb0f86efc92c4b",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.4444444444444444,
+      "weight": 0.5547351524879616,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "558173150f7e7ed8",
+      "a": "s_140b4a44e80e7eec",
+      "b": "s_5d68428785bfc64e",
+      "baseline_label": "A",
+      "full_label": "near_equal",
+      "raw_reliability": 0.75,
+      "weight": 0.9361155698234352,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "3d075ac55cd86aa7",
+      "a": "s_b3929c1aa6802326",
+      "b": "s_fb6bd76973690a7d",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "2397c2fa735e63dc",
+      "a": "s_7e8309f8b6201d44",
+      "b": "s_c6db463ae4ca00f0",
+      "baseline_label": "B",
+      "full_label": "near_equal",
+      "raw_reliability": 0.41666666666666663,
+      "weight": 0.520064205457464,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "2165311030160e66",
+      "a": "s_85169cc71a1e5578",
+      "b": "s_d26b2cb4421b28e3",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.8321027287319424
+    },
+    {
+      "pair_id": "cc8c22bf1c5d62e4",
+      "a": "s_960978587dbc9fbe",
+      "b": "s_9f26af21390fc308",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 0.6240770465489568
+    },
+    {
+      "pair_id": "32c9d88c6c07bcfd",
+      "a": "s_989d2a5dd96f050a",
+      "b": "s_9d272c6cc071753c",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "eac5e41587806c11",
+      "a": "s_10c313497973f043",
+      "b": "s_85169cc71a1e5578",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 0.520064205457464
+    },
+    {
+      "pair_id": "6e42972a2dffe7dc",
+      "a": "s_3560257b0a90b5ec",
+      "b": "s_63b5c9fa073058d6",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "1a7acfdd651d5b92",
+      "a": "s_3ac094f8be2d6b2f",
+      "b": "s_467f557827e25f82",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.6666666666666666,
+      "weight": 0.8321027287319424,
+      "shuffled_weight": 1.0921348314606745
+    },
+    {
+      "pair_id": "eabb6f691a500515",
+      "a": "s_290971cefeb794f6",
+      "b": "s_e358496dc157c836",
+      "baseline_label": "A",
+      "full_label": "A",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "4e41e7e8d9e0834e",
+      "a": "s_2b50f3d9fb60c058",
+      "b": "s_e71ca436f86194be",
+      "baseline_label": "near_equal",
+      "full_label": "A",
+      "raw_reliability": 0.5,
+      "weight": 0.6240770465489568,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "d81970f3db313150",
+      "a": "s_132f642094ff05e4",
+      "b": "s_cd6e1d3945c2be65",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 0.5833333333333333,
+      "weight": 0.7280898876404496,
+      "shuffled_weight": 1.2481540930979136
+    },
+    {
+      "pair_id": "76206b50d6b81cec",
+      "a": "s_6744a883a40d3b29",
+      "b": "s_803a2e91abbd8577",
+      "baseline_label": "near_equal",
+      "full_label": "near_equal",
+      "raw_reliability": 1.0,
+      "weight": 1.2481540930979136,
+      "shuffled_weight": 1.0921348314606745
+    }
+  ],
+  "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1"
+}

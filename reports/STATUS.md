@@ -1,18 +1,20 @@
 # Execution status
 
-Updated2026-09-26 10:40 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 11:42 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
-## Current stage: main experiment submitted
+## Current stage: T0 target prediction
 
-**Main SGE job427527 is RUNNING since2026-09-26 00:00:27 UTC. `STAGE label.py` and successful model loading are verified in the live log.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
+**Main SGE job427527 is RUNNING since2026-09-26 00:00:27 UTC. Supervision completed at11:33 UTC; `STAGE predict.py` for T0 and actual prediction outputs are verified.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
 
 The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submission succeeded. No user reauthorization needed.
 
 ## Latest operational snapshot
 
-10:40 UTC: original job427527 remains running;183/198 pairs finished under both teachers (366 records). All183/183 full audits have valid numbered interfaces;29 exercised local recursion. Common-valid pairs143, spanning162 videos and18 source groups;31 common pairs have different labels. Label counts are preserved in reports/main-progress.json. Raw full reliability spans0.296–1.000. Interim supervision outputs are not human quality evidence; no MOS read and no settings changed.
+11:42 UTC: original job427527 remains running. Supervision finished198/198 pairs for both methods (396 records) at2026-09-26 11:33:47 UTC. All198/198 full audits have valid numbered interfaces;37 exercised local recursion. Baseline153 valid/45 abstained; full197 valid/1 abstained. Common-valid152 pairs, spanning165 videos/18 groups;33 common labels differ. No human score has been read; these labels do not establish teacher accuracy.
 
-Recent20 pairs average205.33sec for both methods: estimated teacher remaining0.86h, finish around2026-09-26 11:31 UTC. Keep hourly checks (remaining time below3h). Existing SSH master remains available with keepalive. Original job healthy; no new submission. Pipeline will automatically freeze the common bundle, predict T0 and then train/test students.
+Frozen schedule:108 unique pairs,165 videos/18 source groups, no repeats; weight mean1, range0.520–1.248, ESS102.44/108. T5 preserves the exact weight distribution. Both teacher labels and shuffled weights were checked against original records. Bundle SHA256 `ff7d80df01a31eb7f4f12a1cfb5861080116808c0d05b6c95fd954410a3bd71d` matches remote; retained as reports/frozen-label-bundle.json.
+
+T0 prediction started automatically: 62/432 saved, all currently valid. Recent20 output intervals average6.05sec/video (including decode/inference), estimated remaining0.62h, finish around2026-09-26 12:19 UTC. Student training follows automatically. Keep hourly checks. Training completion forecasts remain provisional until the first formal batches measure throughput. Existing original job healthy; no new submission or frozen configuration change.
 
 ## Frozen protocol
 
@@ -38,7 +40,7 @@ Commit `5971b83`; `configs/experiment.json` status FROZEN, interface numbered_au
 |427524|First corrected-reward/KL update + optimizer checkpoint succeeded.|
 |427525|Resume and second update succeeded, exit0; grad_norm0.554, nonzero fixed-base KL≈3e-5–5e-5. Both batches160/240sec for2 pairs.|
 |427526|V3 numbered-audit dev check. First real pair passed: all4 verdicts bind correctly; support.5, resolved1, judge agreement2/3, reliability.5. Second pair also passed: reliability1.0; both numbered audit interfaces valid; exit complete.|
-|427527|MAIN RUNNING: real pre-supervision label.py stage, model loaded; prerequisites passed.|
+|427527|MAIN RUNNING: supervision complete; frozen label bundle verified; T0 target prediction underway.|
 
 V3 CPU contract check covered quorum, numbered evidence binding, local recursion and known reliability; actual V2 had local video reinspection, V3 first pair resolved at root (conditional recursion still enabled). Source teacher/student and all model computation are onLop. Mac handled files, hashes and CPU math only.
 
@@ -55,4 +57,4 @@ V3 CPU contract check covered quorum, numbered evidence binding, local recursion
 SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session9968 with server keepalive; older20420 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
 SGE env: SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
 Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; project runtime_deps isolated. GPU script sets LD_LIBRARY_PATH/PYTHONPATH and assigned GPU UUIDs. Main70-ish-hour scheduling remains within original72hdeadline through per-stage deadline checks.
-Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every1h because teacher generation has <=3h remaining; retain hourly for training/test. Use every2h only for stable teacher generation with >3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.
+Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every1h for T0 prediction and upcoming training/test. Use every2h only for stable teacher generation with >3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.

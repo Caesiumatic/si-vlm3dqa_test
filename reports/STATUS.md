@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-26 04:37 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 06:37 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: main experiment submitted
 
@@ -10,9 +10,9 @@ The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submis
 
 ## Latest operational snapshot
 
-04:37 UTC: original job427527 remains running;79/198 pairs finished under both teachers (158 records). All79/79 full audits have valid numbered interfaces;14 exercised local recursion. Common-valid pairs64, spanning105 videos and17 source groups;14 common pairs have different labels. Label counts are preserved in reports/main-progress.json. Raw full reliability spans0.296–1.000. Interim supervision outputs are not human quality evidence; no MOS read and no settings changed.
+06:37 UTC: original job427527 remains running;113/198 pairs finished under both teachers (226 records). All113/113 full audits have valid numbered interfaces;17 exercised local recursion. Common-valid pairs93, spanning131 videos and18 source groups;22 common pairs have different labels. Label counts are preserved in reports/main-progress.json. Raw full reliability spans0.296–1.000. Interim supervision outputs are not human quality evidence; no MOS read and no settings changed.
 
-Recent20 pairs average205.24sec for both methods: estimated teacher remaining6.78h, finish around2026-09-26 11:24 UTC. Keep2h checks (>3h remaining). Old SSH master expired again; reauthenticated with ServerAliveInterval60/ServerAliveCountMax3, current session9968. Original job unaffected; no new submission.
+Recent20 pairs average211.99sec for both methods: estimated teacher remaining5.01h, finish around2026-09-26 11:37 UTC. Keep2h checks (>3h remaining). Existing SSH master remains available with keepalive. Original job healthy; no new submission.
 
 ## Frozen protocol
 

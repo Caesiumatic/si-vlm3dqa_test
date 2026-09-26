@@ -1,44 +1,44 @@
 {
-  "checked_utc": "2026-09-26T09:40:23.204344+00:00",
+  "checked_utc": "2026-09-26T10:40:18.050296+00:00",
   "job_id": 427527,
   "scheduler_state": "running",
   "candidate_pairs": 198,
-  "completed_pair_both_methods": 165,
-  "records": 331,
+  "completed_pair_both_methods": 183,
+  "records": 366,
   "methods": {
     "baseline": {
-      "completed": 166,
+      "completed": 183,
       "label_counts": {
-        "near_equal": 123,
-        "abstain": 34,
-        "A": 7,
+        "near_equal": 132,
+        "abstain": 39,
+        "A": 10,
         "B": 2
       },
-      "mean_seconds": 92.63862343778811
+      "mean_seconds": 92.45911648319881
     },
     "full": {
-      "completed": 165,
+      "completed": 183,
       "label_counts": {
-        "near_equal": 143,
-        "A": 19,
+        "near_equal": 159,
+        "A": 21,
         "B": 2,
         "abstain": 1
       },
-      "mean_seconds": 116.81721088619847
+      "mean_seconds": 116.61971247012987
     }
   },
-  "full_interface_valid": 165,
-  "full_with_local_recursion": 27,
+  "full_interface_valid": 183,
+  "full_with_local_recursion": 29,
   "reliability_min": 0.29629629629629634,
   "reliability_max": 1.0,
-  "common_valid_completed_pairs": 130,
-  "common_label_disagreements": 27,
-  "common_source_videos": 154,
+  "common_valid_completed_pairs": 143,
+  "common_label_disagreements": 31,
+  "common_source_videos": 162,
   "common_source_groups": 18,
   "recent_pairs": 20,
-  "recent_mean_combined_seconds": 209.409368884936,
-  "estimated_teacher_remaining_hours": 1.9195858814452467,
-  "estimated_teacher_finish_utc": "2026-09-26T11:35:33.713517+00:00",
+  "recent_mean_combined_seconds": 205.33094265945255,
+  "estimated_teacher_remaining_hours": 0.8555455944143856,
+  "estimated_teacher_finish_utc": "2026-09-26T11:31:38.014436+00:00",
   "monitor_interval_hours": 1,
   "interpretation": "Interim label-only operational snapshot; no MOS read and no frozen setting changed."
 }

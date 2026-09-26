@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-26 09:40 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 10:40 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: main experiment submitted
 
@@ -10,9 +10,9 @@ The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submis
 
 ## Latest operational snapshot
 
-09:40 UTC: original job427527 remains running;165/198 pairs finished under both teachers (331 records). All165/165 full audits have valid numbered interfaces;27 exercised local recursion. Common-valid pairs130, spanning154 videos and18 source groups;27 common pairs have different labels. Label counts are preserved in reports/main-progress.json. Raw full reliability spans0.296–1.000. Interim supervision outputs are not human quality evidence; no MOS read and no settings changed.
+10:40 UTC: original job427527 remains running;183/198 pairs finished under both teachers (366 records). All183/183 full audits have valid numbered interfaces;29 exercised local recursion. Common-valid pairs143, spanning162 videos and18 source groups;31 common pairs have different labels. Label counts are preserved in reports/main-progress.json. Raw full reliability spans0.296–1.000. Interim supervision outputs are not human quality evidence; no MOS read and no settings changed.
 
-Recent20 pairs average209.41sec for both methods: estimated teacher remaining1.92h, finish around2026-09-26 11:35 UTC. Keep hourly checks (remaining time below3h). Existing SSH master remains available with keepalive. Original job healthy; no new submission. Pipeline will automatically freeze the common bundle, predict T0 and then train/test students.
+Recent20 pairs average205.33sec for both methods: estimated teacher remaining0.86h, finish around2026-09-26 11:31 UTC. Keep hourly checks (remaining time below3h). Existing SSH master remains available with keepalive. Original job healthy; no new submission. Pipeline will automatically freeze the common bundle, predict T0 and then train/test students.
 
 ## Frozen protocol
 

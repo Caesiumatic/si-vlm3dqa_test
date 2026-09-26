@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-26 06:37 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 08:37 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: main experiment submitted
 
@@ -10,9 +10,9 @@ The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submis
 
 ## Latest operational snapshot
 
-06:37 UTC: original job427527 remains running;113/198 pairs finished under both teachers (226 records). All113/113 full audits have valid numbered interfaces;17 exercised local recursion. Common-valid pairs93, spanning131 videos and18 source groups;22 common pairs have different labels. Label counts are preserved in reports/main-progress.json. Raw full reliability spans0.296–1.000. Interim supervision outputs are not human quality evidence; no MOS read and no settings changed.
+08:37 UTC: original job427527 remains running;148/198 pairs finished under both teachers (296 records). All148/148 full audits have valid numbered interfaces;24 exercised local recursion. Common-valid pairs117, spanning146 videos and18 source groups;26 common pairs have different labels. Label counts are preserved in reports/main-progress.json. Raw full reliability spans0.296–1.000. Interim supervision outputs are not human quality evidence; no MOS read and no settings changed.
 
-Recent20 pairs average211.99sec for both methods: estimated teacher remaining5.01h, finish around2026-09-26 11:37 UTC. Keep2h checks (>3h remaining). Existing SSH master remains available with keepalive. Original job healthy; no new submission.
+Recent20 pairs average210.96sec for both methods: estimated teacher remaining2.93h, finish around2026-09-26 11:33 UTC. Changed existing heartbeat to hourly because remaining time is below3h. Existing SSH master remains available with keepalive. Original job healthy; no new submission. Pipeline will automatically freeze the common bundle, predict T0 and then train/test students.
 
 ## Frozen protocol
 
@@ -55,4 +55,4 @@ V3 CPU contract check covered quorum, numbered evidence binding, local recursion
 SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session9968 with server keepalive; older20420 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
 SGE env: SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
 Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; project runtime_deps isolated. GPU script sets LD_LIBRARY_PATH/PYTHONPATH and assigned GPU UUIDs. Main70-ish-hour scheduling remains within original72hdeadline through per-stage deadline checks.
-Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every2h while stable teacher generation has >3h remaining; switch to every1h for training/test or a phase with <=3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.
+Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every1h because teacher generation has <=3h remaining; retain hourly for training/test. Use every2h only for stable teacher generation with >3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.

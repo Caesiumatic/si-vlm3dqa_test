@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-26 02:36 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 04:37 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: main experiment submitted
 
@@ -10,9 +10,9 @@ The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submis
 
 ## Latest operational snapshot
 
-02:36 UTC: original job427527 remains running;44/198 pairs finished under both teachers (88 records). All44 full audits have valid numbered interfaces;11 exercised local recursion. Common-valid pairs34, spanning63 videos and16 source groups;5 common pairs have different baseline/full labels. Baseline counts:33 near_equal,2 A,9 abstain. Full counts:37 near_equal,6 A,1 abstain. Raw full reliability spans0.296–1.0. This is an interim label-only snapshot, not human quality evidence; no MOS read or frozen setting changed.
+04:37 UTC: original job427527 remains running;79/198 pairs finished under both teachers (158 records). All79/79 full audits have valid numbered interfaces;14 exercised local recursion. Common-valid pairs64, spanning105 videos and17 source groups;14 common pairs have different labels. Label counts are preserved in reports/main-progress.json. Raw full reliability spans0.296–1.000. Interim supervision outputs are not human quality evidence; no MOS read and no settings changed.
 
-Recent20 pairs average207.87sec for both methods: estimated teacher remaining8.89h, finish around2026-09-26 11:30 UTC (Saturday06:30 Chicago). Keep2h checks because >3h remains. Stage timing is consistent with prior budget. Snapshot: reports/main-progress.json. SSH idle session expired and was reauthenticated successfully; original job was unaffected and no new job submitted. Current interactive master session20420.
+Recent20 pairs average205.24sec for both methods: estimated teacher remaining6.78h, finish around2026-09-26 11:24 UTC. Keep2h checks (>3h remaining). Old SSH master expired again; reauthenticated with ServerAliveInterval60/ServerAliveCountMax3, current session9968. Original job unaffected; no new submission.
 
 ## Frozen protocol
 
@@ -52,7 +52,7 @@ V3 CPU contract check covered quorum, numbered evidence binding, local recursion
 
 ## Access
 
-SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session20420; older50846 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
+SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session9968 with server keepalive; older20420 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
 SGE env: SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
 Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; project runtime_deps isolated. GPU script sets LD_LIBRARY_PATH/PYTHONPATH and assigned GPU UUIDs. Main70-ish-hour scheduling remains within original72hdeadline through per-stage deadline checks.
 Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every2h while stable teacher generation has >3h remaining; switch to every1h for training/test or a phase with <=3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.

@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-26 21:49 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 22:48 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: T3 seed17 training
 
@@ -20,9 +20,9 @@ T0 predictions complete432/432, all valid with matching video/config hashes and 
 
 T2 seed17 COMPLETE:27 updates,108 presentations (103 processed,5 invalid-rollout pairs skipped);432/432 predictions valid. All prediction video/config/adapter hashes verified against locally backed-up final LoRA. Prediction completion2026-09-26T21:03:53+00:00. Report: reports/T2_17-completion.json. No MOS read.
 
-21:49 UTC: T3 seed17 active,20/108 pair presentations,5/27 updates. First5 batches mean475.3sec/4 pairs; gradient norms finite/nonzero (0.119–0.242), KL finite. Pair statuses{'processed': 19, 'invalid_rollout_pair_skipped': 1}; zero-variance groups1/38. Observed weights0.555–1.248 match frozen bundle; labels and pair order match T2 protocol. Remaining training2.90h plus prediction0.75h. Original job healthy; no resubmission or scientific configuration change.
+22:48 UTC: T3 seed17 active,52/108 pair presentations,13/27 updates. Recent5 batches mean474.5sec/4 pairs; gradient norms finite/nonzero (0.113–0.282), KL finite. Pair statuses{'processed': 50, 'invalid_rollout_pair_skipped': 2}; zero-variance groups4/100. Observed weights0.555–1.248 match frozen bundle; labels and pair order match T2 protocol. Remaining training1.85h plus prediction0.75h. Original job healthy; no resubmission or scientific configuration change.
 
-Forecast uses recent T3 batches for current remainder and completed T1/T2 averages for future full runs: seed17 all arms8.0h from this check; all seeds42.8h, around2026-09-28T16:35:20.353344+00:00. Startup overhead excluded; future speeds provisional. Retain hourly monitoring.
+Forecast uses recent T3 batches for current remainder and completed T1/T2 averages for future full runs: seed17 all arms6.9h from this check; all seeds41.7h, around2026-09-28T16:31:22.275314+00:00. Startup overhead excluded; future speeds provisional. Retain hourly monitoring.
 
 ## Frozen protocol
 

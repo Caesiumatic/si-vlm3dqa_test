@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-26 14:42 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 15:43 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: T1 seed17 training
 
@@ -16,9 +16,9 @@ Frozen schedule:108 unique pairs,165 videos/18 source groups, no repeats; weight
 
 T0 predictions complete432/432, all valid with matching video/config hashes and no adapter. Completed at2026-09-26T12:18:23+00:00; no MOS read and no quality metrics computed.
 
-14:42 UTC: T1 seed17 training active, 68/108 pair presentations, 17/27 updates saved. Recent5 batches average492.7sec/4 pairs. All gradients finite/nonzero (range0.080–0.272); all logged KL values finite. Pair statuses: {'processed': 66, 'invalid_rollout_pair_skipped': 2}; zero-variance groups4/132 processed rollout groups. Estimated current training remaining1.37h; following prediction roughly0.73h. No stage failure or new submission.
+15:43 UTC: T1 seed17 training active, 100/108 pair presentations, 25/27 updates saved. Recent5 batches average477.7sec/4 pairs. All gradients finite/nonzero (range0.080–0.272); all logged KL values finite. Pair statuses: {'processed': 97, 'invalid_rollout_pair_skipped': 3}; zero-variance groups5/194 processed rollout groups. Estimated current training remaining0.27h; following prediction roughly0.73h. No stage failure or new submission.
 
-Throughput extrapolation from latest5 batches, excluding future startup overhead: first seed all four arms finishes about15.4h from this check; second seed about33.1h; all three seeds about50.8h, around2026-09-28T17:29:37.110221+00:00. Later-arm speeds remain unmeasured. Retain hourly monitoring and frozen scientific configuration.
+Throughput extrapolation from latest5 batches, excluding future startup overhead: first seed all four arms finishes about13.9h from this check; second seed about31.2h; all three seeds about48.4h, around2026-09-28T16:10:20.322371+00:00. Later-arm speeds remain unmeasured. Retain hourly monitoring and frozen scientific configuration.
 
 ## Frozen protocol
 

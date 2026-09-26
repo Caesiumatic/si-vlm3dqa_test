@@ -1,0 +1,45 @@
+==============================================================
+qname        gpu1                
+hostname     compute-1-20.local  
+group        domain              
+owner        shic4               
+project      NONE                
+department   defaultdepartment   
+jobname      sevlm_audit_v3      
+jobnumber    427526              
+taskid       undefined
+account      sge                 
+priority     0                   
+qsub_time    Fri Sep 25 18:52:05 2026
+start_time   Fri Sep 25 18:52:12 2026
+end_time     Fri Sep 25 19:00:13 2026
+granted_pe   cuda                
+slots        4                   
+failed       0    
+exit_status  0                   
+ru_wallclock 481s
+ru_utime     309.609s
+ru_stime     56.725s
+ru_maxrss    6.462MB
+ru_ixrss     0.000B
+ru_ismrss    0.000B
+ru_idrss     0.000B
+ru_isrss     0.000B
+ru_minflt    3895144             
+ru_majflt    450                 
+ru_nswap     0                   
+ru_inblock   21370792            
+ru_oublock   208                 
+ru_msgsnd    0                   
+ru_msgrcv    0                   
+ru_nsignals  0                   
+ru_nvcsw     122141              
+ru_nivcsw    21418               
+cpu          366.334s
+mem          1.033TBs
+io           13.783GB
+iow          0.000s
+maxvmem      6.370GB
+arid         undefined
+ar_sub_time  undefined
+category     -u shic4 -q gpu1@compute-1-20.local -l gpu=1,h_rt=7200,slots_gpu=1 -pe cuda 4

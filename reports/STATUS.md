@@ -1,12 +1,16 @@
 # Execution status
 
-Updated2026-09-26 00:01 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-26 00:17 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: main experiment submitted
 
 **Main SGE job427527 is RUNNING since2026-09-26 00:00:27 UTC. `STAGE label.py` and successful model loading are verified in the live log.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
 
 The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submission succeeded. No user reauthorization needed.
+
+## Latest operational snapshot
+
+00:17 UTC: job427527 remains running. Synced5 baseline +4 full records; all4 full audits have valid numbered interfaces,3 exercised local recursion. Three completed pairs are common-valid; raw full reliability spans0.296–1.0 (including abstaining records). Early labels are predominantly near_equal; sample is too small for a distribution/quality conclusion. No MOS read and no frozen settings changed. Mean baseline99sec/full119sec implies roughly12h total teacher time at this early rate, consistent with prior estimate. Detailed snapshot: reports/main-progress.json. Final dev427526 qacct confirms exit0 (reports/pilot-v3-accounting.txt).
 
 ## Frozen protocol
 

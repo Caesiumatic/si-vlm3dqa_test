@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-27 17:02 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-27 18:02 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: T3 seed29 training (last verified; live SSH unavailable)
 
@@ -10,7 +10,7 @@ The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submis
 
 ## Latest operational snapshot
 
-17:02 UTC connectivity failure: two bounded SSH connection attempts timed out before authentication (exit255). Local IPv4 is reachable and Lop DNS resolves; former multiplex session30682 has closed. This does not establish a scheduler/job failure. Last verified output remains T3 seed29,9/27 updates,36/108 presentations at16:00 UTC. No job submitted or modified. No fresh throughput is available; the previous all-run completion estimate (Sep28 ~17:00 UTC) is stale and conditional on uninterrupted execution. Keep hourly checks; reauthenticate if TCP connectivity returns, then inspect persisted job427527 and actual outputs before any action. MOS remains sealed.
+18:02 UTC connectivity failure persists for a second hourly check: SSH connection timed out before authentication (exit255), and a separate TCP22 probe also timed out. Local IPv4 is reachable and Lop DNS resolves; former multiplex session30682 has closed. This does not establish a scheduler/job failure. Last verified output remains T3 seed29,9/27 updates,36/108 presentations at16:00 UTC. No job submitted or modified. No fresh throughput is available; the previous all-run completion estimate (Sep28 ~17:00 UTC) is stale and conditional on uninterrupted execution. Keep hourly checks; reauthenticate if TCP connectivity returns, then inspect persisted job427527 and actual outputs before any action. MOS remains sealed.
 
 11:42 UTC: original job427527 remains running. Supervision finished198/198 pairs for both methods (396 records) at2026-09-26 11:33:47 UTC. All198/198 full audits have valid numbered interfaces;37 exercised local recursion. Baseline153 valid/45 abstained; full197 valid/1 abstained. Common-valid152 pairs, spanning165 videos/18 groups;33 common labels differ. No human score has been read; these labels do not establish teacher accuracy.
 
@@ -58,7 +58,7 @@ Commit `5971b83`; `configs/experiment.json` status FROZEN, interface numbered_au
 |427524|First corrected-reward/KL update + optimizer checkpoint succeeded.|
 |427525|Resume and second update succeeded, exit0; grad_norm0.554, nonzero fixed-base KL≈3e-5–5e-5. Both batches160/240sec for2 pairs.|
 |427526|V3 numbered-audit dev check. First real pair passed: all4 verdicts bind correctly; support.5, resolved1, judge agreement2/3, reliability.5. Second pair also passed: reliability1.0; both numbered audit interfaces valid; exit complete.|
-|427527|MAIN RUNNING: supervision, T0 and all seed17 arms complete; T1 seed29 complete; T2 seed29 complete; T3 seed29 training active.|
+|427527|LAST VERIFIED RUNNING Sep27 16:00 UTC; live SSH unavailable: supervision, T0 and all seed17 arms complete; T1 seed29 complete; T2 seed29 complete; T3 seed29 training active.|
 
 V3 CPU contract check covered quorum, numbered evidence binding, local recursion and known reliability; actual V2 had local video reinspection, V3 first pair resolved at root (conditional recursion still enabled). Source teacher/student and all model computation are onLop. Mac handled files, hashes and CPU math only.
 

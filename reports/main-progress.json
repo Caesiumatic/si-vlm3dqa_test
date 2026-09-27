@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-09-27T17:02:10.819310+00:00",
+  "checked_utc": "2026-09-27T18:02:04.182162+00:00",
   "job_id": 427527,
   "scheduler_state": "unverified_ssh_timeout",
   "stage": "T3_29_training",
@@ -118,12 +118,14 @@
   "last_successful_check_utc": "2026-09-27T16:00:50.254347+00:00",
   "monitoring_error": {
     "type": "ssh_connect_timeout",
-    "attempts": 2,
+    "attempts": 1,
     "dns_resolves": true,
     "local_ipv4_reachable": true,
     "master_session_closed": true,
     "job_resubmitted": false,
     "last_verified_progress": "T3_29: 9/27 updates,36/108 presentations",
-    "forecast_status": "Stale: no new throughput or scheduler evidence; previous estimate retained only as last successful snapshot."
+    "forecast_status": "Stale: no new throughput or scheduler evidence; previous estimate retained only as last successful snapshot.",
+    "tcp_port_probe": "timeout",
+    "consecutive_heartbeat_failures": 2
   }
 }

@@ -1,14 +1,16 @@
 # Execution status
 
-Updated2026-09-27 16:00 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-27 17:02 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
-## Current stage: T3 seed29 training
+## Current stage: T3 seed29 training (last verified; live SSH unavailable)
 
-**Main SGE job427527 is RUNNING since2026-09-26 00:00:27 UTC. Supervision, T0 and all four seed17 student runs completed; T1 seed29 training and prediction complete; T2 seed29 complete; T3 seed29 training active.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
+**Main SGE job427527 was last verified RUNNING at2026-09-27 16:00 UTC; current scheduler state is unverified. Started2026-09-26 00:00:27 UTC. Supervision, T0 and all four seed17 student runs completed; T1 seed29 training and prediction complete; T2 seed29 complete; T3 seed29 training active.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
 
 The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submission succeeded. No user reauthorization needed.
 
 ## Latest operational snapshot
+
+17:02 UTC connectivity failure: two bounded SSH connection attempts timed out before authentication (exit255). Local IPv4 is reachable and Lop DNS resolves; former multiplex session30682 has closed. This does not establish a scheduler/job failure. Last verified output remains T3 seed29,9/27 updates,36/108 presentations at16:00 UTC. No job submitted or modified. No fresh throughput is available; the previous all-run completion estimate (Sep28 ~17:00 UTC) is stale and conditional on uninterrupted execution. Keep hourly checks; reauthenticate if TCP connectivity returns, then inspect persisted job427527 and actual outputs before any action. MOS remains sealed.
 
 11:42 UTC: original job427527 remains running. Supervision finished198/198 pairs for both methods (396 records) at2026-09-26 11:33:47 UTC. All198/198 full audits have valid numbered interfaces;37 exercised local recursion. Baseline153 valid/45 abstained; full197 valid/1 abstained. Common-valid152 pairs, spanning165 videos/18 groups;33 common labels differ. No human score has been read; these labels do not establish teacher accuracy.
 
@@ -70,7 +72,7 @@ V3 CPU contract check covered quorum, numbered evidence binding, local recursion
 
 ## Access
 
-SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session30682 with server keepalive; older90741/9968 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
+SSH multiplex `/private/tmp/sevlm3dqa-ssh` (no active master: session30682 closed; earlier90741/9968 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
 SGE env: SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
 Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; project runtime_deps isolated. GPU script sets LD_LIBRARY_PATH/PYTHONPATH and assigned GPU UUIDs. Main70-ish-hour scheduling remains within original72hdeadline through per-stage deadline checks.
 Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every1h for student training/test. Use every2h only for stable teacher generation with >3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.

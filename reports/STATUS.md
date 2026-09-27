@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-27 14:59 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-27 16:00 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: T3 seed29 training
 
@@ -28,9 +28,9 @@ T1 seed29 COMPLETE:27 updates,108 presentations (106 processed,2 invalid-rollout
 
 T2 seed29 COMPLETE:27 updates,108 presentations; pair statuses{'processed': 107, 'invalid_rollout_pair_skipped': 1}. All gradient norms finite/nonzero, KL finite; zero-variance groups2/214. All432 predictions valid with video/config/adapter hashes verified against locally backed-up final LoRA. Prediction completion2026-09-27T14:44:36+00:00. Record: reports/T2_29-completion.json. No MOS read.
 
-14:59 UTC: T3 seed29 training active,4/108 presentations,1/27 updates. Available1 recent batches mean499.3sec/4 pairs; all gradients finite/nonzero, KL finite. Pair statuses{'processed': 4}; zero-variance groups0/8. Frozen full labels, reliability weights and T2 pair order verified. Training remaining3.61h plus prediction0.76h. Completed student runs6/12; T0 plus completed students total3024 target predictions.
+16:00 UTC: T3 seed29 training active,36/108 presentations,9/27 updates. Recent5 batches mean476.3sec/4 pairs; all gradients finite/nonzero (0.106–0.369), KL finite. Pair statuses{'processed': 35, 'invalid_rollout_pair_skipped': 1}; zero-variance groups1/70. Frozen full labels, reliability weights and T2 pair order verified. Training remaining2.38h plus prediction0.76h. Completed student runs6/12; T0 plus completed students total3024 target predictions.
 
-Forecast uses current batches (early-stage estimate) and all completed-run averages: seed29 all arms8.7h from this check; all seeds26.2h, around2026-09-28T17:12:25.876374+00:00. Startup overhead excluded; future speeds provisional. Original job427527 healthy, no resubmission or frozen configuration changes. MOS remains sealed. Retain hourly monitoring.
+Forecast uses current batches and all completed-run averages: seed29 all arms7.5h from this check; all seeds25.0h, around2026-09-28T17:00:35.616788+00:00. Startup overhead excluded; future speeds provisional. SSH multiplex expired and was reauthenticated successfully; original job427527 remained healthy. No resubmission or frozen configuration changes. MOS remains sealed. Retain hourly monitoring.
 
 ## Frozen protocol
 
@@ -70,7 +70,7 @@ V3 CPU contract check covered quorum, numbered evidence binding, local recursion
 
 ## Access
 
-SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session90741 with server keepalive; older9968 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
+SSH multiplex `/private/tmp/sevlm3dqa-ssh` (current interactive session30682 with server keepalive; older90741/9968 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
 SGE env: SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
 Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; project runtime_deps isolated. GPU script sets LD_LIBRARY_PATH/PYTHONPATH and assigned GPU UUIDs. Main70-ish-hour scheduling remains within original72hdeadline through per-stage deadline checks.
 Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every1h for student training/test. Use every2h only for stable teacher generation with >3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.

@@ -1,0 +1,33 @@
+{
+  "arm": "T3",
+  "seed": 17,
+  "status": "training_complete_prediction_in_progress",
+  "updates": 27,
+  "pair_presentations": 108,
+  "pair_status_counts": {
+    "processed": 103,
+    "invalid_rollout_pair_skipped": 5
+  },
+  "zero_variance_groups": 7,
+  "processed_rollout_groups": 206,
+  "grad_norm_min": 0.11247916519641876,
+  "grad_norm_max": 0.3948870301246643,
+  "batch_seconds_total": 12885.04479623586,
+  "batch_seconds_mean": 477.22388134206886,
+  "max_memory_allocated": [
+    1515026944,
+    2674087424,
+    2345293312,
+    2505623040
+  ],
+  "adapter_sha256": "a169ef512752ddcacffb588fb041a94c053940bc491c05a85855c08bc7dbfbb8",
+  "prediction_count": 78,
+  "prediction_status_counts": {
+    "valid": 78
+  },
+  "recent_prediction_seconds": 6.35,
+  "estimated_prediction_remaining_hours": 0.6244166666666667,
+  "frozen_label_weight_and_T2_order_verified": true,
+  "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+  "metrics": "Not computed; MOS remains sealed."
+}

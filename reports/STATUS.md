@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-27 05:52 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-27 06:53 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: T1 seed29 training
 
@@ -24,9 +24,9 @@ T3 seed17 COMPLETE:27 updates,108 presentations (103 processed,5 invalid-rollout
 
 T5 seed17 COMPLETE:27 updates,108 presentations;{'processed': 103, 'invalid_rollout_pair_skipped': 5}. All gradients finite/nonzero, KL finite;6/206 processed rollout groups have zero advantage variance. Full-run shuffled weights, labels and T3 order verified. All432 predictions valid with matching video/config/adapter hashes; final LoRA backed up. Prediction completed2026-09-27T05:49:14+00:00. Record reports/T5_17-completion.json.
 
-05:52 UTC: first training seed17 fully complete for T1/T2/T3/T5; with T0,2160 predictions saved. Original job427527 automatically started T1 seed29; model loaded, no first checkpoint yet in this snapshot. No MOS read or performance comparison computed. Frozen experiment continues through all three seeds.
+06:53 UTC: first seed17 complete for all four arms;2160 predictions including T0 saved. T1 seed29 active,28/108 presentations,7/27 updates. Recent5 batches mean473.8sec/4 pairs; all gradients finite/nonzero (0.117–0.262), KL finite. Pair statuses{'processed': 27, 'invalid_rollout_pair_skipped': 1}; zero-variance groups2/54. Frozen baseline labels and unit weights verified. Current training remaining2.63h plus prediction0.76h.
 
-Using completed seed17 run averages: each remaining training≈3.59h and prediction≈0.76h; seed29 all arms≈17.4h from this check, all seeds≈34.8h, around2026-09-28T16:38:25.036379+00:00. Estimates exclude startup overhead and assume similar later-seed throughput. Keep hourly checks; no resubmission or configuration changes.
+Forecast uses current recent batches and completed seed17 averages for future runs: seed29 all arms16.4h from this check; all seeds33.8h, around2026-09-28T16:41:55.653101+00:00. Startup overhead excluded; future speeds provisional. Original job healthy, no resubmission or frozen configuration changes. MOS remains sealed. Retain hourly monitoring.
 
 ## Frozen protocol
 

@@ -1,10 +1,10 @@
 # Execution status
 
-Updated2026-09-27 04:51 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-27 05:52 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
-## Current stage: T5 seed17 training
+## Current stage: T1 seed29 training
 
-**Main SGE job427527 is RUNNING since2026-09-26 00:00:27 UTC. Supervision, T0 and T1–T3 seed17 completed; T5 seed17 training/checkpoints verified.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
+**Main SGE job427527 is RUNNING since2026-09-26 00:00:27 UTC. Supervision, T0 and all four seed17 student runs completed; T1 seed29 model loaded.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
 
 The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submission succeeded. No user reauthorization needed.
 
@@ -22,9 +22,11 @@ T2 seed17 COMPLETE:27 updates,108 presentations (103 processed,5 invalid-rollout
 
 T3 seed17 COMPLETE:27 updates,108 presentations (103 processed,5 invalid-rollout pairs skipped);432/432 predictions valid. All prediction video/config/adapter hashes verified against locally backed-up final LoRA. Prediction completion2026-09-27T01:25:56+00:00. Report: reports/T3_17-completion.json. No MOS read.
 
-04:51 UTC: T5 seed17 active,100/108 pair presentations,25/27 updates. Recent5 batches mean477.7sec/4 pairs; gradient norms finite/nonzero (0.100–0.309), KL finite. Pair statuses{'processed': 96, 'invalid_rollout_pair_skipped': 4}; zero-variance groups5/192. Shuffled weights and labels match frozen bundle; pair order matches T3. Remaining training0.27h plus prediction0.75h. Original job healthy; no resubmission or scientific configuration change.
+T5 seed17 COMPLETE:27 updates,108 presentations;{'processed': 103, 'invalid_rollout_pair_skipped': 5}. All gradients finite/nonzero, KL finite;6/206 processed rollout groups have zero advantage variance. Full-run shuffled weights, labels and T3 order verified. All432 predictions valid with matching video/config/adapter hashes; final LoRA backed up. Prediction completed2026-09-27T05:49:14+00:00. Record reports/T5_17-completion.json.
 
-Forecast uses recent T5 batches for remainder and completed T1–T3 averages for future runs: seed17 all arms1.0h from this check; all seeds35.8h, around2026-09-28T16:36:52.957235+00:00. Startup overhead excluded; future speeds provisional. Retain hourly monitoring.
+05:52 UTC: first training seed17 fully complete for T1/T2/T3/T5; with T0,2160 predictions saved. Original job427527 automatically started T1 seed29; model loaded, no first checkpoint yet in this snapshot. No MOS read or performance comparison computed. Frozen experiment continues through all three seeds.
+
+Using completed seed17 run averages: each remaining training≈3.59h and prediction≈0.76h; seed29 all arms≈17.4h from this check, all seeds≈34.8h, around2026-09-28T16:38:25.036379+00:00. Estimates exclude startup overhead and assume similar later-seed throughput. Keep hourly checks; no resubmission or configuration changes.
 
 ## Frozen protocol
 
@@ -50,7 +52,7 @@ Commit `5971b83`; `configs/experiment.json` status FROZEN, interface numbered_au
 |427524|First corrected-reward/KL update + optimizer checkpoint succeeded.|
 |427525|Resume and second update succeeded, exit0; grad_norm0.554, nonzero fixed-base KL≈3e-5–5e-5. Both batches160/240sec for2 pairs.|
 |427526|V3 numbered-audit dev check. First real pair passed: all4 verdicts bind correctly; support.5, resolved1, judge agreement2/3, reliability.5. Second pair also passed: reliability1.0; both numbered audit interfaces valid; exit complete.|
-|427527|MAIN RUNNING: supervision, T0 and T1–T3 seed17 complete; T5 seed17 active.|
+|427527|MAIN RUNNING: supervision, T0 and all seed17 arms complete; T1 seed29 started.|
 
 V3 CPU contract check covered quorum, numbered evidence binding, local recursion and known reliability; actual V2 had local video reinspection, V3 first pair resolved at root (conditional recursion still enabled). Source teacher/student and all model computation are onLop. Mac handled files, hashes and CPU math only.
 

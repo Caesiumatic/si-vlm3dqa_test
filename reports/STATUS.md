@@ -1,16 +1,16 @@
 # Execution status
 
-Updated2026-09-27 18:02 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-27 19:04 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
-## Current stage: T3 seed29 training (last verified; live SSH unavailable)
+## Current stage: T3 seed29 target prediction
 
-**Main SGE job427527 was last verified RUNNING at2026-09-27 16:00 UTC; current scheduler state is unverified. Started2026-09-26 00:00:27 UTC. Supervision, T0 and all four seed17 student runs completed; T1 seed29 training and prediction complete; T2 seed29 complete; T3 seed29 training active.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
+**Main SGE job427527 is RUNNING; SSH connectivity restored. Started2026-09-26 00:00:27 UTC. Supervision, T0 and all four seed17 student runs completed; T1 seed29 training and prediction complete; T2 seed29 complete; T3 seed29 training complete; target prediction active.** Remote persistent receipt: `reports/main-job-id.txt`. Inspect qstat/logs before any new submission; never duplicate. Queue gpu1@compute-1-20.local, cuda PE4, four GTX980,69h walltime. Main log `reports/main-pipeline.log`; outputs `runs/main`.
 
 The earlier automatic approval HTTP401 outage is RESOLVED. SSH checks and submission succeeded. No user reauthorization needed.
 
 ## Latest operational snapshot
 
-18:02 UTC connectivity failure persists for a second hourly check: SSH connection timed out before authentication (exit255), and a separate TCP22 probe also timed out. Local IPv4 is reachable and Lop DNS resolves; former multiplex session30682 has closed. This does not establish a scheduler/job failure. Last verified output remains T3 seed29,9/27 updates,36/108 presentations at16:00 UTC. No job submitted or modified. No fresh throughput is available; the previous all-run completion estimate (Sep28 ~17:00 UTC) is stale and conditional on uninterrupted execution. Keep hourly checks; reauthenticate if TCP connectivity returns, then inspect persisted job427527 and actual outputs before any action. MOS remains sealed.
+19:04 UTC: SSH connectivity restored and reauthenticated. Original persisted job427527 is still running on the same four-GTX980 queue. Outputs advanced during the monitoring outage; no resubmission was needed.
 
 11:42 UTC: original job427527 remains running. Supervision finished198/198 pairs for both methods (396 records) at2026-09-26 11:33:47 UTC. All198/198 full audits have valid numbered interfaces;37 exercised local recursion. Baseline153 valid/45 abstained; full197 valid/1 abstained. Common-valid152 pairs, spanning165 videos/18 groups;33 common labels differ. No human score has been read; these labels do not establish teacher accuracy.
 
@@ -30,9 +30,11 @@ T1 seed29 COMPLETE:27 updates,108 presentations (106 processed,2 invalid-rollout
 
 T2 seed29 COMPLETE:27 updates,108 presentations; pair statuses{'processed': 107, 'invalid_rollout_pair_skipped': 1}. All gradient norms finite/nonzero, KL finite; zero-variance groups2/214. All432 predictions valid with video/config/adapter hashes verified against locally backed-up final LoRA. Prediction completion2026-09-27T14:44:36+00:00. Record: reports/T2_29-completion.json. No MOS read.
 
-16:00 UTC: T3 seed29 training active,36/108 presentations,9/27 updates. Recent5 batches mean476.3sec/4 pairs; all gradients finite/nonzero (0.106–0.369), KL finite. Pair statuses{'processed': 35, 'invalid_rollout_pair_skipped': 1}; zero-variance groups1/70. Frozen full labels, reliability weights and T2 pair order verified. Training remaining2.38h plus prediction0.76h. Completed student runs6/12; T0 plus completed students total3024 target predictions.
+19:04 UTC: T3 seed29 training COMPLETE,27 updates,108 presentations; statuses{'processed': 106, 'invalid_rollout_pair_skipped': 2}. All gradients finite/nonzero (0.092–0.369), KL finite; zero-variance groups2/212. Frozen full labels, reliability weights and complete T2 pair order verified. Final LoRA backed up. Record: reports/T3_29-training.json.
 
-Forecast uses current batches and all completed-run averages: seed29 all arms7.5h from this check; all seeds25.0h, around2026-09-28T17:00:35.616788+00:00. Startup overhead excluded; future speeds provisional. SSH multiplex expired and was reauthenticated successfully; original job427527 remained healthy. No resubmission or frozen configuration changes. MOS remains sealed. Retain hourly monitoring.
+Target prediction active: 368/432, statuses{'valid': 368}; video/config/adapter hashes verified. Recent30 intervals mean6.27sec/video; remaining approximately6.7min. Completed student runs6/12; T0 plus completed students total3024 predictions.
+
+Refreshed forecast uses current prediction speed and completed-run averages: seed29 all arms4.5h from this check; all seeds22.0h, around2026-09-28T17:02:25.053256+00:00. Startup overhead excluded; future speeds provisional. Original job healthy, no frozen changes. MOS remains sealed. Retain hourly monitoring.
 
 ## Frozen protocol
 
@@ -58,7 +60,7 @@ Commit `5971b83`; `configs/experiment.json` status FROZEN, interface numbered_au
 |427524|First corrected-reward/KL update + optimizer checkpoint succeeded.|
 |427525|Resume and second update succeeded, exit0; grad_norm0.554, nonzero fixed-base KL≈3e-5–5e-5. Both batches160/240sec for2 pairs.|
 |427526|V3 numbered-audit dev check. First real pair passed: all4 verdicts bind correctly; support.5, resolved1, judge agreement2/3, reliability.5. Second pair also passed: reliability1.0; both numbered audit interfaces valid; exit complete.|
-|427527|LAST VERIFIED RUNNING Sep27 16:00 UTC; live SSH unavailable: supervision, T0 and all seed17 arms complete; T1 seed29 complete; T2 seed29 complete; T3 seed29 training active.|
+|427527|MAIN RUNNING; connection restored: supervision, T0 and all seed17 arms complete; T1 seed29 complete; T2 seed29 complete; T3 seed29 training complete; target prediction active.|
 
 V3 CPU contract check covered quorum, numbered evidence binding, local recursion and known reliability; actual V2 had local video reinspection, V3 first pair resolved at root (conditional recursion still enabled). Source teacher/student and all model computation are onLop. Mac handled files, hashes and CPU math only.
 
@@ -72,7 +74,7 @@ V3 CPU contract check covered quorum, numbered evidence binding, local recursion
 
 ## Access
 
-SSH multiplex `/private/tmp/sevlm3dqa-ssh` (no active master: session30682 closed; earlier90741/9968 expired); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
+SSH multiplex `/private/tmp/sevlm3dqa-ssh` (active session23229 with server keepalive; older30682/90741/9968 closed); if unavailable reconnect through approved tools using already-authorized user credentials, never store credentials in files. No bypass of approval service errors.
 SGE env: SGE_ROOT=/opt/gridengine SGE_CELL=default SGE_QMASTER_PORT=536 SGE_EXECD_PORT=537; binaries /opt/gridengine/bin/lx-amd64.
 Base Python `/home/shic4/.cache/rl_verified_agent_20260911/conda/bin/python`; project runtime_deps isolated. GPU script sets LD_LIBRARY_PATH/PYTHONPATH and assigned GPU UUIDs. Main70-ish-hour scheduling remains within original72hdeadline through per-stage deadline checks.
 Adaptive heartbeat `se-vlm3dqa-72` active (user-authorized): currently every1h for student training/test. Use every2h only for stable teacher generation with >3h remaining. Estimate using measured throughput on each check and update this existing automation, never duplicate it. Diagnose observed failures in the current turn; do not lengthen the interval during failures or near the hard deadline. Keep quiet on unchanged state; notify meaningful progress/failure/completion only.

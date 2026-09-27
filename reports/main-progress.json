@@ -1,8 +1,8 @@
 {
-  "checked_utc": "2026-09-27T18:02:04.182162+00:00",
+  "checked_utc": "2026-09-27T19:04:22.972926+00:00",
   "job_id": 427527,
-  "scheduler_state": "unverified_ssh_timeout",
-  "stage": "T3_29_training",
+  "scheduler_state": "running",
+  "stage": "T3_29_prediction",
   "candidate_pairs": 198,
   "completed_pair_both_methods": 198,
   "records": 396,
@@ -49,26 +49,25 @@
     "estimated_repeated_prediction_hours": 0.7303016241299304
   },
   "monitor_interval_hours": 1,
-  "interpretation": "Live Lop status unavailable due to two SSH TCP connection timeouts. No inference about job failure; last verified T3 seed29 training. MOS remains sealed.",
+  "interpretation": "SSH restored; original job healthy. T3 seed29 training verified complete and target prediction underway. MOS remains sealed.",
   "current_training": {
     "arm": "T3",
     "seed": 29,
-    "status": "running",
-    "completed_pairs": 36,
+    "status": "complete",
+    "completed_pairs": 108,
     "total_pairs": 108,
-    "completed_updates": 9,
+    "completed_updates": 27,
     "planned_updates": 27,
-    "recent_batches": 5,
-    "mean_batch_seconds": 476.3349217712879,
-    "estimated_remaining_hours": 2.3816746088564393,
-    "estimated_finish_utc": "2026-09-27T18:23:44.282939+00:00",
+    "recent_batches": 27,
+    "mean_batch_seconds": 486.27177107361734,
+    "estimated_remaining_hours": 0,
     "pair_status_counts": {
-      "processed": 35,
-      "invalid_rollout_pair_skipped": 1
+      "processed": 106,
+      "invalid_rollout_pair_skipped": 2
     },
-    "zero_variance_groups": 1,
-    "rollout_groups_observed": 70,
-    "grad_norm_min": 0.105967678129673,
+    "zero_variance_groups": 2,
+    "rollout_groups_observed": 212,
+    "grad_norm_min": 0.09186439216136932,
     "grad_norm_max": 0.3691161274909973,
     "max_memory_allocated": [
       1515026944,
@@ -80,28 +79,28 @@
   },
   "provisional_remaining_stage_forecast": {
     "T3_29": {
-      "hours_from_check": 3.1400968826383417,
-      "estimated_prediction_finish_utc": "2026-09-27T19:09:14.603124+00:00"
+      "hours_from_check": 0.1114074074074074,
+      "estimated_prediction_finish_utc": "2026-09-27T19:11:04.039593+00:00"
     },
     "T5_29": {
-      "hours_from_check": 7.511264308364634,
-      "estimated_prediction_finish_utc": "2026-09-27T23:31:30.805857+00:00"
+      "hours_from_check": 4.482574833133699,
+      "estimated_prediction_finish_utc": "2026-09-27T23:33:20.242325+00:00"
     },
     "T1_43": {
-      "hours_from_check": 11.882431734090925,
-      "estimated_prediction_finish_utc": "2026-09-28T03:53:47.008590+00:00"
+      "hours_from_check": 8.853742258859992,
+      "estimated_prediction_finish_utc": "2026-09-28T03:55:36.445058+00:00"
     },
     "T2_43": {
-      "hours_from_check": 16.253599159817217,
-      "estimated_prediction_finish_utc": "2026-09-28T08:16:03.211322+00:00"
+      "hours_from_check": 13.224909684586283,
+      "estimated_prediction_finish_utc": "2026-09-28T08:17:52.647791+00:00"
     },
     "T3_43": {
-      "hours_from_check": 20.624766585543508,
-      "estimated_prediction_finish_utc": "2026-09-28T12:38:19.414055+00:00"
+      "hours_from_check": 17.596077110312574,
+      "estimated_prediction_finish_utc": "2026-09-28T12:40:08.850523+00:00"
     },
     "T5_43": {
-      "hours_from_check": 24.9959340112698,
-      "estimated_prediction_finish_utc": "2026-09-28T17:00:35.616788+00:00"
+      "hours_from_check": 21.967244536038866,
+      "estimated_prediction_finish_utc": "2026-09-28T17:02:25.053256+00:00"
     }
   },
   "completed_student_runs": [
@@ -115,17 +114,17 @@
   "completed_training_seeds": [
     17
   ],
-  "last_successful_check_utc": "2026-09-27T16:00:50.254347+00:00",
-  "monitoring_error": {
-    "type": "ssh_connect_timeout",
-    "attempts": 1,
-    "dns_resolves": true,
-    "local_ipv4_reachable": true,
-    "master_session_closed": true,
-    "job_resubmitted": false,
-    "last_verified_progress": "T3_29: 9/27 updates,36/108 presentations",
-    "forecast_status": "Stale: no new throughput or scheduler evidence; previous estimate retained only as last successful snapshot.",
-    "tcp_port_probe": "timeout",
-    "consecutive_heartbeat_failures": 2
+  "last_successful_check_utc": "2026-09-27T19:04:22.972926+00:00",
+  "current_prediction": {
+    "arm": "T3",
+    "seed": 29,
+    "completed": 368,
+    "total": 432,
+    "status_counts": {
+      "valid": 368
+    },
+    "recent_intercompletion_seconds": 6.266666666666667,
+    "estimated_remaining_hours": 0.1114074074074074,
+    "video_config_adapter_hashes_verified": true
   }
 }

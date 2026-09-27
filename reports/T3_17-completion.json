@@ -1,7 +1,7 @@
 {
   "arm": "T3",
   "seed": 17,
-  "status": "training_complete_prediction_in_progress",
+  "status": "training_and_prediction_complete",
   "updates": 27,
   "pair_presentations": 108,
   "pair_status_counts": {
@@ -21,13 +21,13 @@
     2505623040
   ],
   "adapter_sha256": "a169ef512752ddcacffb588fb041a94c053940bc491c05a85855c08bc7dbfbb8",
-  "prediction_count": 78,
+  "prediction_count": 432,
   "prediction_status_counts": {
-    "valid": 78
+    "valid": 432
   },
-  "recent_prediction_seconds": 6.35,
-  "estimated_prediction_remaining_hours": 0.6244166666666667,
   "frozen_label_weight_and_T2_order_verified": true,
   "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
-  "metrics": "Not computed; MOS remains sealed."
+  "metrics": "Not computed; MOS remains sealed.",
+  "predictions_completed_utc": "2026-09-27T01:25:56+00:00",
+  "prediction_intercompletion_mean_seconds": 6.303944315545244
 }

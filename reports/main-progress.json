@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-09-28T13:21:07.813096+00:00",
+  "checked_utc": "2026-09-28T14:22:21.097385+00:00",
   "job_id": 427527,
   "scheduler_state": "running",
   "stage": "T5_43_training",
@@ -49,26 +49,27 @@
     "estimated_repeated_prediction_hours": 0.7303016241299304
   },
   "monitor_interval_hours": 1,
-  "interpretation": "T3 seed43 training and all target predictions verified complete; final T5 seed43 active. MOS remains sealed.",
+  "interpretation": "Final T5 seed43 training progressing normally; frozen full labels, shuffled weights and order verified. MOS remains sealed.",
   "current_training": {
     "arm": "T5",
     "seed": 43,
     "status": "running",
-    "completed_pairs": 12,
+    "completed_pairs": 44,
     "total_pairs": 108,
-    "completed_updates": 3,
+    "completed_updates": 11,
     "planned_updates": 27,
-    "recent_batches": 3,
-    "mean_batch_seconds": 495.09451609601575,
-    "estimated_remaining_hours": 3.300630107306772,
-    "estimated_finish_utc": "2026-09-28T16:39:10.081482+00:00",
+    "recent_batches": 5,
+    "mean_batch_seconds": 474.2688390955329,
+    "estimated_remaining_hours": 2.107861507091257,
+    "estimated_finish_utc": "2026-09-28T16:28:49.398811+00:00",
     "pair_status_counts": {
-      "processed": 12
+      "processed": 42,
+      "invalid_rollout_pair_skipped": 2
     },
-    "zero_variance_groups": 1,
-    "rollout_groups_observed": 24,
+    "zero_variance_groups": 4,
+    "rollout_groups_observed": 84,
     "grad_norm_min": 0.0897161215543747,
-    "grad_norm_max": 0.13127002120018005,
+    "grad_norm_max": 0.23969127237796783,
     "max_memory_allocated": [
       1515026944,
       2674087424,
@@ -79,8 +80,8 @@
   },
   "provisional_remaining_stage_forecast": {
     "T5_43": {
-      "hours_from_check": 4.0599382701416165,
-      "estimated_prediction_finish_utc": "2026-09-28T17:24:43.590869+00:00"
+      "hours_from_check": 2.8671696699261022,
+      "estimated_prediction_finish_utc": "2026-09-28T17:14:22.908197+00:00"
     }
   },
   "completed_student_runs": [
@@ -100,5 +101,5 @@
     17,
     29
   ],
-  "last_successful_check_utc": "2026-09-28T13:21:07.813096+00:00"
+  "last_successful_check_utc": "2026-09-28T14:22:21.097385+00:00"
 }

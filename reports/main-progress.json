@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-09-28T10:19:45.906602+00:00",
+  "checked_utc": "2026-09-28T11:18:13.097553+00:00",
   "job_id": 427527,
   "scheduler_state": "running",
   "stage": "T3_43_training",
@@ -54,20 +54,20 @@
     "arm": "T3",
     "seed": 43,
     "status": "running",
-    "completed_pairs": 56,
+    "completed_pairs": 84,
     "total_pairs": 108,
-    "completed_updates": 14,
+    "completed_updates": 21,
     "planned_updates": 27,
     "recent_batches": 5,
-    "mean_batch_seconds": 457.99749253541233,
-    "estimated_remaining_hours": 1.6538798341556555,
-    "estimated_finish_utc": "2026-09-28T11:58:59.874005+00:00",
+    "mean_batch_seconds": 475.9276500225067,
+    "estimated_remaining_hours": 0.7932127500375112,
+    "estimated_finish_utc": "2026-09-28T12:05:48.663453+00:00",
     "pair_status_counts": {
-      "processed": 53,
-      "invalid_rollout_pair_skipped": 3
+      "processed": 80,
+      "invalid_rollout_pair_skipped": 4
     },
-    "zero_variance_groups": 5,
-    "rollout_groups_observed": 106,
+    "zero_variance_groups": 9,
+    "rollout_groups_observed": 160,
     "grad_norm_min": 0.09243832528591156,
     "grad_norm_max": 0.3322601914405823,
     "max_memory_allocated": [
@@ -80,12 +80,12 @@
   },
   "provisional_remaining_stage_forecast": {
     "T3_43": {
-      "hours_from_check": 2.4136106926243333,
-      "estimated_prediction_finish_utc": "2026-09-28T12:44:34.905095+00:00"
+      "hours_from_check": 1.5529436085061887,
+      "estimated_prediction_finish_utc": "2026-09-28T12:51:23.694544+00:00"
     },
     "T5_43": {
-      "hours_from_check": 6.792255211647847,
-      "estimated_prediction_finish_utc": "2026-09-28T17:07:18.025364+00:00"
+      "hours_from_check": 5.931588127529702,
+      "estimated_prediction_finish_utc": "2026-09-28T17:14:06.814812+00:00"
     }
   },
   "completed_student_runs": [
@@ -104,5 +104,5 @@
     17,
     29
   ],
-  "last_successful_check_utc": "2026-09-28T10:19:45.906602+00:00"
+  "last_successful_check_utc": "2026-09-28T11:18:13.097553+00:00"
 }

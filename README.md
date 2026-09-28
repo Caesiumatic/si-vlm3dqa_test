@@ -6,7 +6,7 @@ Start: 2026-09-25 22:00:06 UTC. Deadline: 2026-09-28 22:00:06 UTC.
 
 Main compute: Lop SGE. Mac: auxiliary data processing and analysis, optional measured model assistance.
 
-Current stage: frozen main experiment is RUNNING as Lop SGE job427527. Supervision, T0 and all seed17/29 runs complete. Final seed43 T1/T2 training/test complete; T3 training complete, target prediction underway. Protocol: `RUN_PROTOCOL.md` and `configs/experiment.json`; live continuation: `reports/STATUS.md`. No scientific outcome has been evaluated yet.
+Current stage: frozen main experiment is RUNNING as Lop SGE job427527. Supervision, T0 and all seed17/29 runs complete. Final seed43 T1/T2/T3 training/test complete; final T5 training underway. Protocol: `RUN_PROTOCOL.md` and `configs/experiment.json`; live continuation: `reports/STATUS.md`. No scientific outcome has been evaluated yet.
 
 Only source videos and anonymous identities enter model workflows. Human scores remain evaluation-only. Main arms T0/T1/T2/T3 with T5 prioritized. Teacher and student share initialization; T2/T3/T5 share labels and schedule.
 

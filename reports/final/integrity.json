@@ -1,0 +1,413 @@
+{
+  "verified_utc": "2026-09-28T17:22:42.867494+00:00",
+  "MOS_accessed": false,
+  "job": 427527,
+  "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+  "prediction_files": 5616,
+  "runs": [
+    {
+      "arm": "T0",
+      "seed": 0,
+      "prediction_count": 432
+    },
+    {
+      "arm": "T1",
+      "seed": 17,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 104,
+        "invalid_rollout_pair_skipped": 4
+      },
+      "zero_variance_groups": 6,
+      "processed_rollout_groups": 208,
+      "grad_norm_min": 0.07957706600427628,
+      "grad_norm_max": 0.3376595079898834,
+      "batch_seconds_total": 13019.600003026426,
+      "batch_seconds_mean": 482.2074075194973,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "6dac3802cd81045e9b869d79e21b612b4fa2561e4c7673d174ac23dfdadadaa7",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-26T16:42:33+00:00",
+      "prediction_intercompletion_mean_seconds": 6.248259860788863
+    },
+    {
+      "arm": "T2",
+      "seed": 17,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 103,
+        "invalid_rollout_pair_skipped": 5
+      },
+      "zero_variance_groups": 6,
+      "processed_rollout_groups": 206,
+      "grad_norm_min": 0.09624101221561432,
+      "grad_norm_max": 0.343636691570282,
+      "batch_seconds_total": 12862.388608083129,
+      "batch_seconds_mean": 476.3847632623381,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "1a128269e2fca16053b2c0ddd41f2073a6d583c4107097d2b228849a50522b94",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-26T21:03:53+00:00",
+      "prediction_intercompletion_mean_seconds": 6.2668213457076565
+    },
+    {
+      "arm": "T3",
+      "seed": 17,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 103,
+        "invalid_rollout_pair_skipped": 5
+      },
+      "zero_variance_groups": 7,
+      "processed_rollout_groups": 206,
+      "grad_norm_min": 0.11247916519641876,
+      "grad_norm_max": 0.3948870301246643,
+      "batch_seconds_total": 12885.04479623586,
+      "batch_seconds_mean": 477.22388134206886,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "a169ef512752ddcacffb588fb041a94c053940bc491c05a85855c08bc7dbfbb8",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-27T01:25:56+00:00",
+      "prediction_intercompletion_mean_seconds": 6.303944315545244
+    },
+    {
+      "arm": "T5",
+      "seed": 17,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 103,
+        "invalid_rollout_pair_skipped": 5
+      },
+      "zero_variance_groups": 6,
+      "processed_rollout_groups": 206,
+      "grad_norm_min": 0.10016942769289017,
+      "grad_norm_max": 0.30924591422080994,
+      "batch_seconds_total": 12936.910428911448,
+      "batch_seconds_mean": 479.144830700424,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "63ec3fbbb6b5bfbedab698dce592951d48da45e00e9dcd209e8ea229b48dfaff",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-27T05:49:14+00:00",
+      "prediction_intercompletion_mean_seconds": 6.357308584686775
+    },
+    {
+      "arm": "T1",
+      "seed": 29,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 106,
+        "invalid_rollout_pair_skipped": 2
+      },
+      "zero_variance_groups": 3,
+      "processed_rollout_groups": 212,
+      "grad_norm_min": 0.11670348048210144,
+      "grad_norm_max": 0.3173385560512543,
+      "batch_seconds_total": 13141.965044878423,
+      "batch_seconds_mean": 486.7394461066083,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "9b8d3297c618ffc02f23054fa6047df09e36a9985d5d0b44c2bc0abcc49afc05",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-27T10:16:41+00:00",
+      "prediction_intercompletion_mean_seconds": 6.387470997679815
+    },
+    {
+      "arm": "T2",
+      "seed": 29,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 107,
+        "invalid_rollout_pair_skipped": 1
+      },
+      "zero_variance_groups": 2,
+      "processed_rollout_groups": 214,
+      "grad_norm_min": 0.10418575257062912,
+      "grad_norm_max": 0.3478942811489105,
+      "batch_seconds_total": 13189.386400863528,
+      "batch_seconds_mean": 488.49579262457513,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "4df08e24310f0fba760a3a0f599d0dd22d0884ac98d3037120f4fc7152ac678e",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-27T14:44:36+00:00",
+      "prediction_intercompletion_mean_seconds": 6.357308584686775
+    },
+    {
+      "arm": "T3",
+      "seed": 29,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 106,
+        "invalid_rollout_pair_skipped": 2
+      },
+      "zero_variance_groups": 2,
+      "processed_rollout_groups": 212,
+      "grad_norm_min": 0.09186439216136932,
+      "grad_norm_max": 0.3691161274909973,
+      "batch_seconds_total": 13129.337818987668,
+      "batch_seconds_mean": 486.27177107361734,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "fce0f53b4367dceb65714c35fc036acfd03138ad3e79ba076676f8abb86d4c5c",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-27T19:09:53+00:00",
+      "prediction_intercompletion_mean_seconds": 6.2877030162412995
+    },
+    {
+      "arm": "T5",
+      "seed": 29,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 106,
+        "invalid_rollout_pair_skipped": 2
+      },
+      "zero_variance_groups": 2,
+      "processed_rollout_groups": 212,
+      "grad_norm_min": 0.11248967051506042,
+      "grad_norm_max": 0.3954489827156067,
+      "batch_seconds_total": 13144.645931743085,
+      "batch_seconds_mean": 486.83873821270686,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "0aed7d90c02663359a5ece12210465217cb07812bdc39a83156b974d78fb86cf",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-27T23:36:42+00:00",
+      "prediction_intercompletion_mean_seconds": 6.327146171693736
+    },
+    {
+      "arm": "T1",
+      "seed": 43,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 104,
+        "invalid_rollout_pair_skipped": 4
+      },
+      "zero_variance_groups": 9,
+      "processed_rollout_groups": 208,
+      "grad_norm_min": 0.10224170982837677,
+      "grad_norm_max": 0.3547629415988922,
+      "batch_seconds_total": 12977.502566255629,
+      "batch_seconds_mean": 480.64824319465293,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "f9a1fb845c28d8e64478169e05389deb7c377d72599b1e3c131190d705cfa063",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-28T04:00:46+00:00",
+      "prediction_intercompletion_mean_seconds": 6.315545243619489
+    },
+    {
+      "arm": "T2",
+      "seed": 43,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 104,
+        "invalid_rollout_pair_skipped": 4
+      },
+      "zero_variance_groups": 10,
+      "processed_rollout_groups": 208,
+      "grad_norm_min": 0.11681737005710602,
+      "grad_norm_max": 0.3562653064727783,
+      "batch_seconds_total": 12994.110180988908,
+      "batch_seconds_mean": 481.26334003662623,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "9a221f3671b4b54211770a103f297a50645533a1c4fff198cc27756ed5604f8f",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-28T08:26:21+00:00",
+      "prediction_intercompletion_mean_seconds": 6.459396751740139
+    },
+    {
+      "arm": "T3",
+      "seed": 43,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 104,
+        "invalid_rollout_pair_skipped": 4
+      },
+      "zero_variance_groups": 11,
+      "processed_rollout_groups": 208,
+      "grad_norm_min": 0.09243832528591156,
+      "grad_norm_max": 0.3322601914405823,
+      "batch_seconds_total": 13017.004063121974,
+      "batch_seconds_mean": 482.1112615971102,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "5db67609f67cfe2a447e135eeed3459ee44e2ec532b01e757a2f6cc0c7fc54c1",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-28T12:50:15+00:00",
+      "prediction_intercompletion_mean_seconds": 6.292343387470997
+    },
+    {
+      "arm": "T5",
+      "seed": 43,
+      "status": "training_and_prediction_complete",
+      "updates": 27,
+      "pair_presentations": 108,
+      "pair_status_counts": {
+        "processed": 104,
+        "invalid_rollout_pair_skipped": 4
+      },
+      "zero_variance_groups": 8,
+      "processed_rollout_groups": 208,
+      "grad_norm_min": 0.0897161215543747,
+      "grad_norm_max": 0.37309950590133667,
+      "batch_seconds_total": 12971.923513688147,
+      "batch_seconds_mean": 480.44161161807955,
+      "max_memory_allocated": [
+        1515026944,
+        2674087424,
+        2345293312,
+        2505623040
+      ],
+      "adapter_sha256": "de2cbd9b0ea9467e4b7efb3c2fe655c838d7ea080495ba6a5507e1484162e69e",
+      "frozen_labels_weights_and_same_seed_order_verified": true,
+      "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+      "metrics": "Not computed at completion verification; MOS remains sealed.",
+      "prediction_count": 432,
+      "prediction_status_counts": {
+        "valid": 432
+      },
+      "predictions_completed_utc": "2026-09-28T17:15:03+00:00",
+      "prediction_intercompletion_mean_seconds": 6.3944315545243615
+    }
+  ],
+  "all_video_config_adapter_hashes_verified": true,
+  "all_final_adapters_locally_backed_up": true,
+  "all_fixed_schedule_labels_weights_and_pair_orders_verified": true
+}

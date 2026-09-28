@@ -1,0 +1,401 @@
+{
+  "per_run": [
+    {
+      "arm": "T0",
+      "seed": 0,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.15943888538636627,
+      "raw_PLCC": 0.11940150995221169
+    },
+    {
+      "arm": "T1",
+      "seed": 17,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.17763556804525166,
+      "raw_PLCC": 0.12615438540035476
+    },
+    {
+      "arm": "T2",
+      "seed": 17,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.18792994365224386,
+      "raw_PLCC": 0.13768966428101478
+    },
+    {
+      "arm": "T3",
+      "seed": 17,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.17560960355791327,
+      "raw_PLCC": 0.12523234293045651
+    },
+    {
+      "arm": "T5",
+      "seed": 17,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.18099249469176806,
+      "raw_PLCC": 0.1309358961727319
+    },
+    {
+      "arm": "T1",
+      "seed": 29,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.17589025124522759,
+      "raw_PLCC": 0.1346546224716035
+    },
+    {
+      "arm": "T2",
+      "seed": 29,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.17359352837750686,
+      "raw_PLCC": 0.1311525217229353
+    },
+    {
+      "arm": "T3",
+      "seed": 29,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.17070532306905853,
+      "raw_PLCC": 0.12020929518864976
+    },
+    {
+      "arm": "T5",
+      "seed": 29,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.16502690281366336,
+      "raw_PLCC": 0.11870684582870916
+    },
+    {
+      "arm": "T1",
+      "seed": 43,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.16769728785665064,
+      "raw_PLCC": 0.1278051645948973
+    },
+    {
+      "arm": "T2",
+      "seed": 43,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.1485754210372464,
+      "raw_PLCC": 0.12781710662620865
+    },
+    {
+      "arm": "T3",
+      "seed": 43,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.16282419224928188,
+      "raw_PLCC": 0.12086218057802867
+    },
+    {
+      "arm": "T5",
+      "seed": 43,
+      "valid": 432,
+      "total": 432,
+      "unique_scores": 4,
+      "SRCC": 0.17072522449040958,
+      "raw_PLCC": 0.1253816051466765
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast": "T3-T1",
+      "metric": "SRCC",
+      "common_videos": 432,
+      "per_seed": [
+        -0.002025964487338383,
+        -0.005184928176169057,
+        -0.00487309560736876
+      ],
+      "mean_difference": -0.004027996090292067,
+      "interval95": [
+        -0.021996548031816398,
+        0.014832031590137558
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T3-T1",
+      "metric": "raw_PLCC",
+      "common_videos": 432,
+      "per_seed": [
+        -0.0009220424698982432,
+        -0.014445327282953752,
+        -0.006942984016868631
+      ],
+      "mean_difference": -0.007436784589906875,
+      "interval95": [
+        -0.0237926311451472,
+        0.0069359061510560205
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T2-T1",
+      "metric": "SRCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.010294375606992201,
+        -0.0022967228677207296,
+        -0.019121866819404226
+      ],
+      "mean_difference": -0.0037080713600442516,
+      "interval95": [
+        -0.02918193489433443,
+        0.019275143319849
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T2-T1",
+      "metric": "raw_PLCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.011535278880660027,
+        -0.0035021007486682187,
+        1.1942031311357182e-05
+      ],
+      "mean_difference": 0.002681706721101055,
+      "interval95": [
+        -0.012706260975880564,
+        0.01885903473703483
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T3-T2",
+      "metric": "SRCC",
+      "common_videos": 432,
+      "per_seed": [
+        -0.012320340094330584,
+        -0.0028882053084483272,
+        0.014248771212035466
+      ],
+      "mean_difference": -0.00031992473024781515,
+      "interval95": [
+        -0.01951244894077924,
+        0.01898027641563365
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T3-T2",
+      "metric": "raw_PLCC",
+      "common_videos": 432,
+      "per_seed": [
+        -0.01245732135055827,
+        -0.010943226534285533,
+        -0.006954926048179988
+      ],
+      "mean_difference": -0.01011849131100793,
+      "interval95": [
+        -0.025261545470936553,
+        0.0033852406482997835
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T3-T5",
+      "metric": "SRCC",
+      "common_videos": 432,
+      "per_seed": [
+        -0.005382891133854789,
+        0.005678420255395167,
+        -0.007901032241127703
+      ],
+      "mean_difference": -0.0025351677065291087,
+      "interval95": [
+        -0.020031590657641457,
+        0.015704043293536172
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T3-T5",
+      "metric": "raw_PLCC",
+      "common_videos": 432,
+      "per_seed": [
+        -0.005703553242275394,
+        0.0015024493599405941,
+        -0.004519424568647845
+      ],
+      "mean_difference": -0.002906842816994215,
+      "interval95": [
+        -0.015622907851666586,
+        0.007656765584540478
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T1-T0",
+      "metric": "SRCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.018196682658885382,
+        0.01645136585886131,
+        0.008258402470284365
+      ],
+      "mean_difference": 0.014302150329343686,
+      "interval95": [
+        -0.03384879397547153,
+        0.05898950600491099
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T1-T0",
+      "metric": "raw_PLCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.00675287544814307,
+        0.01525311251939182,
+        0.00840365464268561
+      ],
+      "mean_difference": 0.010136547536740167,
+      "interval95": [
+        -0.037941819476402565,
+        0.05720063673962531
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T2-T0",
+      "metric": "SRCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.028491058265877583,
+        0.014154642991140581,
+        -0.010863464349119861
+      ],
+      "mean_difference": 0.010594078969299434,
+      "interval95": [
+        -0.036183589514129214,
+        0.053579169721653455
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T2-T0",
+      "metric": "raw_PLCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.018288154328803097,
+        0.011751011770723602,
+        0.008415596673996967
+      ],
+      "mean_difference": 0.012818254257841222,
+      "interval95": [
+        -0.03073787632849877,
+        0.05636214250588988
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T3-T0",
+      "metric": "SRCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.016170718171547,
+        0.011266437682692254,
+        0.0033853068629156047
+      ],
+      "mean_difference": 0.01027415423905162,
+      "interval95": [
+        -0.032437175203321185,
+        0.05185816315744377
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T3-T0",
+      "metric": "raw_PLCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.0058308329782448265,
+        0.0008077852364380689,
+        0.0014606706258169788
+      ],
+      "mean_difference": 0.0026997629468332915,
+      "interval95": [
+        -0.048327262466835455,
+        0.0461615411351663
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T5-T0",
+      "metric": "SRCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.02155360930540179,
+        0.005588017427297087,
+        0.011286339104043308
+      ],
+      "mean_difference": 0.012809321945580729,
+      "interval95": [
+        -0.027331366702406733,
+        0.05499582538817669
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    },
+    {
+      "contrast": "T5-T0",
+      "metric": "raw_PLCC",
+      "common_videos": 432,
+      "per_seed": [
+        0.01153438622052022,
+        -0.0006946641235025253,
+        0.005980095194464824
+      ],
+      "mean_difference": 0.005606605763827506,
+      "interval95": [
+        -0.04497580054805787,
+        0.051877212974932106
+      ],
+      "valid_bootstrap": 2000,
+      "bootstrap": "paired content groups and paired training seeds"
+    }
+  ],
+  "target_content_groups": 54,
+  "limitations": [
+    "Single frozen teacher-label realization; bootstrap does not cover teacher randomness.",
+    "Three training seeds provide limited inference about optimization variability.",
+    "Undefined correlations from constant predictions are reported as null, never zero."
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "analyzed_utc": "2026-09-28T17:23:33.917800+00:00",
+  "all_correlations_independently_verified_with_scipy": true,
+  "prediction_hashes_unchanged": true,
+  "mos_sha256": "2ef9efa02bf6dcc41a4eb93f377ea8bc8003a9b68cf5e1b09706c4656aa2c1e9",
+  "MOS_use": "Final evaluation only, after prediction freeze commit de048da; no further experiment changes.",
+  "source_MOS_used": false,
+  "teacher_call_hours": {
+    "baseline": 5.085437157418993,
+    "full": 6.453145970217884
+  },
+  "student_batch_hours": 43.408283154662286,
+  "prediction_call_hours": 7.54216651480231,
+  "main_job_wall_hours": 65.24388888888889,
+  "allocated_gpu_hours": 260.97555555555556,
+  "allocated_gpu_hours_note": "Four reserved GTX980 devices times SGE wallclock; not utilization-adjusted and excludes preflight.",
+  "all_training_presentations": 1296,
+  "processed_training_pairs": 1254,
+  "skipped_training_pairs": 42,
+  "processed_rollout_groups": 2508,
+  "zero_variance_rollout_groups": 72,
+  "positive_finite_gradient_updates": 324,
+  "score_histograms": {
+    "T0_0": {
+      "4.5": 202,
+      "2.0": 66,
+      "4.0": 126,
+      "1.0": 38
+    },
+    "T1_17": {
+      "4.5": 159,
+      "2.0": 69,
+      "4.0": 184,
+      "1.0": 20
+    },
+    "T2_17": {
+      "4.5": 164,
+      "2.0": 70,
+      "4.0": 178,
+      "1.0": 20
+    },
+    "T3_17": {
+      "4.5": 169,
+      "2.0": 63,
+      "4.0": 179,
+      "1.0": 21
+    },
+    "T5_17": {
+      "4.5": 151,
+      "2.0": 65,
+      "4.0": 192,
+      "1.0": 24
+    },
+    "T1_29": {
+      "4.5": 183,
+      "4.0": 168,
+      "2.0": 62,
+      "1.0": 19
+    },
+    "T2_29": {
+      "4.5": 172,
+      "2.0": 66,
+      "4.0": 173,
+      "1.0": 21
+    },
+    "T3_29": {
+      "4.5": 176,
+      "2.0": 66,
+      "4.0": 169,
+      "1.0": 21
+    },
+    "T5_29": {
+      "4.5": 184,
+      "2.0": 63,
+      "4.0": 163,
+      "1.0": 22
+    },
+    "T1_43": {
+      "4.5": 172,
+      "2.0": 65,
+      "4.0": 176,
+      "1.0": 19
+    },
+    "T2_43": {
+      "4.5": 190,
+      "4.0": 162,
+      "2.0": 60,
+      "1.0": 20
+    },
+    "T3_43": {
+      "4.5": 183,
+      "2.0": 64,
+      "4.0": 163,
+      "1.0": 22
+    },
+    "T5_43": {
+      "4.5": 182,
+      "4.0": 165,
+      "2.0": 63,
+      "1.0": 22
+    }
+  },
+  "training_schedule_label_counts": {
+    "baseline_label": {
+      "near_equal": 97,
+      "A": 8,
+      "B": 3
+    },
+    "full_label": {
+      "near_equal": 94,
+      "B": 2,
+      "A": 12
+    }
+  }
+}

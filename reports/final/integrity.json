@@ -409,5 +409,7 @@
   ],
   "all_video_config_adapter_hashes_verified": true,
   "all_final_adapters_locally_backed_up": true,
-  "all_fixed_schedule_labels_weights_and_pair_orders_verified": true
+  "all_fixed_schedule_labels_weights_and_pair_orders_verified": true,
+  "frozen_code_config_manifest_hashes_verified": true,
+  "pre_MOS_commit": "de048da"
 }

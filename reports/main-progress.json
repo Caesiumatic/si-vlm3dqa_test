@@ -1,8 +1,8 @@
 {
-  "checked_utc": "2026-09-28T16:22:46.802529+00:00",
+  "checked_utc": "2026-09-28T17:24:32.542464+00:00",
   "job_id": 427527,
-  "scheduler_state": "running",
-  "stage": "T5_43_training",
+  "scheduler_state": "completed_exit_0",
+  "stage": "complete",
   "candidate_pairs": 198,
   "completed_pair_both_methods": 198,
   "records": 396,
@@ -48,42 +48,8 @@
     "mean_intercompletion_seconds": 6.08584686774942,
     "estimated_repeated_prediction_hours": 0.7303016241299304
   },
-  "monitor_interval_hours": 1,
-  "interpretation": "Final T5 seed43 training progressing normally; frozen full labels, shuffled weights and order verified. MOS remains sealed.",
-  "current_training": {
-    "arm": "T5",
-    "seed": 43,
-    "status": "running",
-    "completed_pairs": 104,
-    "total_pairs": 108,
-    "completed_updates": 26,
-    "planned_updates": 27,
-    "recent_batches": 5,
-    "mean_batch_seconds": 492.56709644943476,
-    "estimated_remaining_hours": 0.1368241934581763,
-    "estimated_finish_utc": "2026-09-28T16:30:59.369625+00:00",
-    "pair_status_counts": {
-      "processed": 100,
-      "invalid_rollout_pair_skipped": 4
-    },
-    "zero_variance_groups": 8,
-    "rollout_groups_observed": 200,
-    "grad_norm_min": 0.0897161215543747,
-    "grad_norm_max": 0.37309950590133667,
-    "max_memory_allocated": [
-      1515026944,
-      2674087424,
-      2345293312,
-      2505623040
-    ],
-    "frozen_full_labels_shuffled_weights_and_T3_order_verified": true
-  },
-  "provisional_remaining_stage_forecast": {
-    "T5_43": {
-      "hours_from_check": 0.8961323562930212,
-      "estimated_prediction_finish_utc": "2026-09-28T17:16:32.879012+00:00"
-    }
-  },
+  "monitor_interval_hours": null,
+  "interpretation": "All 12 students and T0 verified complete; MOS final analysis complete. Primary contrast does not establish improvement.",
   "completed_student_runs": [
     "T1_17",
     "T2_17",
@@ -95,11 +61,21 @@
     "T5_29",
     "T1_43",
     "T2_43",
-    "T3_43"
+    "T3_43",
+    "T5_43"
   ],
   "completed_training_seeds": [
     17,
-    29
+    29,
+    43
   ],
-  "last_successful_check_utc": "2026-09-28T16:22:46.802529+00:00"
+  "last_successful_check_utc": "2026-09-28T17:24:32.542464+00:00",
+  "total_valid_predictions": 5616,
+  "primary_SRCC_difference": -0.004027996090292067,
+  "primary_SRCC_interval95": [
+    -0.021996548031816398,
+    0.014832031590137558
+  ],
+  "final_report": "reports/FINAL_REPORT.md",
+  "automation_status": "deleted_after_completion"
 }

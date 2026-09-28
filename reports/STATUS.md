@@ -1,6 +1,6 @@
 # Execution status
 
-Updated2026-09-28 06:12 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
+Updated2026-09-28 07:12 UTC. Hard deadline2026-09-28 22:00:06 UTC (Monday17:00 Chicago). Local `/Users/shichen/GitHub/SE-VLM3DQA-1`; remote `/home/shic4/SE-VLM3DQA-1`. Main branch only. User authorizes autonomous execution; Lop primary, Mac auxiliary. No MOS values read for development.
 
 ## Current stage: T2 seed43 training
 
@@ -36,9 +36,9 @@ T5 seed29 COMPLETE:27 updates,108 presentations (106 processed,2 invalid-rollout
 
 T1 seed43 COMPLETE:27 updates,108 presentations; statuses{'processed': 104, 'invalid_rollout_pair_skipped': 4}. All gradients finite/nonzero, KL finite; zero-variance groups9/208. All432 predictions valid with video/config/adapter hashes verified against locally backed-up final LoRA. Prediction completion2026-09-28T04:00:46+00:00. Record: reports/T1_43-completion.json. No MOS read.
 
-06:12 UTC: T2 seed43 training active,64/108 presentations,16/27 updates. Recent5 batches mean478.6sec/4 pairs; all gradients finite/nonzero (0.117–0.356), KL finite. Pair statuses{'processed': 61, 'invalid_rollout_pair_skipped': 3}; zero-variance groups5/122. Frozen full labels and unit weights verified. Training remaining1.46h plus prediction0.76h. Completed student runs9/12; T0 plus completed students total4320 target predictions.
+07:12 UTC: T2 seed43 training active,92/108 presentations,23/27 updates. Recent5 batches mean474.9sec/4 pairs; all gradients finite/nonzero (0.117–0.356), KL finite. Pair statuses{'processed': 88, 'invalid_rollout_pair_skipped': 4}; zero-variance groups9/176. Frozen full labels and unit weights verified. Training remaining0.53h plus prediction0.76h. Completed student runs9/12; T0 plus completed students total4320 target predictions.
 
-Forecast uses current batches and all completed-run averages: remaining three arms11.0h, around2026-09-28T17:10:42.064828+00:00. Startup overhead excluded; future speeds provisional. Original job427527 healthy, no resubmission or frozen configuration changes. MOS remains sealed. Retain hourly monitoring.
+Forecast uses current batches and all completed-run averages: remaining three arms10.0h, around2026-09-28T17:15:10.996512+00:00. Startup overhead excluded; future speeds provisional. Original job427527 healthy, no resubmission or frozen configuration changes. MOS remains sealed. Retain hourly monitoring.
 
 ## Frozen protocol
 

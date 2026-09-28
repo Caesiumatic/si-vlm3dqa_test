@@ -1,8 +1,8 @@
 {
-  "checked_utc": "2026-09-28T11:18:13.097553+00:00",
+  "checked_utc": "2026-09-28T12:20:35.032874+00:00",
   "job_id": 427527,
   "scheduler_state": "running",
-  "stage": "T3_43_training",
+  "stage": "T3_43_prediction",
   "candidate_pairs": 198,
   "completed_pair_both_methods": 198,
   "records": 396,
@@ -49,43 +49,46 @@
     "estimated_repeated_prediction_hours": 0.7303016241299304
   },
   "monitor_interval_hours": 1,
-  "interpretation": "T3 seed43 training progressing normally; frozen labels, weights and order verified. MOS remains sealed.",
+  "interpretation": "T3 seed43 final training verified and adapter backed up; target prediction active. MOS remains sealed.",
   "current_training": {
     "arm": "T3",
     "seed": 43,
-    "status": "running",
-    "completed_pairs": 84,
-    "total_pairs": 108,
-    "completed_updates": 21,
-    "planned_updates": 27,
-    "recent_batches": 5,
-    "mean_batch_seconds": 475.9276500225067,
-    "estimated_remaining_hours": 0.7932127500375112,
-    "estimated_finish_utc": "2026-09-28T12:05:48.663453+00:00",
+    "status": "training_complete_prediction_in_progress",
+    "updates": 27,
+    "pair_presentations": 108,
     "pair_status_counts": {
-      "processed": 80,
+      "processed": 104,
       "invalid_rollout_pair_skipped": 4
     },
-    "zero_variance_groups": 9,
-    "rollout_groups_observed": 160,
+    "zero_variance_groups": 11,
+    "processed_rollout_groups": 208,
     "grad_norm_min": 0.09243832528591156,
     "grad_norm_max": 0.3322601914405823,
+    "batch_seconds_total": 13017.004063121974,
+    "batch_seconds_mean": 482.1112615971102,
     "max_memory_allocated": [
       1515026944,
       2674087424,
       2345293312,
       2505623040
     ],
-    "frozen_full_labels_weights_and_T2_order_verified": true
+    "adapter_sha256": "5db67609f67cfe2a447e135eeed3459ee44e2ec532b01e757a2f6cc0c7fc54c1",
+    "frozen_full_labels_weights_and_T2_order_verified": true,
+    "config_sha256": "b6948725ee9384ec63f6c227760b4038a38cf404df8c38258e1988ebf04720e1",
+    "metrics": "Not computed; MOS remains sealed.",
+    "completed_pairs": 108,
+    "total_pairs": 108,
+    "completed_updates": 27,
+    "planned_updates": 27
   },
   "provisional_remaining_stage_forecast": {
     "T3_43": {
-      "hours_from_check": 1.5529436085061887,
-      "estimated_prediction_finish_utc": "2026-09-28T12:51:23.694544+00:00"
+      "hours_from_check": 0.518,
+      "estimated_prediction_finish_utc": "2026-09-28T12:51:39.832874+00:00"
     },
     "T5_43": {
-      "hours_from_check": 5.931588127529702,
-      "estimated_prediction_finish_utc": "2026-09-28T17:14:06.814812+00:00"
+      "hours_from_check": 4.896644519023513,
+      "estimated_prediction_finish_utc": "2026-09-28T17:14:22.953142+00:00"
     }
   },
   "completed_student_runs": [
@@ -104,5 +107,18 @@
     17,
     29
   ],
-  "last_successful_check_utc": "2026-09-28T11:18:13.097553+00:00"
+  "last_successful_check_utc": "2026-09-28T12:20:35.032874+00:00",
+  "current_prediction": {
+    "arm": "T3",
+    "seed": 43,
+    "completed": 136,
+    "total": 432,
+    "status_counts": {
+      "valid": 136
+    },
+    "mean_recent_intercompletion_seconds": 6.3,
+    "estimated_remaining_hours": 0.518,
+    "estimated_finish_utc": "2026-09-28T12:51:39.832874+00:00",
+    "video_config_adapter_hashes_verified": true
+  }
 }

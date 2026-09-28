@@ -1,8 +1,8 @@
 {
-  "checked_utc": "2026-09-27T23:08:08.846620+00:00",
+  "checked_utc": "2026-09-28T00:08:54.114674+00:00",
   "job_id": 427527,
   "scheduler_state": "running",
-  "stage": "T5_29_prediction",
+  "stage": "T1_43_training",
   "candidate_pairs": 198,
   "completed_pair_both_methods": 198,
   "records": 396,
@@ -49,54 +49,50 @@
     "estimated_repeated_prediction_hours": 0.7303016241299304
   },
   "monitor_interval_hours": 1,
-  "interpretation": "T5 seed29 training verified complete and target prediction underway. MOS remains sealed.",
+  "interpretation": "Both seed17 and seed29 training and all target predictions verified complete; final seed43 T1 active. MOS remains sealed.",
   "current_training": {
-    "arm": "T5",
-    "seed": 29,
-    "status": "complete",
-    "completed_pairs": 108,
+    "arm": "T1",
+    "seed": 43,
+    "status": "running",
+    "completed_pairs": 12,
     "total_pairs": 108,
-    "completed_updates": 27,
+    "completed_updates": 3,
     "planned_updates": 27,
-    "recent_batches": 27,
-    "mean_batch_seconds": 486.83873821270686,
-    "estimated_remaining_hours": 0,
+    "recent_batches": 3,
+    "mean_batch_seconds": 495.43335939447087,
+    "estimated_remaining_hours": 3.3028890626298057,
+    "estimated_finish_utc": "2026-09-28T03:27:04.515299+00:00",
     "pair_status_counts": {
-      "processed": 106,
-      "invalid_rollout_pair_skipped": 2
+      "processed": 12
     },
-    "zero_variance_groups": 2,
-    "rollout_groups_observed": 212,
-    "grad_norm_min": 0.11248967051506042,
-    "grad_norm_max": 0.3954489827156067,
+    "zero_variance_groups": 1,
+    "rollout_groups_observed": 24,
+    "grad_norm_min": 0.10224170982837677,
+    "grad_norm_max": 0.11824386566877365,
     "max_memory_allocated": [
       1515026944,
       2674087424,
       2345293312,
       2505623040
     ],
-    "frozen_full_labels_shuffled_weights_and_T3_order_verified": true
+    "frozen_baseline_labels_and_unit_weights_verified": true
   },
   "provisional_remaining_stage_forecast": {
-    "T5_29": {
-      "hours_from_check": 0.5039444444444444,
-      "estimated_prediction_finish_utc": "2026-09-27T23:38:23.046620+00:00"
-    },
     "T1_43": {
-      "hours_from_check": 4.87945404435285,
-      "estimated_prediction_finish_utc": "2026-09-28T04:00:54.881180+00:00"
+      "hours_from_check": 4.060928505785258,
+      "estimated_prediction_finish_utc": "2026-09-28T04:12:33.457295+00:00"
     },
     "T2_43": {
-      "hours_from_check": 9.254963644261256,
-      "estimated_prediction_finish_utc": "2026-09-28T08:23:26.715739+00:00"
+      "hours_from_check": 8.44081791535493,
+      "estimated_prediction_finish_utc": "2026-09-28T08:35:21.059169+00:00"
     },
     "T3_43": {
-      "hours_from_check": 13.63047324416966,
-      "estimated_prediction_finish_utc": "2026-09-28T12:45:58.550299+00:00"
+      "hours_from_check": 12.820707324924605,
+      "estimated_prediction_finish_utc": "2026-09-28T12:58:08.661044+00:00"
     },
     "T5_43": {
-      "hours_from_check": 18.005982844078066,
-      "estimated_prediction_finish_utc": "2026-09-28T17:08:30.384859+00:00"
+      "hours_from_check": 17.20059673449428,
+      "estimated_prediction_finish_utc": "2026-09-28T17:20:56.262918+00:00"
     }
   },
   "completed_student_runs": [
@@ -106,22 +102,12 @@
     "T5_17",
     "T1_29",
     "T2_29",
-    "T3_29"
+    "T3_29",
+    "T5_29"
   ],
   "completed_training_seeds": [
-    17
+    17,
+    29
   ],
-  "last_successful_check_utc": "2026-09-27T23:08:08.846620+00:00",
-  "current_prediction": {
-    "arm": "T5",
-    "seed": 29,
-    "completed": 150,
-    "total": 432,
-    "status_counts": {
-      "valid": 150
-    },
-    "recent_intercompletion_seconds": 6.433333333333334,
-    "estimated_remaining_hours": 0.5039444444444444,
-    "video_config_adapter_hashes_verified": true
-  }
+  "last_successful_check_utc": "2026-09-28T00:08:54.114674+00:00"
 }

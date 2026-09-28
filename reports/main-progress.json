@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-09-28T09:15:30.601476+00:00",
+  "checked_utc": "2026-09-28T10:19:45.906602+00:00",
   "job_id": 427527,
   "scheduler_state": "running",
   "stage": "T3_43_training",
@@ -49,27 +49,27 @@
     "estimated_repeated_prediction_hours": 0.7303016241299304
   },
   "monitor_interval_hours": 1,
-  "interpretation": "T2 seed43 training and all target predictions verified complete; T3 seed43 active. MOS remains sealed.",
+  "interpretation": "T3 seed43 training progressing normally; frozen labels, weights and order verified. MOS remains sealed.",
   "current_training": {
     "arm": "T3",
     "seed": 43,
     "status": "running",
-    "completed_pairs": 20,
+    "completed_pairs": 56,
     "total_pairs": 108,
-    "completed_updates": 5,
+    "completed_updates": 14,
     "planned_updates": 27,
     "recent_batches": 5,
-    "mean_batch_seconds": 481.70661713778975,
-    "estimated_remaining_hours": 2.943762660286493,
-    "estimated_finish_utc": "2026-09-28T12:12:08.147053+00:00",
+    "mean_batch_seconds": 457.99749253541233,
+    "estimated_remaining_hours": 1.6538798341556555,
+    "estimated_finish_utc": "2026-09-28T11:58:59.874005+00:00",
     "pair_status_counts": {
-      "processed": 19,
-      "invalid_rollout_pair_skipped": 1
+      "processed": 53,
+      "invalid_rollout_pair_skipped": 3
     },
-    "zero_variance_groups": 1,
-    "rollout_groups_observed": 38,
-    "grad_norm_min": 0.1097600907087326,
-    "grad_norm_max": 0.2713668942451477,
+    "zero_variance_groups": 5,
+    "rollout_groups_observed": 106,
+    "grad_norm_min": 0.09243832528591156,
+    "grad_norm_max": 0.3322601914405823,
     "max_memory_allocated": [
       1515026944,
       2674087424,
@@ -80,12 +80,12 @@
   },
   "provisional_remaining_stage_forecast": {
     "T3_43": {
-      "hours_from_check": 3.7034935187551703,
-      "estimated_prediction_finish_utc": "2026-09-28T12:57:43.178144+00:00"
+      "hours_from_check": 2.4136106926243333,
+      "estimated_prediction_finish_utc": "2026-09-28T12:44:34.905095+00:00"
     },
     "T5_43": {
-      "hours_from_check": 8.082138037778684,
-      "estimated_prediction_finish_utc": "2026-09-28T17:20:26.298412+00:00"
+      "hours_from_check": 6.792255211647847,
+      "estimated_prediction_finish_utc": "2026-09-28T17:07:18.025364+00:00"
     }
   },
   "completed_student_runs": [
@@ -104,5 +104,5 @@
     17,
     29
   ],
-  "last_successful_check_utc": "2026-09-28T09:15:30.601476+00:00"
+  "last_successful_check_utc": "2026-09-28T10:19:45.906602+00:00"
 }

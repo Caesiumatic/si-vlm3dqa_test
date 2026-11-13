@@ -70,11 +70,11 @@ prediction (`scripts/predict.py`), and evaluation (`scripts/metrics.py`).
 `scripts/pipeline.py` orchestrated the original time-bounded run and retains its
 historical deadline and pilot gate.
 
-A fresh training run needs the source/target videos, original manifests,
-model weights, and a GPU environment with the model dependencies. The checked-in
-repository supplies source and result records; it does not currently provide a
-portable, fully pinned training environment. Use the stage scripts and frozen
-protocol when preparing a new run, with separate outputs from the completed run.
+To prepare a fresh training run, supply the source and target videos, original
+manifests, model weights, and a GPU environment with the model dependencies.
+The repository includes source and result records; a portable, fully pinned
+training environment remains to be assembled. Follow the stage sequence and
+frozen protocol above, and write new outputs to a separate run directory.
 
 ## Data separation
 

@@ -1,4 +1,4 @@
-"""CPU-only video inventory and content-group split. Never reads MOS."""
+"""Inventory videos and split content groups on CPU using label-free metadata."""
 import concurrent.futures
 import hashlib
 import json

@@ -1,4 +1,4 @@
-"""Pair-centric GRPO, frozen supervision, LoRA, resumable optimizer-boundary checkpoints."""
+"""Train LoRA with pair-centric GRPO and resume at saved optimizer boundaries."""
 import argparse
 import hashlib
 import json
@@ -124,7 +124,7 @@ def main():
                'arm':a.arm,'seed':a.seed,
                'max_memory_allocated':[torch.cuda.max_memory_allocated(i) for i in range(torch.cuda.device_count())]}
         temp=state_path.with_suffix('.tmp');temp.write_text(json.dumps(state,indent=2));temp.replace(state_path)
-        # Only our previous resumable optimizer snapshots are disposable; all batch logs remain.
+        # Keep the two latest optimizer snapshots and every batch log; prune older snapshots.
         for previous in sorted(out.glob('step_[0-9][0-9][0-9][0-9]'))[:-2]:
             if previous.is_dir():
                 shutil.rmtree(previous)

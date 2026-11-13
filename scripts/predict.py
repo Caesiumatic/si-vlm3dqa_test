@@ -1,4 +1,4 @@
-"""Write frozen single-video predictions. No MOS import or file access."""
+"""Save single-video predictions under the frozen protocol before the MOS join."""
 import argparse
 import hashlib
 import json

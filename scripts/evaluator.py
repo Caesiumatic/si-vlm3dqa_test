@@ -1,4 +1,4 @@
-"""Frozen, video-only teacher roles. No MOS or synthesis metadata interface."""
+"""Run frozen teacher roles on video inputs, excluding MOS and synthesis metadata."""
 import collections
 import json
 import re

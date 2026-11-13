@@ -25,6 +25,8 @@ Read the [complete comparison and frozen settings](docs/reproduction.md) or
 with Python 3.10 or later:
 
 ```bash
+git clone https://github.com/Caesiumatic/si-vlm3dqa_test.git
+cd si-vlm3dqa_test
 python tools/summarize_results.py
 ```
 

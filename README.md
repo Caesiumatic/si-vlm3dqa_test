@@ -1,4 +1,4 @@
-# SE-VLM3DQA-1
+# si-vlm3dqa_test
 
 A video-only teacher–student experiment for quality assessment of rendered 3D scenes.
 A structured teacher collects pairwise judgments with adversarial search, local
